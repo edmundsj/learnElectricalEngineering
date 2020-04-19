@@ -5,47 +5,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <?php
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/head.php";
+
 echo'<html>';
 echo "PHP is working";
-include $_SERVER["DOCUMENT_ROOT"] . "/includes/head.php";
-//include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
-
 echo '<body class="is-preload">';
-echo '<div id="wrapper">'
+echo '<div id="wrapper">';
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
 ?>
-		<!-- Wrapper -->
-
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
-
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
