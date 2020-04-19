@@ -4,14 +4,16 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
 <?php
+echo'<html>';
 echo "PHP is working";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/head.php";
+//include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
+
+echo '<body class="is-preload">';
+echo '<div id="wrapper">'
 ?>
-	<body class="is-preload">
 		<!-- Wrapper -->
-			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
