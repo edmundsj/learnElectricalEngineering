@@ -158,7 +158,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
 						</div>
 					</div>
 
-				<!-- Footer -->
+				<!-- Footer 
 					<footer id="footer">
 						<div class="inner">
 							<section>
@@ -198,12 +198,14 @@ include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
 							</ul>
 						</div>
 					</footer>
+				-->
 
-			</div>
 
 		<!-- Scripts -->
 <?php
+	include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 	include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
 ?>
+			</div>
 	</body>
 </html>
