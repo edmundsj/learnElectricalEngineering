@@ -9,9 +9,17 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Generic Page</h1>
-<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-<p>Some text goes here</p>
+<h1>Lesson 1: Sinewaves</h1>
+<span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
+
+<?php
+addLessonNavigation("/signals_systems", "lesson2");
+?>
+
+<p>
+Some text goes here.
+</p>
+
 
 <?php
 endWrapper();
