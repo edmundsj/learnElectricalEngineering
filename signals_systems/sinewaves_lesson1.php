@@ -37,7 +37,9 @@ For most of this course, we will be dealing with functions not of \(x\), but of 
 </p>
 <p>
 For example, if we had an angular frequency of \(2\pi\) per second, we could plot that sinewave (to the right).
-<img src="/images/sinewave_two_periods_time.png", align="right" class="mobileImage"/>
+<div class="mobileImage">
+<img src="/images/sinewave_two_periods_time.png", align="right"/>
+</div>
 Now, instead of radians on the x-axis, we have time, in units of seconds. When the time is equal to 1 second, the total phase of the sinewave \(\omega*t\) is equal to \(2\pi\) / second * \(1\) second \(= 2 \pi\), and the sinewave will have value 0. When time is equal to 0.25 seconds, the phase will be \(\pi/2\), and the sinewave will have a value of 1.
 </p>
 <h2>Angular Frequency, Period, and Frequency</h2>
