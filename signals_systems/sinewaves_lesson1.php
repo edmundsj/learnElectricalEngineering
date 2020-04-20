@@ -28,7 +28,7 @@ understand the basic terminology we use to describe it.
 First, the most basic version, the one you are probably familiar with - \(sin(x) \), Here, \(x\) is what is called the "total phase" of the sinewave, or "phase" for short. We can plot this equation versus x, and we get your garden-variety sinewave:
 </p>
 <p>
-<img src="/images/sinewave_two_periods.png" align="left"/>
+<img src="/images/sinewave_two_periods.png" align="left" style="width:auto; max-width:100%; height: auto;"/>
 The most interesting parts of the sinewave are that it goes from -1 to +1, it is zero at every integer value of \(\pi\), and it is <i>periodic</i>, meaning it repeats itself. In this case, the <i>period</i> of the sinewave is equal to \(2\pi\), since this sinewave repeats itself after we increase the value of \(x\) by \(2\pi\). Notice that in this case, the period is in radians, and doesn't have units of time.
 </p>
 <h2>Time versus pure radians</h2>
