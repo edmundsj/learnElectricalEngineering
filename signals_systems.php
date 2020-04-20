@@ -12,6 +12,9 @@ beginWrapper();
 <h1>Signals and Systems</h1>
 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 <h1>Introduction to Signals and Systems</h1>
+<?php
+addLessonNavigation("/explore.php", "signals_systems/sinewaves_lesson1.php", "Explore", "Sinewaves");
+?>
 <h2>Why am I here?</h2>
 <p>First of all, why on earth are you taking this course? That's the question my professors
 never seemed quite able to answer with anything other than "it's important". In a sentence,
