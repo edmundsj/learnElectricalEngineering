@@ -13,152 +13,67 @@ beginPage();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
 ?>
 				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>This is Phantom, a free, fully responsive site<br />
-								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Magna</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Lorem</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Feugiat</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Tempus</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Aliquam</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Veroeros</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic07.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ipsum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic08.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Dolor</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic09.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Nullam</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ultricies</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic11.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Dictum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic12.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Pretium</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
+<div id="main">
+<div class="inner">
+<header>
+<h1>Welcome to Electrical Engineering</h1><br/>
+<p>Here, you will find a comprehensive resource for your study of electrical engineering,
+from online lecture videos, to reference material, to practice problems so you can test your knowledge.
+My hope is for this site to expand to cover all commonly-taught courses in Electrical Engineering 
+departments. If you know what you are looking for, click on one of the subjects below, or on the menu
+to the right. If not, explore the discipline of electrical engineering and the course material
+offered here by clicking on the link below or the menu to the right. </p>
+
+
+</header>
+
+<section class="tiles">
+<article class="style1">
+<span class="image">
+<img src="images/pic01.jpg" alt="" />
+</span>
+<a href="explore.php">
+<h2>Explore</h2>
+<div class="content">
+<p>Explore courses, figure out prerequisites, and find out where you stand and what you are missing.</p>
+</div>
+</a>
+</article>
+</section>
+
+<br><br>
+<h1>About This Site</h1>
+As an undergraduate in electrical engineering, I loved the curated videos of khan academy. I relied on
+them heavily to get me through basic biology, organic chemistry, calculus, and some differential equations and
+basic circuits. From there on out, however, there was essentially no content to help me in my electrical
+engineering coursework. This frustrated me so much that in my final year of undergrad, I started making those
+videos. These are on <a href="https://www.youtube.com/channel/UCEmBUvaW0UhAbPz4IiscKgw">my YouTube channel</a>,
+and sprinkled throughout this site. While videos are useful, and probably my favorite medium for learning,
+they are not sufficient by themselves. Once you watch a video and generally understand a topic, 
+re-watching it all over again when you forget a single concept or equation is frustrating at best. This
+is what reference material does exceptionally well, and where the written word beats video hands-down.
+Practice, and <i>immediate feedback</i> is probably the most critical for learning and remembering a topic
+once you have the basic outline from videos and reference material on hand, but this is not something videos
+can give either. This website was created as a one-stop-shop for learning electrical engineering - 
+containing lecture videos, reference material, and practice problems with immediate feedback. It is my hope that
+this can make the next generation of engineer's educations less painful, more rewarding, and more fun.
+
+<br><br>
+
+<h1>About Me</h1>
+I am currently a Ph.D. student in the <a href="https://maharbizgroup.wordpress.com/members/">Maharbiz Group</a>
+in the <a href="https://eecs.berkeley.edu/">Electrical Engineering and Computer Science</a> department at UC
+Berkeley. My Ph.D. focuses on using photonic devices to measure brain activity. When I'm not at work, you'll
+find me at the gym, walking around Tilden Park in Berkeley, or making pita bread and Indian food with
+my girlfriend.
+
+</p>
+
+</div>
+</div>
 
 <?php
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
-endPage()
+endPage();
 ?>
