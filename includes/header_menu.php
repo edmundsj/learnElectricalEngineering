@@ -19,7 +19,7 @@
 	<h2>Menu</h2>
 	<ul>
 		<li><a href="index.php">Home</a></li>
-		<li><a href="Explore.php">Explore</a></li>
+		<li><a href="explore.php">Explore</a></li>
 		<li><a href="skeleton.php">Generic</a></li>
 		<li><a href="elements.php">Elements</a></li>
 	</ul>
