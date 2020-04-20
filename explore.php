@@ -72,6 +72,7 @@ as a student. Without further ado, the fundamentals, in the order they should be
 	</ul>
 <li>Core Electrical Engineering Courses</li>
 	<ul style="margin-bottom: 0px;">
+	<li><a href="signals_systems.php">Signals and Systems</a></li>
 	<li><a href="electronics_device_physics.php">Electronics: Device Physics</a></li>
 	<li><a href="electronics_transistors.php">Electronics: From Device to Circuit</a></li>
 	<li><a href="electronics_integrated_circuits.php">Electronics: Integrated Circuits</a></li>
@@ -184,15 +185,8 @@ the underlying physics at work. Finally, you build off this knowledge further in
 to build basic integrated circuits from transistors.
 <br><br>
 
-The other two courses, <a href="control_systems.php">Control Systems</a> and 
-<a href="electromagnetics.php">Engineering Electromagnetics</a> can be taken whenever you please. They
-build off of what you learned in <a href="signals_systems.php">Signals and Systems</a> and 
-<a href="intro_em.php">Electricity and Magnetism</a>, respectively. In Control Systems you will learn
-how to use <a href="intro_analog.php">Analog</a> and <a href="intro_digital.php">Digital</a> circuits
-to control physical systems, from motors to airplanes, and how these systems respond to disturbances
-(a sophisticated way of saying being hit by a hammer). In Electromagnetics, you will learn how the 
-basic concepts you learned in electricity and magnetism can be extended to larger and more complex systems,
-and how to model and interact with these systems.
+The other three courses, <a href="signals_systems.php">Signals and Systems</a>, <a href="control_systems.php">Control Systems</a>, and
+<a href="electromagnetics.php">Engineering Electromagnetics</a> can be taken whenever you please, although Signals and Systems should be taken before controls. In Control Systems you will learn how to use <a href="intro_analog.php">Analog</a> and <a href="intro_digital.php">Digital</a> circuits to control physical systems, from motors to airplanes, and how these systems respond to disturbances (a sophisticated way of saying being hit by a hammer). In Electromagnetics, you will learn how the basic concepts you learned in electricity and magnetism can be extended to larger and more complex systems, and how to model and interact with these systems.
 
 </p>
 
