@@ -12,7 +12,7 @@ beginWrapper();
 <h1>Signals and Systems</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <style>
-.mobileImage {
+img .mobileImage {
 	width: auto;
 	height: auto;
 	max-width: 100%;
@@ -63,14 +63,14 @@ We also sometimes care about the regular frequency (we will use the symbol \(f\)
 </p>
 <p>You might ask - what happens when we increase the frequency? What does the sinewave look like? For example, what happens when we double the frequency?
 </p>
-<div class="mobileImage" style="width: 100%">
+<div style="width:100%; overflow: hidden; text-align:center;">
 <img src="/images/sinewave_comparison_faster.svg", align="left", style="width: auto; max-width: 100%; height: auto;"/>
 </div>
 <p>
 As you might have guessed, if we plot the function over the same amount of time, we have twice as many periods. Or, if we felt so inclined, we could say the sinewave is changing "twice as fast" (this is actually exactly true if you compute the derivative, it will be twice as large - check!). <i>Frequency</i> (angular or regular) is thus a measure of the <i>speed</i> of the signal, how rapidly it changes in time. Higher frequency &#8594; faster signal. Lower frequency &#8594; slower signal. This theme will recur over and over again. If we wanted to also plot a sinewave at <i>half</i> the frequency, we see that there are fewer periods (only one in two seconds), and it is changing more <i>slowly</i> with time:
 </p>
-<div class="mobileImage", style="width:100%; overflow: hidden; text-align:center;">
-<img src="/images/sinewave_comparison_slower.svg", align="left"/>
+<div style="width:100%; overflow: hidden; text-align:center;">
+<img src="/images/sinewave_comparison_slower.svg", align="left" class="mobileImage"/>
 </div>
 
 <?php
