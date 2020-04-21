@@ -43,7 +43,7 @@ world in the years since I have taken it, and it has never stopped being critica
 </p>
 
 <h2>Course Overview</h2>
-<img src="images/sinewave_two_periods.png", align="right"/>
+<?php addMobileImage('sinewave_two_periods.png', 'right'); ?>
 <p>
 At the heart of signals and systems is the first "signal" we will meet, the humble sinewave. 
 We will first spend a few lectures reviewing
