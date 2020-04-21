@@ -35,6 +35,6 @@ if(isInjected($visitor_email)) {
 }
 else {
 	mail($to, $email_subject, $email_body, $headers);
-	echo'Done!';
+	echo'<script>alert("message sent succesfully"); window.history.go(-1);</script>';
 }
 ?>
