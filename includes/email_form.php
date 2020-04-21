@@ -1,40 +1,34 @@
 <?php
+require_once "Mail.php";
+
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $message = $_POST['message'];
 
-$email_from = 'jordan.e@berkeley.edu';
-$email_subject = 'New Website Submission';
-$email_body = 'Message from user $name.\nMessage: $message';
+$from = $visitor_email;
+$to = 'jordan.e@berkeley.edu';
 
-$to = 'edmundsj.e@uci.edu';
-$headers = 'From: $email_from\r\n';
-$headers .= 'Reply-To: $visitor_email \r\n';
+$host = "ssl://smtp.gmail.com";
+$port = "465";
+$username = 'learneecs@gmail.com';
+$password = 'QPp-9bP`g9s6';
 
-function isInjected($str) {
-	$injections = array('(\n+)',
-		'(\r+)',
-		'(\t+)',
-		'(%0A+)',
-		'(%0D+)',
-		'(%08+)',
-		'(%09+)',
-	);
-	$inject = join('|', $injections);
-	$inject = '/$inject/i';
+$subject = 'Message from: ' . $name . ". Email: " . $visitor_email;
+$body = $message;
 
-	if(preg_match($inject, $str)) {
-		return true;
-	} else {
-		return false;
-	}
+$headers = array ('From' => $from, 'To' => $to,'Subject' => $subject);
+$smtp = Mail::factory('smtp',
+  array ('host' => $host,
+    'port' => $port,
+    'auth' => true,
+    'username' => $username,
+    'password' => $password));
+
+$mail = $smtp->send($to, $headers, $body);
+
+if (PEAR::isError($mail)) {
+  echo($mail->getMessage());
+} else {
+  echo("<script>alert('Message succesfully sent!'); " .
+	  "window.history.go(-1);</script>");
 }
-if(isInjected($visitor_email)) {
-	echo "Bad email value!";
-	exit;
-}
-else {
-	mail($to, $email_subject, $email_body, $headers);
-	echo'<script>alert("message sent succesfully"); window.history.go(-1);</script>';
-}
-?>
