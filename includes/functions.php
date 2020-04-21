@@ -31,11 +31,11 @@ function addLessonNavigation($leftLink, $rightLink, $leftName="", $rightName="")
 }
 
 function addMobileImageFull($imageName) {
-	echo '<div class="mobileImageWrapper">';
-	echo '<img src="/images/' . $imageName . '", class="mobileImage" />';
+	echo '<div style="width:100%; overflow: hidden;">';
+	echo '<img src="/images/' . $imageName . '", style="width:auto; height:auto; max-width:100%" />';
 	echo '</div>';
 }
 
 function addMobileImage($imageName, $alignment="left") {
-	echo '<img src="/images/' . $imageName . '", align="' . $alignment . '", class="mobileImage" />';
+	echo '<img src="/images/' . $imageName . '", align="' . $alignment . '", style="width:auto; height: auto; max-width:100%" />';
 }
