@@ -22,7 +22,6 @@ beginWrapper();
 <?php
 addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
 ?>
-
 <h2>The Humble Sinewave</h2>
 <p>
 Ah, the humble sinewave. You have likely already met this beast in other coursework, or in a trigonometry
@@ -43,9 +42,9 @@ For most of this course, we will be dealing with functions not of \(x\), but of 
 </p>
 <p>
 For example, if we had an angular frequency of \(2\pi\) per second, we could plot that sinewave (to the right).
-<div class="mobileImage">
-<img src="/images/sinewave_two_periods_time.png", align="right"/>
-</div>
+<img src="/images/sinewave_two_periods_time.png", align="right" 
+	style="width:auto; max-width: 100%; height: auto;"/>
+
 Now, instead of radians on the x-axis, we have time, in units of seconds. When the time is equal to 1 second, the total phase of the sinewave \(\omega*t\) is equal to \(2\pi\) / second * \(1\) second \(= 2 \pi\), and the sinewave will have value 0. When time is equal to 0.25 seconds, the phase will be \(\pi/2\), and the sinewave will have a value of 1.
 </p>
 <h2>Angular Frequency, Period, and Frequency</h2>
@@ -64,13 +63,13 @@ We also sometimes care about the regular frequency (we will use the symbol \(f\)
 </p>
 <p>You might ask - what happens when we increase the frequency? What does the sinewave look like? For example, what happens when we double the frequency?
 </p>
-<div style="width:100%; overflow: hidden; text-align:center;">
-<img src="/images/sinewave_comparison_faster.svg", align="left"/>
+<div class="mobileImage" style="width: 100%">
+<img src="/images/sinewave_comparison_faster.svg", align="left", style="width: auto; max-width: 100%; height: auto;"/>
 </div>
 <p>
 As you might have guessed, if we plot the function over the same amount of time, we have twice as many periods. Or, if we felt so inclined, we could say the sinewave is changing "twice as fast" (this is actually exactly true if you compute the derivative, it will be twice as large - check!). <i>Frequency</i> (angular or regular) is thus a measure of the <i>speed</i> of the signal, how rapidly it changes in time. Higher frequency &#8594; faster signal. Lower frequency &#8594; slower signal. This theme will recur over and over again. If we wanted to also plot a sinewave at <i>half</i> the frequency, we see that there are fewer periods (only one in two seconds), and it is changing more <i>slowly</i> with time:
 </p>
-<div style="width:100%; overflow: hidden; text-align:center;">
+<div class="mobileImage", style="width:100%; overflow: hidden; text-align:center;">
 <img src="/images/sinewave_comparison_slower.svg", align="left"/>
 </div>
 
