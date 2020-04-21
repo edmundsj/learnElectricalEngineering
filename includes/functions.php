@@ -29,3 +29,13 @@ function addLessonNavigation($leftLink, $rightLink, $leftName="", $rightName="")
 	echo '<br>';
 	echo '<br>';
 }
+
+function addMobileImageFull($imageName) {
+	echo '<div class="mobileImageWrapper">';
+	echo '<img src="/images/' . $imageName . '", align="left", class="mobileImage" />';
+	echo '</div>';
+}
+
+function addMobileImage($imageName, $alignment="left") {
+	echo '<img src="/images/' . $imageName . '", align="' . $alignment . '", class="mobileImage" />';
+}
