@@ -2,7 +2,7 @@
 <header id="header">
 	<div class="inner">
 
-			<a href="index.php" class="logo">
+			<a href="/index.php" class="logo">
 				<span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title                                    ">Learn Electrical Engineering</span>
 			</a>
 
@@ -18,9 +18,12 @@
 <nav id="menu">
 	<h2>Menu</h2>
 	<ul>
-		<li><a href="index.php">Home</a></li>
-		<li><a href="explore.php">Explore</a></li>
-		<li><a href="skeleton.php">Generic</a></li>
-		<li><a href="elements.php">Elements</a></li>
+		<li><a href="/index.php">Home</a></li>
+		<li><a href="/explore.php">Explore</a></li>
+		<li>Courses
+		<ul style="list-style-type: none">
+		<li><a href="/signals_systems.php">Signals and Systems</a></li>
+		</ul>
+		</li>
 	</ul>
 </nav>

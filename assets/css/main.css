@@ -74,11 +74,6 @@ input, select, textarea {
 
 /* Basic */
 
-.mobileImage {
-	width: auto;
-	height: auto;
-	max-width: 100%;
-}
 	@-ms-viewport {
 		width: device-width;
 	}

@@ -60,6 +60,9 @@ We also sometimes care about the regular frequency (we will use the symbol \(f\)
 As you might have guessed, if we plot the function over the same amount of time, we have twice as many periods. Or, if we felt so inclined, we could say the sinewave is changing "twice as fast" (this is actually exactly true if you compute the derivative, it will be twice as large - check!). <i>Frequency</i> (angular or regular) is thus a measure of the <i>speed</i> of the signal, how rapidly it changes in time. Higher frequency &#8594; faster signal. Lower frequency &#8594; slower signal. This theme will recur over and over again. If we wanted to also plot a sinewave at <i>half</i> the frequency, we see that there are fewer periods (only one in two seconds), and it is changing more <i>slowly</i> with time:
 </p>
 <?php addMobileImageFull('sinewave_comparison_slower.svg'); ?>
+<p>
+Now to give you some practice mastering the material, I have posted a few practice questions below.
+</p>
 
 <?php
 endWrapper();
