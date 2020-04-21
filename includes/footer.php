@@ -25,11 +25,7 @@
 			<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter<                                    /span></a></li>
 			<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Faceb                                    ook</span></a></li>
 			<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instag                                    ram</span></a></li>
-			<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbbl                                    e</span></a></li>
-			<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</s                                    pan></a></li>
 			<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</spa                                    n></a></li>
-			<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span                                    ></a></li>
-			<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</s                                    pan></a></li>
 		</ul>
 	</section>
 	<ul class="copyright">
