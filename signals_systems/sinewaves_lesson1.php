@@ -23,7 +23,7 @@ of this lesson is for you to learn to dance with the sinewave - scale, shift, an
 understand the basic terminology we use to describe it.
 </p>
 <p>
-First, the most basic version, the one you are probably familiar with - \(sin(x) \), Here, \(x\) is what is called the "total phase" of the sinewave, or "phase" for short. We can plot this equation versus x, and we get your garden-variety sinewave:
+First, the most basic version, the one you are probably familiar with,  \(sin(x) \), Here, \(x\) is what is called the "total phase" of the sinewave, or "phase" for short. We can plot this equation versus x, and we get your garden-variety sinewave:
 </p>
 <p>
 <?php addMobileImage('sinewave_two_periods.png'); ?>

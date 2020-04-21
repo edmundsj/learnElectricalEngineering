@@ -32,7 +32,7 @@ function addLessonNavigation($leftLink, $rightLink, $leftName="", $rightName="")
 
 function addMobileImageFull($imageName) {
 	echo '<div class="mobileImageWrapper">';
-	echo '<img src="/images/' . $imageName . '", align="left", class="mobileImage" />';
+	echo '<img src="/images/' . $imageName . '", class="mobileImage" />';
 	echo '</div>';
 }
 
