@@ -2,7 +2,7 @@
 <div class="inner">
 	<section>
 		<h2>Get in touch</h2>
-		<form method="post" action="#">
+		<form method="post" action="/includes/email_form.php">
 			<div class="fields">
 				<div class="field half">
 					<input type="text" name="name" id="name" placeholder="Name" />
@@ -22,14 +22,13 @@
 	<section>
 		<h2>Follow</h2>
 		<ul class="icons">
-			<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter<                                    /span></a></li>
-			<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Faceb                                    ook</span></a></li>
-			<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instag                                    ram</span></a></li>
-			<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</spa                                    n></a></li>
+			<li><a href="https://github.com/edmundsj" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+			<li><a href="https://www.youtube.com/channel/UCEmBUvaW0UhAbPz4IiscKgw" class="icon brands style2 fa-youtube"><span class="label">YouTube</span></a></li>
+			<li><a href="https://www.linkedin.com/in/jordan-edmunds-eecs" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
 		</ul>
 	</section>
 	<ul class="copyright">
-		<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">                                HTML5 UP</a></li>
+		<li>&copy; Untitled. All rights reserved</li>
 	</ul>
 </div>
 </footer>
