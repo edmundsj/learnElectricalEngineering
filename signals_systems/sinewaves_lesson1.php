@@ -11,13 +11,6 @@ beginWrapper();
 <!-- Main content goes here -->
 <h1>Signals and Systems</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<style>
-img .mobileImage {
-	width: auto;
-	height: auto;
-	max-width: 100%;
-}
-</style>
 <h1>Lesson 1: Playing with Sinewaves</h1>
 <?php
 addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
@@ -33,7 +26,7 @@ understand the basic terminology we use to describe it.
 First, the most basic version, the one you are probably familiar with - \(sin(x) \), Here, \(x\) is what is called the "total phase" of the sinewave, or "phase" for short. We can plot this equation versus x, and we get your garden-variety sinewave:
 </p>
 <p>
-<img src="/images/sinewave_two_periods.png" align="left" style="width:auto; max-width:100%; height: auto;"/>
+<img src="/images/sinewave_two_periods.png" align="left", class="mobileImage"/>
 The most interesting parts of the sinewave are that it goes from -1 to +1, it is zero at every integer value of \(\pi\), and it is <i>periodic</i>, meaning it repeats itself. In this case, the <i>period</i> of the sinewave is equal to \(2\pi\), since this sinewave repeats itself after we increase the value of \(x\) by \(2\pi\). Notice that in this case, the period is in radians, and doesn't have units of time.
 </p>
 <h2>Time versus pure radians</h2>
@@ -42,8 +35,7 @@ For most of this course, we will be dealing with functions not of \(x\), but of 
 </p>
 <p>
 For example, if we had an angular frequency of \(2\pi\) per second, we could plot that sinewave (to the right).
-<img src="/images/sinewave_two_periods_time.png", align="right" 
-	style="width:auto; max-width: 100%; height: auto;"/>
+<img src="/images/sinewave_two_periods_time.png", align="right", class="mobileImage"/>
 
 Now, instead of radians on the x-axis, we have time, in units of seconds. When the time is equal to 1 second, the total phase of the sinewave \(\omega*t\) is equal to \(2\pi\) / second * \(1\) second \(= 2 \pi\), and the sinewave will have value 0. When time is equal to 0.25 seconds, the phase will be \(\pi/2\), and the sinewave will have a value of 1.
 </p>
@@ -63,13 +55,13 @@ We also sometimes care about the regular frequency (we will use the symbol \(f\)
 </p>
 <p>You might ask - what happens when we increase the frequency? What does the sinewave look like? For example, what happens when we double the frequency?
 </p>
-<div style="width:100%; overflow: hidden; text-align:center;">
-<img src="/images/sinewave_comparison_faster.svg", align="left", style="width: auto; max-width: 100%; height: auto;"/>
+<div class="mobileImageWrapper">
+<img src="/images/sinewave_comparison_faster.svg", align="left", class="mobileImage"/>
 </div>
 <p>
 As you might have guessed, if we plot the function over the same amount of time, we have twice as many periods. Or, if we felt so inclined, we could say the sinewave is changing "twice as fast" (this is actually exactly true if you compute the derivative, it will be twice as large - check!). <i>Frequency</i> (angular or regular) is thus a measure of the <i>speed</i> of the signal, how rapidly it changes in time. Higher frequency &#8594; faster signal. Lower frequency &#8594; slower signal. This theme will recur over and over again. If we wanted to also plot a sinewave at <i>half</i> the frequency, we see that there are fewer periods (only one in two seconds), and it is changing more <i>slowly</i> with time:
 </p>
-<div style="width:100%; overflow: hidden; text-align:center;">
+<div class="mobileImageWrapper">
 <img src="/images/sinewave_comparison_slower.svg", align="left" class="mobileImage"/>
 </div>
 

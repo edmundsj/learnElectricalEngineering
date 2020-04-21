@@ -1,0 +1,11 @@
+img .mobileImage {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.mobileImageWrapper {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
