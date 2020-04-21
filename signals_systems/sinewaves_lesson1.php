@@ -11,7 +11,13 @@ beginWrapper();
 <!-- Main content goes here -->
 <h1>Signals and Systems</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-
+<style>
+.mobileImage {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+</style>
 <h1>Lesson 1: Playing with Sinewaves</h1>
 <?php
 addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
