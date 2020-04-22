@@ -13,7 +13,7 @@ beginWrapper();
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 2: Shifting and Scaling Signals</h1>
 <?php
-addLessonNavigation("sinewaves_lesson1.php", "lesson3.php", "Sinewaves", "Next");
+addLessonNavigation("sinewaves_lesson1.php", "pendulum_lesson3.php", "Sinewaves", "Pendulum System");
 ?>
 <h2>Scaling signals (a.k.a. multiplying)</h2>
 <p>
@@ -56,7 +56,7 @@ $counter = appendToQuiz($counter, 'What is the correct expression for a sinewave
 	array('\(1 + 0.5*sin(x)\)', '\(0.5 + 0.5*sin(x)\)', '\(0.5 + sin(x + 1)\)', '\(sin(x)\)'), 1);
 ?>
 <?php
-addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
+addLessonNavigation("sinewaves_lesson1.php", "pendulum_lesson3.php", "Sinewaves", "Pendulum System");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

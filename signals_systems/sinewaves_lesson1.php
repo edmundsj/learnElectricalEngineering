@@ -76,7 +76,7 @@ $counter = appendToQuiz($counter, 'If a sinewave frequency doubles, what happnes
 	array('It doubles', 'It halves', 'It stays the same', 'It is multplied by \( \pi\)'), 0);
 ?>
 <?php
-addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
+addLessonNavigation("/signals_systems.php", "shifting_scaling_lesson2.php", "Introduction", "Shifting and Scaling");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
