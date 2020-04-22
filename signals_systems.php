@@ -148,6 +148,7 @@ Finally, we will learn a couple of useful tools that go beyond the Fourier Trans
 </p>
 
 <?php
+addLessonNavigation("/explore.php", "signals_systems/sinewaves_lesson1.php", "Explore", "Sinewaves");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
