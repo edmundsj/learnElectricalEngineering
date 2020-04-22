@@ -39,6 +39,17 @@ offered here by clicking on the link below or the menu to the right. </p>
 </div>
 </a>
 </article>
+
+<article class="style2">
+<span class="image">
+<img src="images/pic02.jpg" alt="" />
+</span>
+<a href="/signals_systems.php">
+<h2>Signals and Systems</h2>
+<div class="content">
+<p>Linear Time Invariant Signals and Systems, Fourier Analysis - become a world-class sinewave manipulator. Learn how the world actually works.</p>
+</div>
+</a>
 </section>
 
 <br><br>
