@@ -13,7 +13,7 @@ beginWrapper();
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 1: Playing with Sinewaves</h1>
 <?php
-addLessonNavigation("/signals_systems.php", "shifting_scaling_lesson2.php", "Introduction", "Next");
+addLessonNavigation("/signals_systems.php", "shifting_scaling_lesson2.php", "Introduction", "Shifting and Scaling");
 ?>
 <h2>The Humble Sinewave</h2>
 <p>
