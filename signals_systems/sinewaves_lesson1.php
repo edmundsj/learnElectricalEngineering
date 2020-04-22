@@ -59,12 +59,24 @@ We also sometimes care about the regular frequency (we will use the symbol \(f\)
 <p>
 As you might have guessed, if we plot the function over the same amount of time, we have twice as many periods. Or, if we felt so inclined, we could say the sinewave is changing "twice as fast" (this is actually exactly true if you compute the derivative, it will be twice as large - check!). <i>Frequency</i> (angular or regular) is thus a measure of the <i>speed</i> of the signal, how rapidly it changes in time. Higher frequency &#8594; faster signal. Lower frequency &#8594; slower signal. This theme will recur over and over again. If we wanted to also plot a sinewave at <i>half</i> the frequency, we see that there are fewer periods (only one in two seconds), and it is changing more <i>slowly</i> with time:
 </p>
-<?php addMobileImageFull('sinewave_comparison_slower.svg'); ?>
+<?php addMobileImageFull('sinewave_comparison_slower.svg'); ?><br>
 <p>
 Now to give you some practice mastering the material, I have posted a few practice questions below.
 </p>
 
 <?php
+$counter = 0;
+$counter = appendToQuiz($counter, 'If  \(\omega = 6\pi\) rad/s, what is the period T?',
+	array('\(T=0.333s\)', '\(T=12s\)', '\(T=12\pi^2s\)', '\(T=3s\)'), 0);
+$counter = appendToQuiz($counter, 'If  \(T = 0.2s\), what is \(f\)?',
+	array('\(f=0.04Hz\)', '\(f=5\)', '\(f=5 rad/s\)', '\(f=5 Hz\)'), 3);
+$counter = appendToQuiz($counter, 'If a sinewave period halves, what happens to the angular frequency?',
+	array('It doubles', 'It halves', 'It stays the same', 'It is multplied by \( \pi\)'), 0);
+$counter = appendToQuiz($counter, 'If a sinewave frequency doubles, what happnes to the angular frequency?',
+	array('It doubles', 'It halves', 'It stays the same', 'It is multplied by \( \pi\)'), 0);
+?>
+<?php
+addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

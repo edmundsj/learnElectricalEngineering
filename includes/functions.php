@@ -39,3 +39,44 @@ function addMobileImageFull($imageName) {
 function addMobileImage($imageName, $alignment="left") {
 	echo '<img src="/images/' . $imageName . '", align="' . $alignment . '", style="width:auto; height: auto; max-width:100%" />';
 }
+
+function appendToQuiz($counter, $question, $options, $answer) {
+    // first, add the HTML for the quiz
+    $questionText = 'question' . $counter;
+    $buttonText = 'button' . $counter;
+    $resultText = 'result' . $counter;
+    $answer = strval($answer);
+
+    echo '<b><i><p>' . $question . '</p></i></b>';
+    $i = 0;
+    foreach ($options as $value) {
+        echo'<input type="radio" name="' . $questionText . '" value="' . $value . '" id="' . $counter .
+            '_' . $i . '"/>';
+        echo'<label for="' . $counter . '_' . $i .  '">' . $value . '</label><br/>';
+        $i += 1;
+    }
+    echo '<button id="' . $buttonText . '">Check Answer</button>';
+    echo '<div id="' . $resultText . '"></div>';
+    echo '<hr>';
+
+    echo '<script>' . "\n";
+    echo 'function showResult' . $counter . '() {'. "\n";
+    echo 'if(document.getElementById("' . $counter . '_' . $answer . '").checked == true) {' . "\n";
+    echo 'question' . $counter . 'Result.innerHTML = "<p style=\"color:green;\">Correct.</p>";' . "\n";
+    echo '} else {' . "\n";
+    echo 'question' . $counter . 'Result.innerHTML = "<p style=\"color:red;\">Excellent! You\'ve got the wrong answer.     This presents a learning opportunity. Try again :)</p>";' . "\n";
+    echo '}' . "\n";
+    echo '}' . "\n";
+    echo 'question' . $counter . 'Button = document.getElementById("'. $buttonText . '");' . "\n";
+    echo 'question' . $counter . 'Button.addEventListener("click", showResult' . $counter . ');' . "\n";
+    echo 'question' . $counter . 'Result = document.getElementById("' . $resultText . '");' . "\n";
+    echo '</script>'. "\n";
+
+    $counter += 1;
+    return $counter;
+
+// Sample code if we want the first answer to be the correct one (zero-indexed)
+// $counter = 0
+//$counter = appendToQuiz($counter, 'This is a question', 
+//array('option 1', 'option 2'), 0);
+}
