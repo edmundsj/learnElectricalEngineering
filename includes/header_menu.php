@@ -3,7 +3,7 @@
 	<div class="inner">
 
 			<a href="/index.php" class="logo">
-				<span class="symbol"><img src="/images/logo.svg" alt="" /></span><span class="title                                    ">Learn Electrical Engineering</span>
+				<span class="symbol"><img src="/images/android-chrome-192x192.png" alt="" /></span><span class="title">Learn Electrical Engineering</span>
 			</a>
 
 			<nav>
