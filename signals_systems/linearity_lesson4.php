@@ -13,7 +13,7 @@ beginWrapper();
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 4: Linearity</h1>
 <?php
-addLessonNavigation("pendulum_lesson3.php", "lesson5.php", "Pendulum System", "Next");
+addLessonNavigation("pendulum_lesson3.php", "coming_soon.php", "Pendulum System", "Next");
 ?>
 <p>
 In this lesson, we are going to delve a little deeper into the property of linearity. It will underlie pretty much all the work we do in the future, and I hope will help you see how we might break up a complicated problem into a bunch of solvable ones.
@@ -58,7 +58,7 @@ $counter = appendToQuiz($counter, 'Say we feed in the sum of two scaled sinewave
 	'\(2*sin(\omega_1 t) + 1.5 * sin(\omega_2 t)\)'), 1);
 ?>
 <?php
-addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
+addLessonNavigation("/signals_systems.php", "coming_soon.php", "Introduction", "Next");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
