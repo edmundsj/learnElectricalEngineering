@@ -71,12 +71,17 @@ this can make the next generation of engineer's educations less painful, more re
 
 <br><br>
 
+<h1>Get Involved</h1>
+<p>
+Are you a web developer? Animator? Fellow educator and content creator? If you're interested in helping out with this site in any capacity, or want to discuss your own projects and how I can help you, shoot me an email with the form below.
+</p>
+
 <h1>About Me</h1>
+<img src='/images/self_thumbnail.jpg', style="max-size: 100%; width: 20%; height: 20%; float: left; margin-right: 20px; margin-top: 0px;"/>
 I am currently a Ph.D. student in the <a href="https://maharbizgroup.wordpress.com/members/">Maharbiz Group</a>
 in the <a href="https://eecs.berkeley.edu/">Electrical Engineering and Computer Science</a> department at UC
 Berkeley. My Ph.D. focuses on using photonic devices to measure brain activity. When I'm not at work, you'll
-find me at the gym, walking around Tilden Park in Berkeley, or making pita bread and Indian food with
-my girlfriend.
+find me at the gym, walking around Tilden Park in Berkeley, or making Indian food with my girlfriend. I make some killer naan and Baingan Bharta.
 
 </p>
 
