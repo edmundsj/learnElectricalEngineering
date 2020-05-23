@@ -33,7 +33,7 @@ beginWrapper();
 <p>
 Are you going to be able to understand what is taught in a particular course? Are you ready
 to study device physics? RF? Electromagnetics? What is the coursework path of an electrical engineer,
-and where do you get started?
+and where do you get started? What if you want to specialize, and get really good at a particular area. Nanoelectronics? Optoelectronics? RF? Circuit design? Signal processing? Computer architecture? How should you direct your tsudy, what courses should you be focusing your energy on? What other coursework and experiences would benefit you? I answer all these questions for common specializations me and my colleagues work in below.
 </p>
 <p>
 This page is intended as a brief guide and reference, which will pull back the curtain on what exactly is
@@ -45,7 +45,7 @@ First, you should know that engineering in general, and electrical engineering i
 is an <i><b>extremely</b></i> cumulative discipline. What you learned last semester will usually be necessary
 for what you learn this semester, and the more you master the core fundamentals that show up over and
 over again, the more competent you will be as an engineer and the more successful you will be
-as a student. Without further ado, the fundamentals, in the order they should be learned:
+as a student. It's also true that even if you want to specialize in a particular area, the fundamentals are still required (there's no getting away from caluclus or differential equations). Without further ado, the fundamentals, in the order they should be learned:
 </p>
 
 <h1>The Fundamental Courses</h1>
@@ -188,6 +188,12 @@ to build basic integrated circuits from transistors.
 The other three courses, <a href="signals_systems.php">Signals and Systems</a>, <a href="coming_soon.php">Control Systems</a>, and
 <a href="coming_soon.php">Engineering Electromagnetics</a> can be taken whenever you please, although Signals and Systems should be taken before controls. In Control Systems you will learn how to use <a href="coming_soon.php">Analog</a> and <a href="coming_soon.php">Digital</a> circuits to control physical systems, from motors to airplanes, and how these systems respond to disturbances (a sophisticated way of saying being hit by a hammer). In Electromagnetics, you will learn how the basic concepts you learned in electricity and magnetism can be extended to larger and more complex systems, and how to model and interact with these systems.
 
+</p>
+
+<h2> Specializations </h3>
+<h3> Photonics / Optoelectronics </h3>
+<p>
+This is the discipline I am most directly involved in for my Ph.D. work - but what courses do you need to specialize in this area? What skills do you need? Well, a lot. The most commonly-used physics by far is electromagnetism. So you should get really really good at that, and take as many courses as your university offers. 
 </p>
 
 <h2>Helpful Resources</h2>

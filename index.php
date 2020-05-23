@@ -67,13 +67,13 @@ Practice, and <i>immediate feedback</i> is probably the most critical for learni
 once you have the basic outline from videos and reference material on hand, but this is not something videos
 can give either. This website was created as a one-stop-shop for learning electrical engineering - 
 containing lecture videos, reference material, and practice problems with immediate feedback. It is my hope that
-this can make the next generation of engineer's educations less painful, more rewarding, and more fun.
+this can make the next generation of engineer's educations less painful, more rewarding, and more fun. 
 
 <br><br>
 
 <h1>Get Involved</h1>
 <p>
-Are you a web developer? Animator? Fellow educator and content creator? If you're interested in helping out with this site in any capacity, or want to discuss your own projects and how I can help you, shoot me an email with the form below.
+Are you a web developer? Animator? Fellow educator and content creator? Do you have feedback about the content on this site? Find something confusing, think something could be explained more clearly or in less math? Have your own projects you think I could help with? Shoot me an email in the contact form below! 
 </p>
 
 <h1>About Me</h1>
