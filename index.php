@@ -90,6 +90,11 @@ this can make the next generation of engineer's educations less painful, more re
 Are you a web developer? Animator? Fellow educator and content creator? Do you have feedback about the content on this site? Find something confusing, think something could be explained more clearly or in less math? Have your own projects you think I could help with? Shoot me an email in the contact form below! 
 </p>
 
+<h1>Support this Site</h1>
+<p>
+The content on this site takes a surprising amount of time to make! (It's typically 2-3 hours per page). While I'm currently doing it in my free time, if I can generate a livable income I might do it full-time for a while, and massively expand the content. If you support me <a href="https://www.patreon.com/edmundsj">on Patreon</a>, we could make that happen.
+</p>
+
 <h1>About Me</h1>
 <img src='/images/self_thumbnail.jpg', style="max-size: 100%; width: 20%; height: 20%; float: left; margin-right: 20px; margin-top: 0px;"/>
 I am currently a Ph.D. student in the <a href="https://maharbizgroup.wordpress.com/members/">Maharbiz Group</a>
