@@ -18,11 +18,13 @@
 <nav id="menu">
 	<h2>Menu</h2>
 	<ul>
+		<li><a href="https://www.patreon.com/edmundsj">Donate</a></li>
 		<li><a href="/index.php">Home</a></li>
 		<li><a href="/explore.php">Explore</a></li>
 		<li>Courses
-		<ul style="list-style-type: none">
+		<ul style="list-style-type: none; padding:0px">
 		<li><a href="/signals_systems.php">Signals and Systems</a></li>
+		<li><a href="/computational_em/computational_em.php">Computational Electromagnetics</a></li>
 		</ul>
 		</li>
 	</ul>

@@ -28,6 +28,7 @@ offered here by clicking on the link below or the menu to the right. </p>
 </header>
 
 <section class="tiles">
+
 <article class="style1">
 <span class="image">
 <img src="images/pic01.jpg" alt="" />
@@ -36,6 +37,18 @@ offered here by clicking on the link below or the menu to the right. </p>
 <h2>Explore</h2>
 <div class="content">
 <p>Explore courses, figure out prerequisites, and find out where you stand and what you are missing.</p>
+</div>
+</a>
+</article>
+
+<article class="style3">
+<span class="image">
+<img src="images/pic03.jpg" alt="" />
+</span>
+<a href="/computational_em/computational_em.php">
+<h2>Computational Electromagnetics</h2>
+<div class="content">
+<p>Computational Electromagnetics with MEEP. Build on what you know about the theory of computational electromagnetics and learn to use an open-source simulator.</p>
 </div>
 </a>
 </article>
@@ -51,6 +64,7 @@ offered here by clicking on the link below or the menu to the right. </p>
 </div>
 </a>
 </section>
+
 
 <br><br>
 <h1>About This Site</h1>

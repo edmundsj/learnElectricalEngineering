@@ -25,6 +25,7 @@
 			<li><a href="https://github.com/edmundsj" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
 			<li><a href="https://www.youtube.com/channel/UCEmBUvaW0UhAbPz4IiscKgw" class="icon brands style2 fa-youtube"><span class="label">YouTube</span></a></li>
 			<li><a href="https://www.linkedin.com/in/jordan-edmunds-eecs" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+			<li><a href="https://www.patreon.com/edmundsj" class="icon brands style2 fa-patreon"><span class="label">Linkedin</span></a></li>
 		</ul>
 	</section>
 	<ul class="copyright">
