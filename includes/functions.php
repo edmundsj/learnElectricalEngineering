@@ -40,6 +40,13 @@ function addMobileImage($imageName, $alignment="left") {
 	echo '<img src="/images/' . $imageName . '", align="' . $alignment . '", style="width:auto; height: auto; max-width:100%" />';
 }
 
+function addMobileVideoFull($videoName) {
+	echo '<div style="width:100%; overflow: hidden;">';
+	echo '<video src="/videos/' . $videoName . '", style="width:auto; height:auto; max-width:100%" controls>';
+	echo '</video>';
+	echo '</div>';
+}
+
 function appendToQuiz($counter, $question, $options, $answer) {
     // first, add the HTML for the quiz
     $questionText = 'question' . $counter;
