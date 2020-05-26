@@ -3,20 +3,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation
 
-resolution = 32
+resolution = 64
 frequency = 2.0
-pmlThickness = 1.0
-endTime = 20.0
-courantFactor = 0.5
-timestepDuration = courantFactor / resolution
-numberTimesteps = int(endTime / timestepDuration)
+frequencyWidth = 1
+numberFrequencies = 50
+pmlThickness = 4.0
+endTime = 30.0
+animationTimestepDuration = 0.05
 materialThickness = 2.5
 length = 2 * materialThickness + 2 * pmlThickness
 
 cellSize = mp.Vector3(0, 0, length)
 
 sources = [mp.Source(
-    mp.ContinuousSource(frequency=frequency, end_time=endTime/4),
+    mp.GaussianSource(frequency=frequency,fwidth=frequencyWidth),
     component=mp.Ex,
     center=mp.Vector3(0, 0, -materialThickness/2),
     )]
@@ -35,11 +35,13 @@ simulation = mp.Simulation(
     boundary_layers=pmlLayers)
 
 incidentRegion = mp.FluxRegion(center=mp.Vector3(0, 0, -materialThickness/4))
-incidentFluxMonitor = simulation.add_flux(frequency, 0, 1, incidentRegion)
+incidentFluxMonitor = simulation.add_flux(frequency, frequencyWidth, numberFrequencies, incidentRegion)
 
-simulation.run(until=endTime)
+simulation.run(until=endTime, )
 fieldEx = simulation.get_array(center=mp.Vector3(0, 0, 0), size=cellSize, component=mp.Ex)
 fieldData = np.zeros(len(fieldEx))
+
+incidentFluxToSubtract = simulation.get_flux_data(incidentFluxMonitor)
 
 simulation = mp.Simulation(
     cell_size=cellSize,
@@ -50,20 +52,26 @@ simulation = mp.Simulation(
 
 transmissionRegion = mp.FluxRegion(
         center=mp.Vector3(0, 0, materialThickness/4))
-transmissionFluxMonitor = simulation.add_flux(frequency, 0, 1, transmissionRegion)
+transmissionFluxMonitor = simulation.add_flux(frequency, frequencyWidth, numberFrequencies, transmissionRegion)
+reflectionRegion = incidentRegion
+reflectionFluxMonitor = simulation.add_flux(frequency, frequencyWidth, numberFrequencies, reflectionRegion)
+simulation.load_minus_flux_data(reflectionFluxMonitor, incidentFluxToSubtract)
 
-simulation.run(until=timestepDuration)
-field_Ex = simulation.get_array(center=mp.Vector3(0, 0, 0), size=cellSize, component=mp.Ex)
-fieldData = np.array(field_Ex)
-
-for i in range(numberTimesteps-1):
-    simulation.run(until=timestepDuration)
-    fieldEx = simulation.get_array(center=mp.Vector3(0, 0, 0), size=cellSize, component=mp.Ex)
+def updateField(sim):
+    global fieldData
+    fieldEx = sim.get_array(center=mp.Vector3(0, 0, 0), size=cellSize, component=mp.Ex)
     fieldData = np.vstack((fieldData, fieldEx))
 
-incidentFlux = mp.get_fluxes(incidentFluxMonitor)[0]
-transmittedFlux = mp.get_fluxes(transmissionFluxMonitor)[0]
-print(transmittedFlux/incidentFlux)
+simulation.run(mp.at_every(animationTimestepDuration, updateField), until=endTime)
+
+incidentFlux = np.array(mp.get_fluxes(incidentFluxMonitor))
+transmittedFlux = np.array(mp.get_fluxes(transmissionFluxMonitor))
+reflectedFlux = np.array(mp.get_fluxes(reflectionFluxMonitor))
+R = -reflectedFlux / incidentFlux
+T = transmittedFlux / incidentFlux
+print(T)
+print(R)
+print(R + T)
 
 fig = plt.figure()
 ax = plt.axes(xlim=(-length/2,length/2),ylim=(-1,1))

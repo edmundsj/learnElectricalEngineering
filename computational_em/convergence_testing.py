@@ -3,13 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation
 
-resolution = 32
+resolution = 64
 frequency = 2.0
-pmlThickness = 1.0
+pmlThickness = 4.0
 endTime = 20.0
 courantFactor = 0.5
 timestepDuration = courantFactor / resolution
-numberTimesteps = int(endTime / timestepDuration)
+animationTimestepDuration = 0.05
 materialThickness = 2.5
 length = 2 * materialThickness + 2 * pmlThickness
 
@@ -52,14 +52,12 @@ transmissionRegion = mp.FluxRegion(
         center=mp.Vector3(0, 0, materialThickness/4))
 transmissionFluxMonitor = simulation.add_flux(frequency, 0, 1, transmissionRegion)
 
-simulation.run(until=timestepDuration)
-field_Ex = simulation.get_array(center=mp.Vector3(0, 0, 0), size=cellSize, component=mp.Ex)
-fieldData = np.array(field_Ex)
-
-for i in range(numberTimesteps-1):
-    simulation.run(until=timestepDuration)
-    fieldEx = simulation.get_array(center=mp.Vector3(0, 0, 0), size=cellSize, component=mp.Ex)
+def updateField(sim):
+    global fieldData
+    fieldEx = sim.get_array(center=mp.Vector3(0, 0, 0), size=cellSize, component=mp.Ex)
     fieldData = np.vstack((fieldData, fieldEx))
+
+simulation.run(mp.synchronized_magnetic(mp.at_every(animationTimestepDuration, updateField)), until=endTime)
 
 incidentFlux = mp.get_fluxes(incidentFluxMonitor)[0]
 transmittedFlux = mp.get_fluxes(transmissionFluxMonitor)[0]

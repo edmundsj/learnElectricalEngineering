@@ -13,7 +13,7 @@ beginWrapper();
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 2: Dealing with Units in MEEP</h1>
 <?php
-addLessonNavigation("/lesson1.php", "lesson3.php", "Getting Started", "Hello World");
+addLessonNavigation("lesson1.php", "lesson3.php", "Getting Started", "Hello World");
 ?>
 <h2>MEEP Length vs. SI Length</h2>
 <p>
@@ -70,7 +70,7 @@ $counter = appendToQuiz($counter, 'Suppose that MEEP tells you the time is 4 uni
 </p>
 
 <?php
-addLessonNavigation("/lesson1.php", "lesson3.php", "Getting Started", "Hello World");
+addLessonNavigation("lesson1.php", "lesson3.php", "Getting Started", "Hello World");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
