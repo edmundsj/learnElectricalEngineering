@@ -66,7 +66,7 @@ And the rest of the code for running the simulation and generating the animation
 Woah! It worked! We can see the waves attenuate as they start to enter the PML, slowly at first but then more quickly, and it looks like our reflections are completely gone! If we want, we could look at the field amplitudes near the edges at the end of the simulation. If you do this, you'll see that the fields decay to about ~\(10^{-4}\) by the time they get to the edges, which is definetely not zero, so there are <i>some</i> waves getting reflected back out of the PML, but they are pretty small.
 </p>
 <p>
-This was just waves propagating in free space - it was definitely cool to watch, and we seem to be using the simulator correctly because everything makes sense
+This was just waves propagating in free space - it was definitely cool to watch, and we seem to be using the simulator correctly because everything makes sense. In the <a href="lesson7.php">next lesson</a>, we're going to extend our code further to simulate something more interesting - reflection off a boundary.
 </p>
 <?php
 $counter = 0;

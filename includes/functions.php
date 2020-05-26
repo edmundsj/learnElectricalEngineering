@@ -45,6 +45,7 @@ function addMobileVideoFull($videoName) {
 	echo '<video src="/videos/' . $videoName . '", style="width:auto; height:auto; max-width:100%" controls>';
 	echo '</video>';
 	echo '</div>';
+	echo '<br>';
 }
 
 function appendToQuiz($counter, $question, $options, $answer) {
