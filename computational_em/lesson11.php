@@ -55,7 +55,7 @@ If we re-run the simulation from the <a href="lesson10.php">previous lesson</a> 
 <?php addMobileVideoFull('reflected_gaussian_pulse.mp4'); ?>
 </p>
 <p>
-Notice that despite the slow turn-on, everything actually dies out much more quickly, and we don't see the same really high-frequency nasty bumpiness of the source that we were using before. If you look at the reflected and transmitted power, you'll probably see nearly-identical values, but that seems a little strange. Our signal is totally different, why are R and T exactly the same? Well, internally, when we asked MEEP's flux monitors to give us the flux at a <i>single frequency</i>, it was actually taking the Fourier Transform of the fields that it added up, and then only grabbing the single frequency we asked for. It's still doing the same exact thing now - so as long as our signal <i>contains</i> our frequency of interest, we are good to go. It doesn't have to be <i>purely</i> made of our frequency of interest. It actually doesn't really matter what our input signal is, so long as it has our frequency of interest. We just need to specify the number of frequencies we want.
+Notice that despite the slow turn-on, everything actually dies out much more quickly, and we don't see the same really high-frequency nasty bumpiness of the source that we were using before. If you look at the reflected and transmitted power, you'll probably see nearly-identical values, but that seems a little strange. Our signal is totally different, why are R and T exactly the same? Well, internally, when we asked MEEP's flux monitors to give us the flux at a <i>single frequency</i>, it was actually taking the Fourier Transform of the fields that it added up, and then only grabbing the single frequency we asked for. It's still doing the same exact thing now - so as long as our signal <i>contains</i> our frequency of interest, we are good to go. It doesn't have to be <i>purely</i> made of our frequency of interest. 
 </p>
 <h2>So how about those extra frequencies?</h2>
 <p>
@@ -91,11 +91,11 @@ I'm also going to delete all the code for computing the incident fields and the 
 endTime = 30.0
 </pre>
 <p>
-Now, if you run the simulation, we get fields that look like this:
+If you run the simulation, we get fields that look like this:
 <?php addMobileVideoFull('gaussian_pulse_30seconds.mp4'); ?>
 </p>
 <p>
-Now, what about the reflection and transmission coefficients, \(R\) and \(T\)? Would we expect them to be different at different frequencies in this simulation? Since the reflection (and transmission) coefficient from an interface at normal incidence only depends on the refractive index, and that is constant over all frequencies here, no. We wouldn't expect any variation. But if we look at the values for \(T\), we see that they range from \(0.8958\) to \(0.8917\) (you might have different values if your simulation parameters were different). That's interesting, and definitely wasn't something I expected. Any deviation in \(T\) here is strictly due to simulation error, and so we can take what we learned in the <a href="lesson9.php">last lesson on convergence testing</a> and see if the spread gets reduced.
+What about the reflection and transmission coefficients, \(R\) and \(T\)? Would we expect them to be different at different frequencies in this simulation? Since the reflection (and transmission) coefficient from an interface at normal incidence only depends on the refractive index, and that is constant over all frequencies here, no. We wouldn't expect any variation. But if we look at the values for \(T\), we see that they range from \(0.8958\) to \(0.8917\) (you might have different values if your simulation parameters were different). That's interesting, and definitely wasn't something I expected. Any deviation in \(T\) here is strictly due to simulation error, and so we can take what we learned in the <a href="lesson9.php">last lesson on convergence testing</a> and see if the spread gets reduced.
 <?php addMobileImageFull('computational_em/convergence_plot_transmission_deviation.svg'); ?>
 </p>
 <p>
@@ -104,7 +104,7 @@ Indeed, we see that the spread in values over various frequencies goes down as w
 <?php addMobileImageFull('computational_em/convergence_plot_transmission_error.svg'); ?>
 </p>
 <p>
-WOW. That's much smaller error than we could achieve previously when we were using our continuous source that we abruptly turned on and off, and it <i>keeps</i> going down with increasing resolution (I stopped testing at 256 points per wavelength (resolution of \(1024\)), because I was getting tired of waiting on the simulator. This shows the strength of Gaussian pulses - the fact that they only have frequencies in a narrow range is what allows for this much-improved error. Now that we know how to compute a bunch of frequencies at once, in the <a href="lesson12.php">next lesson</a> we will put that skill to use, with a material that has a frequency-dependent refractive index - a metal. 
+WOW. That's much smaller error than we could achieve previously when we were using our continuous source that we abruptly turned on and off, and it <i>keeps</i> going down with increasing resolution (I stopped testing at 256 points per wavelength (resolution of \(1024\)), because I was getting tired of waiting on the simulator. This shows the strength of Gaussian pulses - the fact that they only have frequencies in a narrow range is what allows for this much-improved error. Now that we know how to compute a bunch of frequencies at once, in the <a href="lesson12.php">next lesson</a> we will put that skill to use, with a material that has a frequency-dependent refractive index - which is pretty much everything. 
 </p>
 <p>
 
