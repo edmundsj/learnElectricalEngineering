@@ -48,7 +48,7 @@ offered here by clicking on the link below or the menu to the right. </p>
 <a href="/computational_em/computational_em.php">
 <h2>Computational Electromagnetics</h2>
 <div class="content">
-<p>Computational Electromagnetics with MEEP. Build on what you know about the theory of computational electromagnetics and learn to use an open-source simulator.</p>
+<p>Computational Electromagnetics with an open source FDTD simulator. Build on what you know about the theory of electromagnetics by learning to use the Finite Difference Time Domain, one of the most powerful tools for electromagnetics..</p>
 </div>
 </a>
 </article>
