@@ -11,7 +11,7 @@ $to = 'jordan.e@berkeley.edu';
 $host = "ssl://smtp.gmail.com";
 $port = "465";
 $username = 'learneecs@gmail.com';
-$password = 'kY*t{(C6$,5J'
+$password = 'kY*t{(C6$,5J';
 
 $subject = 'Message from: ' . $name . ". Email: " . $visitor_email;
 $body = $message;
