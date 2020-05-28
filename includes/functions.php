@@ -17,7 +17,7 @@ function beginWrapper() {
 }
 
 function endWrapper() {
-	echo '<p>If you found this content helpful, it would mean a lot to me if you would support me on Patreon. Help keep this content ad-free, get access to my Discord server, exclusive content, and receive my personal thanks :)</p>';
+	echo '<p>If you found this content helpful, it would mean a lot to me if you would support me on Patreon. Help keep this content ad-free, get access to my Discord server, exclusive content, and receive my personal thanks for as little as $2. :)</p>';
 	echo '<a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>';
 	echo '</div>';
 	echo '</div>';
