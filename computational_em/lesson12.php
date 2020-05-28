@@ -123,7 +123,7 @@ $counter = appendToQuiz($counter, 'How do we know our spectra is correct',
 	array("We don't, but we can do a convergence test!"), 0);
 ?>
 <p>
-I like the way you think. If we increase the resolution to 256, then 512, the reflectance at the minimum and maximum frequencies changes (at the most extreme) from 0.467 &#8594; 0.453 &#8594; 0.450, and if I had to guess would converge somewhere just below there. If I wanted the reflectance at every wavelength to within 0.001, I might continue doing convergence testing. At this point, though, I'm pretty happy. The curve also makes sense because as the wavelength gets longer, the refractive index of Si gets lower (in the range of frequencies we are testing). This means we expect the reflection coefficient to decrease at lower frequencies, or increase as we increase the frequency, which is exactly what we see. The curve at a resolution of 512 looks like this:
+I like the way you think. If we increase the resolution to 256, then 512, the reflectance at the minimum and maximum frequencies changes (at the most extreme) from 0.467 &#8594; 0.453 &#8594; 0.450, and if I had to guess would converge somewhere just below there. If I wanted the reflectance at every wavelength to within 0.001, I might continue doing convergence testing. At this point, though, I'm pretty happy. The curve also makes sense because as the wavelength gets shorter, the refractive index of Si gets higher (in the range of frequencies we are testing). This means we expect the reflection coefficient to increase as we increase the frequency, which is exactly what we see. The curve at a resolution of 512 looks like this:
 <?php addMobileImageFull('computational_em/si_reflection_spectra_512_resolution.svg'); ?>
 </p>
 <p>

@@ -5,6 +5,7 @@
 			<a href="/index.php" class="logo">
 				<span class="symbol"><img src="/images/android-chrome-192x192.png" alt="" /></span><span class="title">Learn Electrical Engineering</span>
 			</a>
+			<a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
 			<nav>
 				<ul>
@@ -18,7 +19,7 @@
 <nav id="menu">
 	<h2>Menu</h2>
 	<ul>
-		<li><a href="https://www.patreon.com/edmundsj">Donate</a></li>
+		<li><a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></li><br>
 		<li><a href="/index.php">Home</a></li>
 		<li><a href="/explore.php">Explore</a></li>
 		<li>Courses

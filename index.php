@@ -92,7 +92,8 @@ Are you a web developer? Animator? Fellow educator and content creator? Do you h
 
 <h1>Support this Site</h1>
 <p>
-The content on this site takes a surprising amount of time to make! (It's typically 2-3 hours per page). While I'm currently doing it in my free time, if I can generate a livable income I might do it full-time for a while, and massively expand the content. If you support me <a href="https://www.patreon.com/edmundsj">on Patreon</a>, we could make that happen.
+The content on this site takes a surprising amount of time to make! (It's typically 2-3 hours per page). While I'm currently doing it in my free time, if I can generate a livable income I might do it full-time for a while, and massively expand the content. The best way to support this work is on Patreon, for which you have my gratitude, acess to my Discord server, and some other neat stuff!
+<a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 </p>
 
 <h1>About Me</h1>

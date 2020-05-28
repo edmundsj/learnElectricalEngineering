@@ -26,6 +26,7 @@
 			<li><a href="https://www.youtube.com/channel/UCEmBUvaW0UhAbPz4IiscKgw" class="icon brands style2 fa-youtube"><span class="label">YouTube</span></a></li>
 			<li><a href="https://www.linkedin.com/in/jordan-edmunds-eecs" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
 			<li><a href="https://www.patreon.com/edmundsj" class="icon brands style2 fa-patreon"><span class="label">Linkedin</span></a></li>
+			<li><a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></li>
 		</ul>
 	</section>
 	<ul class="copyright">
