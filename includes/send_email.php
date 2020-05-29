@@ -65,7 +65,7 @@ try {
 	     /* Finally send the mail. */
 	     $mail->send();
 	  echo("<script>alert('Message Successfully Sent!');" .
-		  "window.history.go(-1);</script>");
+		  "window.location.href('/index.php');</script>");
 }
 catch (Exception $e)
 {
