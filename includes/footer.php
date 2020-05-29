@@ -2,7 +2,7 @@
 <div class="inner">
 	<section>
 		<h2>Get in touch</h2>
-		<form method="post" action="/includes/email_form.php">
+		<form method="post" action="/includes/send_email.php">
 			<div class="fields">
 				<div class="field half">
 					<input type="text" name="name" id="name" placeholder="Name" />
