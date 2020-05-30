@@ -24,7 +24,7 @@
 		 * [1] user creation
 		 * https://stackoverflow.com/questions/1720244/create-new-user-in-mysql-and-give-it-full-access-to-one-database
 		 */
-         $dbhost = 'localhost:3306';
+         $dbhost = 'localhost';
          $dbuser = 'feedbackUser';
          $dbpass = '%`Yy887"R5L4of%-';
 
