@@ -69,13 +69,14 @@ If we plug in MEEP's normalized frequency \(f_{MEEP} \) for \(f\) we can rearran
 <p>
 \(|\overrightarrow{k}|=\frac{2\pi}{a}*f_{MEEP}\)
 </p>
-<p>Now, since \(\overrightarrow{k}\) has units of inverse length, and MEEP normalizes everything to make it unitless, the all we need to do to get rid of the units of \(\overrightarrow{k}\) is multiply by our characteristic length \(a\), and we are left with what MEEP stores internally as the wavevector's length:
+<p>Now, since \(\overrightarrow{k}\) has units of inverse length, and MEEP normalizes everything to make it unitless, the all we need to do to get rid of the units of \(\overrightarrow{k}\) is multiply by our characteristic length \(a\), and we are left with what MEEP stores internally as the wavevector's length, \(2\pi * f_{MEEP}\). However, the designers chose to take care of the factor of \(2\pi\) themselves, so we only need to enter \(f_{MEEP}\):
 </p>
 <p>
-\(|\overrightarrow{k}_{MEEP}|=2\pi*f_{MEEP}\)
+\(|\overrightarrow{k}_{MEEP}|=f_{MEEP}\)
 </p>
 <p>
-Now it turns out the designers of MEEP decided to handle the factor of \(2 \pi\) themselves, so we actually only need to enter \(f_{MEEP}\) for the spatial frequency \(|\overrightarrow{k}_{MEEP}|\). That's nice! We already have that in our code. How considerate of them. Let's do an example to make sure we understand what's going on:
+That's pretty darn simple! Maybe that's why they did it. &#129300;
+</p>
 
 <?php
 $counter = 0;
@@ -168,7 +169,7 @@ This is all fine and good, but what about some numbers? At an angle of incidence
 What is this at 30 degrees angle of incidence (\(\theta_1\))? About 0.9199904. If we do the simulation, and some convergence testing, starting at 8 points per wavelength and increasing the resolution, we go from 0.9357 &#8594; 0.9238 &#8594; 0.9209 &#8594; 0.9202 &#8594; 0.92005 &#8594; 0.9199904. Pretty darn good, as in the previous simulation. Here is a plot of the error in the transmission coefficient vs. resolution:
 </p>
 <?php addMobileImageFull('computational_em/convergence_30_degrees_transmission.svg'); ?>
-You might notice that it took quite a bit longer to run these simulations - that's a consequence of applying the boundary conditions we did, and unfortunately there's really no avoiding it. This was also just <i>one</i> angle, and usually we are interested in a bunch of different angles - or how the \(R\) and \(T\) coefficients vary with angle. That will be the subject of the <a href="lesson14.php">next lesson</a>.
+You might notice that it took a bit longer to run these simulations - that's a consequence of applying the boundary conditions we did, and unfortunately there's really no avoiding it. But we just ran the simulation getting data from a single wavelength - usually we want data from a variety of wavelengths and angles - that is the subject of the <a href="lesson14.php">next lesson</a>.
 <h2>Full Code - Angular Reflection</h2>
 <p>Grab the code <a href="angular_reflection.py">here</a> as well.
 <pre class="prettyprint">

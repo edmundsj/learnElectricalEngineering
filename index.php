@@ -17,14 +17,8 @@ include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
 <div class="inner">
 <header>
 <h1>Welcome to Electrical Engineering</h1><br/>
-<p>Here, you will find a comprehensive resource for your study of electrical engineering,
-from online lecture videos, to reference material, to practice problems so you can test your knowledge.
-My hope is for this site to expand to cover all commonly-taught courses in Electrical Engineering 
-departments. If you know what you are looking for, click on one of the subjects below, or on the menu
-to the right. If not, explore the discipline of electrical engineering and the course material
-offered here by clicking on the link below or the menu to the right. </p>
-
-
+<p>Here, you will find a resource for your study of electrical engineering,
+from an overview of the discipline to online lecture videos, reference material, and practice problems so you can test your knowledge. This site is currently in its early stages and I am working on expanding the content - my hope is for it to expand to cover all commonly-taught courses in Electrical Engineering departments. 
 </header>
 
 <section class="tiles">
@@ -67,6 +61,12 @@ offered here by clicking on the link below or the menu to the right. </p>
 
 
 <br><br>
+<h1>Support this Site</h1>
+<p>
+The content on this site takes a surprising amount of time to make! (It's typically 2-3 hours per page). While I'm currently doing it in my free time, if I can generate a livable income I might do it full-time for a while, and massively expand the content. The best way to support this work is on Patreon, for which you have my gratitude, acess to my Discord server, and some other neat stuff!
+<a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+</p>
+
 <h1>About This Site</h1>
 As an undergraduate in electrical engineering, I loved the curated videos of khan academy. I relied on
 them heavily to get me through basic biology, organic chemistry, calculus, and some differential equations and
@@ -90,10 +90,9 @@ this can make the next generation of engineer's educations less painful, more re
 Are you a web developer? Animator? Fellow educator and content creator? Do you have feedback about the content on this site? Find something confusing, think something could be explained more clearly or in less math? Have your own projects you think I could help with? Shoot me an email in the contact form below! 
 </p>
 
-<h1>Support this Site</h1>
+<h1>Licensing</h1>
 <p>
-The content on this site takes a surprising amount of time to make! (It's typically 2-3 hours per page). While I'm currently doing it in my free time, if I can generate a livable income I might do it full-time for a while, and massively expand the content. The best way to support this work is on Patreon, for which you have my gratitude, acess to my Discord server, and some other neat stuff!
-<a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+The whole point of this site is to help people learn, and the broader the material is disseminated, the better, regardless of who does it. For this reason, everything on this site is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> license. This applies to all the written content, graphics, animations, and anything else you might find on this site. Most of the graphics on this site are my own, generated using python or Mathematica. 
 </p>
 
 <h1>About Me</h1>
@@ -102,7 +101,6 @@ I am currently a Ph.D. student in the <a href="https://maharbizgroup.wordpress.c
 in the <a href="https://eecs.berkeley.edu/">Electrical Engineering and Computer Science</a> department at UC
 Berkeley. My Ph.D. focuses on using photonic devices to measure brain activity. When I'm not at work, you'll
 find me at the gym, walking around Tilden Park in Berkeley, or making Indian food with my girlfriend. I make some killer naan and Baingan Bharta.
-
 </p>
 
 </div>
