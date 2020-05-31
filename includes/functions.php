@@ -16,9 +16,23 @@ function beginWrapper() {
 	echo '<div class="inner">';
 }
 
-function endWrapper() {
+function addPatreonFooter() {
 	echo '<p>If you found this content helpful, it would mean a lot to me if you would support me on Patreon. Help keep this content ad-free, get access to my Discord server, exclusive content, and receive my personal thanks for as little as $2. :)</p>';
 	echo '<a href="https://www.patreon.com/bePatron?u=14713334" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>';
+}
+
+function addUnderstandingButtons() {
+	echo '<div style="text-align:center" id="feedbackButtons">';
+	echo '<button id="understood" style="margin-right:10px;">I Understood This</button>';
+	echo "<button id='confused'>&#x1f914;I'm still confused.</button>";
+	echo '</div>';
+	echo '<div id="moreFeedback"></div>';
+}
+
+// this is where to put everything that should go on the core pages.
+function endWrapper() {
+	addUnderstandingButtons();
+	addPatreonFooter();
 	echo '</div>';
 	echo '</div>';
 }
@@ -89,4 +103,65 @@ function appendToQuiz($counter, $question, $options, $answer) {
 // $counter = 0
 //$counter = appendToQuiz($counter, 'This is a question', 
 //array('option 1', 'option 2'), 0);
+}
+/*
+function addBottomFeedback($feedback_type, $comment='None') {
+	$dbhost = 'localhost';
+	$dbuser = 'feedbackUser';
+	$dbpass = '%`Yy887"R5L4of%-';
+
+	$mysqli = new mysqli($dbhost, $dbuser, $dbpass);
+	if ($mysqli->connect_errno) {
+	echo 'Failed to connect to MySQL: ' . $mysqli->connect_error;
+	exit();
+	}
+	echo 'Connected successfully<br>';
+	$user_id = 'None';
+	$page = $_SERVER['REQUEST_URI'];
+	$user_ip = $_SERVER['REMOTE_ADDR'];
+	$type = 'None';
+
+	$desiredQuery = 'insert into user_feedback.bottom_page(timestamp, user_id, page, ip, comment, type)
+	values(NOW(), "' . $user_id . '","' . $page . '","' . $user_ip . '","' . $comment . '","' . 
+		$feedback_type . '")';
+
+	$queryResult = $mysqli->query($desiredQuery);
+	if ($queryResult  === True) {
+	echo 'New record created successfully<br>';
+	} else {
+	echo 'Error: ' . $mysqli->error . '<br>';
+	}
+	$mysqli->close();
+	echo 'Closed successfully';
+}
+ */
+
+// takes the user feedback and shoves it into the SQL database
+function insertFeedbackToDatabase() {
+	$data = json_decode($_POST['data']);
+	$dbhost = 'localhost:3306';
+	$dbuser = 'feedbackUser';
+	$dbpass = '%`Yy887"R5L4of%-';
+
+	$mysqli = new mysqli($dbhost, $dbuser, $dbpass);
+	if ($mysqli->connect_errno) {
+	echo 'Failed to connect to MySQL: ' . $mysqli->connect_error;
+	exit();
+	}
+	echo 'Connected successfully<br>';
+	$user_id = 'None';
+	$page = $_SERVER['REQUEST_URI'];
+	$user_ip = $_SERVER['REMOTE_ADDR'];
+	$comment = $data->comment;
+	$type = $data->feedback_type;
+	$page = $data->page;
+
+	$desiredQuery = 'insert into user_feedback.bottom_page(timestamp, user_id, page, ip, comment, type)
+	values(NOW(), "' . $user_id . '","' . $page . '","' . $user_ip . '","' . $comment . '","' . $type .            '")';
+
+	$queryResult = $mysqli->query($desiredQuery);
+	if ($queryResult  === False) {
+	echo 'Error: ' . $mysqli->error . '<br>';
+	}
+	$mysqli->close();
 }
