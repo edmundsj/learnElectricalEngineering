@@ -8,6 +8,7 @@
 	  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <script src="/assets/js/prettify.js"></script>
+<script src="/assets/js/feedback.js"></script>
 <script>
 window.onload = (function(){ prettyPrint(); });
 </script>
