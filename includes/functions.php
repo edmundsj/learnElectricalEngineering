@@ -31,7 +31,9 @@ function addUnderstandingButtons() {
 
 // this is where to put everything that should go on the core pages.
 function endWrapper() {
+	echo '<hr>';
 	addUnderstandingButtons();
+	echo '<hr>';
 	addPatreonFooter();
 	echo '</div>';
 	echo '</div>';
