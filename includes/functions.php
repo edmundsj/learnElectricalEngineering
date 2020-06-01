@@ -108,7 +108,11 @@ function appendToQuiz($counter, $question, $options, $answer) {
 // takes the user feedback and shoves it into the SQL database
 function insertFeedbackToDatabase() {
 	$data = json_decode($_POST['data']);
-	$dbhost = 'localhost:3306';
+	$dbhost = 'localhost';
+	$dbuser = 'feedbackUser';
+	$dbpass = '%`Yy887"R5L4of%-';
+
+	$dbhost = 'localhost';
 	$dbuser = 'feedbackUser';
 	$dbpass = '%`Yy887"R5L4of%-';
 
