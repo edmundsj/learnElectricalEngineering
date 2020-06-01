@@ -59,7 +59,8 @@ function sendDatabaseRequest(objectToSend, targetFile) {
     let xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("moreFeedback").innerHTML = this.responseText;
+		  // uncomment this line for debugging and bidirectional communication with server.
+        //document.getElementById("moreFeedback").innerHTML = this.responseText;
       }
     };
     xmlhttp.open("POST", targetFile, true);
