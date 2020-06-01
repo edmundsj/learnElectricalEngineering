@@ -20,6 +20,7 @@ function askAboutConfusion() {
 function submitConfusedFeedback() {
 	let pageLocation = window.location.href;
 	pageLocation = pageLocation.replace('http://localhost', '');
+	pageLocation = pageLocation.replace('https://www.learnelectricalengineering.com', '');
 	confusionComment = {comment: document.getElementById('confusedText').value,
 		feedback_type: 'Confused', page: pageLocation};
     showThanks();
@@ -30,6 +31,7 @@ function submitConfusedFeedback() {
 function submitPartialConfusedFeedback() {
 	let pageLocation = window.location.href;
 	pageLocation = pageLocation.replace('http://localhost', '');
+	pageLocation = pageLocation.replace('https://www.learnelectricalengineering.com', '');
 	confusionComment = {comment: 'None',
 		feedback_type: 'Confused', page: pageLocation};
     showThanks();
@@ -40,6 +42,7 @@ function submitPartialConfusedFeedback() {
 function submitUnderstoodFeedback() {
 	let pageLocation = window.location.href;
 	pageLocation = pageLocation.replace('http://localhost', '');
+	pageLocation = pageLocation.replace('https://www.learnelectricalengineering.com', '');
 	understoodComment = {comment: "None",
 		feedback_type: 'Understood', page: pageLocation};
 	showThanks();
