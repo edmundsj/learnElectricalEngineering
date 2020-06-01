@@ -40,7 +40,7 @@
 		 $comment = 'None';
 		 $type = 'None';
 
-		$desiredQuery = 'insert into user_feedback.bottom_page(timestamp, user_id, page, ip, comment, type)
+		$desiredQuery = 'insert into user_feedback.bottom_page(timestamp, user_id, page, user_ip, comment, type)
 			values(NOW(), "' . $user_id . '","' . $page . '","' . $user_ip . '","' . $comment . '","' . $type. '")';
 		 
 		$queryResult = $mysqli->query($desiredQuery);
