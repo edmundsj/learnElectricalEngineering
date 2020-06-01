@@ -121,7 +121,7 @@ function insertFeedbackToDatabase() {
 	echo 'Failed to connect to MySQL: ' . $mysqli->connect_error;
 	exit();
 	}
-	echo 'Connected successfully<br>';
+	//echo 'Connected successfully<br>';
 	$user_id = 'None';
 	$page = $_SERVER['REQUEST_URI'];
 	$user_ip = $_SERVER['REMOTE_ADDR'];
@@ -137,5 +137,5 @@ function insertFeedbackToDatabase() {
 	echo 'Error: ' . $mysqli->error . '<br>';
 	}
 	$mysqli->close();
-	echo 'Closed Successfully';
+	// echo 'Closed Successfully';
 }
