@@ -12,7 +12,6 @@ beginWrapper();
 <h1>Generic Page</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <p>
-<?php addUnderstandingButtons() ?>
 
 <script>
 let xhttp = new XMLHttpRequest();

@@ -40,10 +40,10 @@ The only thing we need is the thickness of the film. What should we make it? Ide
 </p>
 <p>
 \(t_{MEEP} = \left(m-\frac{1}{2}\right)*\frac{1}{2 n f_{MEEP}}\) (constructive)<br><br>
-\(t_{MEEP} = m*\frac{1}{2 n f_{MEEP}}\) (constructive)
+\(t_{MEEP} = m*\frac{1}{2 n f_{MEEP}}\) (destructive)
 </p>
 <p>
-Since \(n=2\), and our center frequency is also 2, if we make our thickness 0.125, we should see costructive interference right at our center frequency. Is that what we see? Let's plot the reflection spectra of this oil-water system when we send a plane wave in from the air region. If you don't remember how to do that, don't worry, it's in <a href="lesson12.php">a previous lesson</a> :). Since our maximum frequency is 2.5 and our maximum index is 2, let's use a resolution of 40 to get at least 8 points per wavelength at all frequencies. If you don't remember how to choose the resolution, you can find that in <a href="lesson3.php">this lesson</a>.
+Since \(n=2\), and our center frequency is also 2, if we make our thickness 0.125, we should see destructive interference right at our center frequency. Is that what we see? Let's plot the reflection spectra of this oil-water system when we send a plane wave in from the air region. If you don't remember how to do that, don't worry, it's in <a href="lesson12.php">a previous lesson</a> :). Since our maximum frequency is 2.5 and our maximum index is 2, let's use a resolution of 40 to get at least 8 points per wavelength at all frequencies. If you don't remember how to choose the resolution, you can find that in <a href="lesson3.php">this lesson</a>.
 </p>
 <p>
 Plotting the reflection spectra, it looks like this:
