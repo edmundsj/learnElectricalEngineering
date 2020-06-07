@@ -47,10 +47,35 @@ function addLessonNavigation($leftLink, $rightLink, $leftName="", $rightName="")
 	echo '<br>';
 	echo '<br>';
 }
+function addLessonNavigationE($leftLink, $rightLink, $menuLink, $leftName="", $rightName="", $menuName="") {
+	echo '<div class="row">';
+	echo '<div class="column-left">';
+	echo '<a href="' . $leftLink . '">&#8592;Previous: ' . $leftName . '</a>';
+	echo '</div>';
+	echo '<div class="column-center">';
+	echo '<a href="' . $menuLink. '">' . $menuName. '</a>';
+	echo '</div>';
+	echo '<div class="column-right">';
+	echo '<a href="' . $rightLink . '">Next: ' . $rightName . ' &#8594;</a>';
+	echo '</div>';
+	echo '</div>';
+	echo '<br>';
+}
 
 function addMobileImageFull($imageName) {
 	echo '<div style="width:100%; overflow: hidden;">';
 	echo '<img src="/images/' . $imageName . '", style="width:auto; height:auto; max-width:100%" />';
+	echo '</div>';
+}
+
+function addTwoMobileImages($image1, $image2) {
+	echo '<div class="row">';
+	echo '<div style="max-width: 50%">';
+	echo '<img src="/images/' . $image1 . '" style="width: auto; height: auto;" />'; 
+	echo '</div>';
+	echo '<div style="max-width: 50%">';
+	echo '<img src="/images/' . $image2 . '" style="width: auto; height: auto;" />'; 
+	echo '</div>';
 	echo '</div>';
 }
 

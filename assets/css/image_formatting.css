@@ -9,3 +9,7 @@ img .mobileImage {
     overflow: hidden;
     text-align: center;
 }
+
+.imageColumn {
+	max-width: 50%;
+}

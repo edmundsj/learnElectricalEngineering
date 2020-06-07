@@ -1,0 +1,102 @@
+<?php
+
+echo'<html>';
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/functions.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/head.php";
+beginPage();
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
+beginWrapper();
+?>
+
+<!-- Main content goes here -->
+<h1>Signals and Systems</h1>
+<span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
+<h1>Syllabus</h1>
+<?php
+addLessonNavigation("/signals_systems.php", "shifting_scaling_lesson2.php", "Introduction", "Next");
+?>
+<h2>Part 1: Sinewaves and Linear Time-Invariant Systems</h2>
+<ol>
+<li>Playing with Sinewaves</li>
+<li>Shifting and Scaling</li>
+<li>The Linear Pendulum system</li>
+<li>Linearity</li>
+<li>Time-Invariance</li>
+</ol>
+<h2>Part 2: Fourier Series Representation</h2>
+<ol>
+<li>The Inner Product (or how many peas are in my soup?</li>
+<li>Orthogonal Functions</li>
+<li>Periodicity</li>
+<li>Decomposing a periodic signal: Power</li>
+<li>The Sinusoidal Fourier Series</li>
+<li>Even and odd Signals</li>
+<li>Driving the simple pendulum with an odd square wave</li>
+<li>The Cosine Fourier Series</li>
+<li>The Complex Exponential</li>
+<li>The damped Pendulum (or why we love complex numbers)</li>
+<li>The complex exponential as an Eigenfunction</li>
+<li>The Complex Fourier Series</li>
+</ol>
+<h2>Part 3: The Fourier Transform and its Applications</h2>
+<ol>
+<li>Stretching the Period</li>
+<li>The limit as the period becomes infinite</li>
+<li>Examples of the Fourier Transform</li>
+<li>Filtering</li>
+<li>The Transfer function
+<li>The RC circuit and its cousins: First-order systems</li>
+<li>The RLC circuit and its cousins: Second-order systems</li>
+<li>Modulation and frequency-shifting</li>
+</ol>
+<h2>Part 4: Time-Domain Analysis of Systems</h2>
+<ol>
+<li>The Impulse 'Function'</li>
+<li>The Impulse Response</li>
+<li>The transfer function and the impulse response</li>
+<li>Response to A bunch of impulses: Convolution</li>
+<li>Response to a continuous function</li>
+<li>The convolution integral</li>
+<li>The convolution integral and the Fourier Transform</li>
+</ol>
+<h2>Part 5: The Laplace Transform</h2>
+<ol>
+<li>When does the Fourier Transform not exist? Stability</li>
+<li>The Laplace Transform</li>
+<li>The Laplace Transform graphically</li>
+<li>When to use the Laplace Transform</li>
+<li>Region of Convergence</li>
+<li>The inverse Laplace Transform</li>
+</ol>
+
+<h2>Additional Things to cover I haven't added yet</h2>
+<ul>
+<li>Causality</li>
+<li>Stability</li>
+<li>Fourier Series Convergence</li>
+<li>Parseval's Theorem</li>
+<li>Properties of the Fourier series (teach by example)</li>
+<li>Properties of the Fourier Transform</li>
+<li>Replacing the derivative with \(j\omega\)</li>
+<li>Unilateral vs. bilateral Laplace transform</li>
+</ul>
+Some stuff
+</p>
+<h2>Planned For</h2>
+<ol>
+<li>Power</li>
+<li>Inner products</li>
+</ul>
+
+<?php
+$counter = 0;
+$counter = appendToQuiz($counter, 'A quiz question',
+	array('A quiz option'), 0);
+?>
+<?php
+addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
+endWrapper();
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
+endPage();
+?>

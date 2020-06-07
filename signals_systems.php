@@ -75,7 +75,7 @@ them before.
 
 This is all fine and good, but where are we going to find sinewaves (not to mention complex exponentials!)
 in the real world? Isn't everything more complicated than that? Well, no, it turns out. Bizarrely, we
-will find that <i>any</i> periodic signal can be represented by a sum of appropriately scaled and shifted
+will find that <i>any</i> periodic (repeats itself in time) signal can be represented by a sum of appropriately scaled and shifted
 sinewaves of different frequencies. This is called the Fourier Series.
 Because of the properties of linearity and time-invariance (which
 we will define and discuss here), since the response of a system to a sinewave is just a scaled and

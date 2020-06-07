@@ -22,6 +22,7 @@ set_error_handler("var_dump");
 <link rel="manifest" href="/images/site.webmanifest">
 <link rel="stylesheet" href="/assets/css/main.css" />
 <link rel="stylesheet" href="/assets/css/image_formatting.css" />
+<link rel="stylesheet" href="/assets/css/menu_formattng.css" />
 <link rel="stylesheet" href="/assets/css/prettify.css" />
 <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 </head>

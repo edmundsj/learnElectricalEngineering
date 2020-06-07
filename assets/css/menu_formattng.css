@@ -1,0 +1,20 @@
+.column-left{ 
+	float: left; 
+	width: 33.333%; 
+	text-align:left;
+}
+.column-right{ 
+	float: left; 
+	width: 33.333%;
+	text-align:right;
+}
+.column-center{ 
+	float: left;
+	width: 33.333%; 
+	text-align:center;
+}
+
+.row {
+	width: 100%;
+	overflow: hidden;
+}
