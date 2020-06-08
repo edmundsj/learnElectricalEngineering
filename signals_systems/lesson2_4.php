@@ -11,74 +11,71 @@ beginWrapper();
 <!-- Main content goes here -->
 <h1>Signals and Systems Part 2: Fourier Series</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 4: The Fourier Coefficients and Series</h1>
+<h1>Lesson 4: Energy and Power</h1>
 <?php
-addLessonNavigationE("lesson2_2.php", "lesson2_4.php", "syllabus.php", "Inner Product", "Next", "Syllabus");
+addLessonNavigationE("lesson2_3.php", "lesson2_5.php", "syllabus.php", "Decomposition", "Fourier Series", "Syllabus");
 ?>
-<h2>Hacking away at the squarewave</h2>
+<h2>How 'much' is there - Energy</h2>
 <p>
-In the <a href="lesson2_3.php">previous lesson</a> we saw that there is a sinewave, <i>literally speaking</i> contained within a square wave. Quantitatively, we can reduce the <i>energy</i> of a signal by subtracting off an appropriately-scaled sinewave (with the same period). But how far can we go with this? Are there other sinewaves of different frequencies hiding in our square wave? Let's find out. Let's take our left-overs, and use the equation we figured out in the previous lesson to answer this question. Remember that the signal we are working with has a period of \(2\pi\), so I'm going to set \(P\) equal to \(2\pi\). Then, if we want to find out whether the left-over signal has any higher-frequency sinewaves in it, we just need to use the formula we figured out last time:
+The "energy" of a signal lets us get precise about how "much" of a signal there is. It's called energy because it is, in a real sense, the ability of the signal to <i>do work or carry information</i>. A signal that has zero energy cannot carry information. A signal that has <i>lots</i> of energy can carry lots of information, or if it represents a physical force, can do lots of work on objects. Fortunately, you already know how to compute the energy - you just take the <a href="lesson2_1.php">inner product</a> of a signal with itself. If we have some arbitrary signal \(f(x)\) its energy is \(\langle f(x), f(x) \rangle \), where you integrate over the entire region over which the signal exists (in math-speak, you integrate from \(-\infty\) to \(+\infty\)). If you're more comfortable with the math form of this, where \(E\) is the signal energy, then the energy is just:
 </p>
 \begin{equation}
-\frac{1}{\pi}\langle (sq(x)-sin(x),sin(2x) \rangle
+E = \int_{-\infty}^{\infty}|f(x)|^2dx
 \end{equation}
 <p>
-But since integration is <i>linear</i>, the inner product is also a <i>linear</i> operation, and so we can separate it out into two parts:
+For now you can just <i>square</i> signals, but when we start using complex signals we will actually need to take their magnitude.
+</p>
+<h2>Periodic vs. Aperiodic signals</h2>
+For signals that start and stop at some point, this means we just need to grab the inner product over the region where that signal is nonzero. Some signals are never really "zero" exactly, but you can still integrate them over everywhere they exist. For example, take this signal, the one-sided exponential:
+<?php addMobileImageFull('signals_systems/one_sided_exponential.svg'); ?>
+<p>
+It has a nonzero value all the way off to \(+\infty\), but as long as its integral converges when we try to integrate from \(-\infty\) to \(\infty\), everything is OK. So all we need to do is integrate from \(0\) to \(\infty\). The energy of this signal is just:
 </p>
 \begin{equation}
-\frac{1}{\pi}\langle sq(x),sin(2x) \rangle - \frac{1}{\pi}\langle (sin(x), sin(2x) \rangle
+E = \int_{0}^{\infty}|e^{-x}|^2 dx
 \end{equation}
 <p>
-Fortunately, one of these terms we already know (the right-most one)- it's zero! Remember that sinewaves of integer multiple frequencies are orthogonal to each other. Whew! I thought we were actually going to have to do math. So we're just left with the following equation for how much \(sin(2x)\) there is in our left overs. 
-</p>
-\begin{equation}
-\frac{1}{\pi}\langle sq(x),sin(2x) \rangle
-\end{equation}
-<p>
-Notice that this is identical to the amount of \(sin(2x)\) in our <i>original</i> signal. So if we want to slowly chip off one piece after another from our square wave, we can just work directly with the original signal, rather than having to subtract off one more part each time. That makes life much easier! Let's plot these two signals and see if we can guess how much there is in our square wave:
-<?php addMobileImageFull('signals_systems/sin2x_squarewave.svg'); ?>
-</p>
-<p>
-Look at this closely - does this remind you of anything? Maybe something back in our lesson on <a href="lesson2_2.php">orthogonal functions</a>. It looks like if you were to multiply these two signals, for every positive region there is an equal and opposite negative region, and so they cancel each other out when you do the integration. You can check this for yourself mathematically, just to make sure the integral is actually zero. You should find that it is.
-</p>
-<h2>On to the next one!</h2>
-<p>
-What about \(sin(3x)\)? \(sin(4x)\)? We can do this all day. But how about we save ourselves some time, and let's find how much of the n-th sinewave \(sin(n x)\) is contained in our square wave.
-</p>
-\begin{equation}
-\frac{1}{\pi}\langle sq(x),sin(nx) \rangle = \frac{1}{\pi}\int_{0}^{2\pi} sq(x)*sin(nx)dx
-\end{equation}
-<p>
-If you actually do this integral, and simplify it a bit since n is an integer, you'll get 
-</p>
-\begin{equation}
-b_n = \frac{2}{n \pi}\left(1 - cos(n\pi) \right)
-\end{equation}
-<p>
-Let's just check real quick to make sure this makes sense with what we have already tried - for \(n=1\), which we went over in the <a href="lesson2_3.php">previous lesson</a>, we know the answer <i>should</i> be \(4/\pi\), and indeed, that is what this spits out. If you try \(n=2\) you will find that this gives you \(0\), also as expected from just above. These are called <i>Fourier Coefficients</i>, and denoted with the symbol \(b_n\). Why \(b\)? Well, because there's also an \(a\) and a \(c\), which we will get to later :). 
+In fact, let's actually have you do this integral to get some practice computing the energy.
 </p>
 <?php
 $counter = 0;
-$counter = appendToQuiz($counter, 'What are the Fourier coefficients \(b_5\) and \(b_6\)?',
-	array('\(b_5 = 0, b_6 = \frac{1}{\pi}\)', '\(b_5 = \frac{2}{\pi}, b_6 = \frac{4}{\pi}\)', '\(b_5 = \frac{4}{5\pi}, b_6 = 0\)'), 2);
+$counter = appendToQuiz($counter, 'What is the energy of the signal above, \(e^{-x}*u(x)\) (an exponential zero everywhere from \(-\infty\) to 0)',
+	array('1', '1/2', '2'), 1);
+?>
+<h2>Average power, or energy per period</h2>
+<p>
+For periodic signals, or signals that never end, if we tried to take the inner product from \(-\infty\) to \(\infty\), we would get a value of \(\infty\). Not terribly insightful. But we still want some estimate of how "much" of a signal is left. You might imagine one way to do it for periodic signals - just integrate over a single period and take that to be the "energy". This is pretty much excatly what we do. We integrate over a single period, and divide by that period, to get the "avergae power", or energy density / energy per unit time. So if \(P\) is our signal period, then the average power for a periodic signal \(f(x)\) is defined as:
+</p>
+\begin{equation}
+P_{avg} = \frac{1}{P}\langle f(x), f(x) \rangle = \frac{1}{P}\int_{0}^{P}|f(x)|^2dx
+\end{equation}
+<p>
+You could have also integrated from \(-P/2\) to \(P/2\), or \(-P/4\) to \(3P/4\), it doesn't matter. As long as you get a single period in the integration the answer will be the same. Let's do some practice below to get a feel for this:
+</p>
+
+<?php
+$counter = appendToQuiz($counter, 'What is the energy of 2-pi periodic a sinewave over a single period?',
+	array('1', '\(\pi\)', '2'), 1);
+$counter = appendToQuiz($counter, 'What is the average power of a 2-pi periodic sinewave?',
+	array('4', '\(2 \pi\)', '1/2'), 2);
+?>
+
+<p>
+<?php addMobileImageFull('signals_systems/square_wave_minus_sinewave.svg'); ?>
+Now what if we go back to the original question we were asking - how much of our square wave signal is left after we take out the sinewave part? Well, now we can answer this question quantitatively - we can find the <i>energy</i> over a single period of the signal (or the average power) before and after taking out the sinewave. What is the average power of the signal beforehand? Well, we can calculate it. The period is \(2\pi\), and if we take the magnitude squared of our square wave, that's just \(1\) over our region of integration, so the average power is 1. What about after we subtract the sinewave (properly scaled by \(4/\pi\) as we found <a href="lesson2_3.php">before</a>)? Well, we can actually calculate the average power in our left-over signal using the definition above. I'll leave that to you as an exercise in calculus :)
+
+<?php
+$counter = appendToQuiz($counter, 'What is the energy of the left-over signal, \(sq(x) - 4/\pi sin(x)\)?',
+	array('\(\pi\)', '~\(0.227\)', '~\(0.4\)'), 1);
 ?>
 <p>
-Now for the really crazy part. Imagine you keep subtracting higher and higher frequency sinewaves. Eventually, in the limit as you subtract an <i>infinite</i> number of sinewaves, the remaining signal energy is <i>exactly</i> zero. Not close to zero. Actually zero. This means that our square wave (which, let me remind you in case you forgot is a SQUARE), is actually made up of an <i>infinite</i> number of sinewaves. This means not only can we subtract the sinewaves from the original signal to make it zero energy, but we can <i>add</i> a bunch of sinewaves up to <i>create</i> a square wave. Don't believe me? Watch this. First, let's just plot our square wave and compare it to the first sinewave we found, with \(b_1 = \frac{4}{\pi}\):
+You should have found the average power is <i>lower</i> than it was before! That means, in a <i>literal sense</i>, there is a sinewave <i>contained within</i> our square wave, because when we remove it, our signal's average power is lower. Now, here's something really spooky. If you <i>slightly increase</i> or <i>slightly decrease</i> the amplitude of the subtracted sinewave from \(4/\pi\), the energy of the left-over signal will go <i>up</i> in both cases. Give it a try! This means that the amount we found when we asked the question 'how much sinewave is in my square wave'? is the precise amount that <i>minimizes</i> the left-over energy. We take out exactly the amount of sinewave that does this and no more.
 </p>
-<?php addMobileImageFull('signals_systems/sinewave_squarewave_approximation_1.svg'); ?>
-<p> Now let's add in \(b_3 * sin(3x)\):
-<?php addMobileImageFull('signals_systems/sinewave_squarewave_approximation_3.svg'); ?>
-<p> And \(b_5 * sin(5x)\):
-<?php addMobileImageFull('signals_systems/sinewave_squarewave_approximation_5.svg'); ?>
-<p>Notice it's starting to look more and more like a square wave! Let's go bigger, adding in the sinewaves for \(b_7\) through \(b_{25}\):
-<?php addMobileImageFull('signals_systems/sinewave_squarewave_approximation_25.svg'); ?>
-<p>Now let's go really big, let's add up to \(b_{200}\):
-<?php addMobileImageFull('signals_systems/sinewave_squarewave_approximation_200.svg'); ?>
 <p>
-That's pretty darn close - I can't even see the underlying orange curve any more. Notice theer's a bit of ringing at the edges. That never goes away, it's called the <a href="https://en.wikipedia.org/wiki/Gibbs_phenomenon">Gibbs Phenomenon</a>. Fortunately, the <i>energy</i> of that ringing approaches zero as you add more and more sinewaves, so we usually don't have to worry about it.
+But why stop after just a single sinewave? Can we reduce the energy of the left over signal even further? Yes, and that leads us directly into the <a href="lesson2_5.php">next lesson</a> on the Fourier Series.
 </p>
 <?php
-addLessonNavigationE("lesson2_2.php", "lesson2_4.php", "syllabus.php", "Inner Product", "Next", "Syllabus");
+addLessonNavigationE("lesson2_3.php", "lesson2_5.php", "syllabus.php", "Decomposition", "Fourier Series", "Syllabus");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

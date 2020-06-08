@@ -22,14 +22,15 @@ addLessonNavigation("/signals_systems.php", "sinewaves_lesson1.php", "Introducti
 <li><a href="pendulum_lesson3.php">The Linear Pendulum system</a></li>
 <li><a href="linearity_lesson4.php">Linearity</a></li>
 <li>Time-Invariance</li>
-<li>Other fun periodic signals: Square Waves, Triangle Waves</li>
+<li>Other fun signals: Square Waves, Triangle Waves, Unit Steps</li>
 </ol>
 <h2>Part 2: Fourier Series Representation</h2>
 <ol>
 <li><a href="lesson2_1.php">The Inner Product (or how many peas are in my soup?)</a></li>
 <li><a href="lesson2_2.php">Orthogonal Functions</a></li>
 <li><a href="lesson2_3.php">Decomposing Periodic Signals</a></li>
-<li><a href="lesson2_4.php">The (Sine) Fourier Series</a></li>
+<li><a href="lesson2_4.php">Signal Energy and Average Power</a></li>
+<li><a href="lesson2_5.php">The (Sine) Fourier Series</a></li>
 <li>Even and Odd Signals, and The Cosine Fourier Series</a></li>
 <li>Driving the simple pendulum with an odd square wave</li>
 <li>The damped Pendulum (or why we love complex numbers)</li>
