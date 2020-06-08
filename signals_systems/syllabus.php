@@ -13,7 +13,7 @@ beginWrapper();
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Syllabus</h1>
 <?php
-addLessonNavigation("/signals_systems.php", "shifting_scaling_lesson2.php", "Introduction", "Next");
+addLessonNavigation("/signals_systems.php", "sinewaves_lesson1.php", "Introduction", "Sinewaves");
 ?>
 <h2>Part 1: Sinewaves and Linear Time-Invariant Systems</h2>
 <ol>
@@ -93,7 +93,7 @@ $counter = appendToQuiz($counter, 'A quiz question',
 	array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Next");
+addLessonNavigation("/signals_systems.php", "sinewaves_lesson1.php", "Introduction", "Sinewaves");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

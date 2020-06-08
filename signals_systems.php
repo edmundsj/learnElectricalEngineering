@@ -13,7 +13,7 @@ beginWrapper();
 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
 <h1>Introduction to Signals and Systems</h1>
 <?php
-addLessonNavigation("/explore.php", "signals_systems/sinewaves_lesson1.php", "Explore", "Sinewaves");
+addLessonNavigation("/explore.php", "signals_systems/syllabus.php", "Explore", "Syllabus");
 ?>
 <h2>Why am I here?</h2>
 <p>First of all, why on earth are you taking this course? That's the question my professors
@@ -148,7 +148,7 @@ Finally, we will learn a couple of useful tools that go beyond the Fourier Trans
 </p>
 
 <?php
-addLessonNavigation("/explore.php", "signals_systems/sinewaves_lesson1.php", "Explore", "Sinewaves");
+addLessonNavigation("/explore.php", "signals_systems/syllabus.php", "Explore", "Syllabus");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
