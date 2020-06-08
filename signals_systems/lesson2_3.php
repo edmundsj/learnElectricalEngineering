@@ -68,7 +68,7 @@ Now we are ready to quantitatively answer the question - how much of a sinewave 
 \frac{2}{P}\langle sq(x), sin(x) \rangle = \frac{2}{2\pi}\int_{0}^{2\pi}sq(x)*sin(x)dx
 \end{equation*}
 <p>
-If you actually carry out this integral, you'll get a value of \(4/\pi\). This might seem a little odd at first. How can the coefficient by greater than 1? Well, let's plot the sinewave, multiplied by \(4/\pi\), and the square wave together:
+If you actually carry out this integral (try splitting it up into two intervals), you'll get a value of \(4/\pi\). This might seem a little odd at first. How can the coefficient by greater than 1? Well, let's plot the sinewave, multiplied by \(4/\pi\), and the square wave together:
 </p>
 <?php addMobileImageFull('signals_systems/sinewave_squarewave_approximation_1.svg'); ?>
 <p>
@@ -80,12 +80,22 @@ What do I mean exactly when I say this size of the sinewave "minimizes the amoun
 <?php addMobileImageFull('signals_systems/square_wave_minus_sinewave.svg'); ?>
 </p>
 <p>
-Pretty ugly. If we square this ugly mess, and then we integrate it over a period, that is what is called the "energy" of a signal over a single period. It's called that because it does really represent a form of energy - the ability of the signal to push or pull stuff, or to do work, or <i>carry information</i> and be robust to noise. If you actually compute the energy of the left-over signal, you'll get about 1.19. If you <i>slightly increase</i> or <i>slightly decrease</i> the amplitude of the subtracted sinewave from \(4/\pi\), the left over energy will get <i>larger</i>. In other words, it looks like that amplitude is <i>exactly</i> the amplitude that you would want to minimize the energy of the remaining signal. You might also have noticed that the energy is smaller than the original signal itself (\(2\pi\)). This means, in a literal sense, <i>there is a sinewave inside the square wave</i>, and removing it made the signal have less energy.
+Pretty ugly. Looks like someone took a bite out of our square wave. If we take the square of this ugly mess, and then we integrate it over a period, that is what is called the "energy" of a signal over a single period. It's called that because it does really represent a form of energy - the ability of the signal to push or pull stuff, or to do work, or <i>carry information</i> and be robust to noise. If you actually compute the energy of the left-over signal, you'll get about 1.19. If you <i>slightly increase</i> or <i>slightly decrease</i> the amplitude of the subtracted sinewave from \(4/\pi\), the left over energy will get <i>larger</i>. In other words, it looks like that amplitude is <i>exactly</i> the amplitude that you would want to minimize the energy of the remaining signal. You might also have noticed that the energy is smaller than the original signal itself (\(2\pi\)). This means, in a literal sense, <i>there is a sinewave inside the square wave</i>, and removing it made the signal have less energy. Let's mak esure you understand how to compute energy so this all makes more sense:
 </p>
+<?php
+$counter = appendToQuiz($counter, 'What is the energy of 2-pi periodic a sinewave over a single period?',
+	array('1', '\(\pi\)', '2'), 1);
+$counter = appendToQuiz($counter, 'What is the energy of a 2-pi periodic square wave over a single period?',
+	array('4', '\(2 \pi\)', '1'), 1);
+?>
 <h2>Energy and Power</h2>
 <p>
 But, you might say, what if we had integrated over a longer time? Won't this signal have more energy? Why yes, you are correct, that does seem to be kind of annoying. For this reason, we can instead choose to use <i>average power</i>, or just the energy in some window of time divided by the time over which we integrate. 
 </p>
+<?php
+$counter = appendToQuiz($counter, 'What is the average power of a sinewave (of any frequency)?',
+	array('1', '\(\pi\)', '1/2'), 2);
+?>
 <p>
 But why stop after just a single sinewave? Can we reduce the energy of the left over signal even further? Yes, and that leads us directly into the <a href="lesson2_4.php">next lesson</a> on the Fourier Series.
 </p>

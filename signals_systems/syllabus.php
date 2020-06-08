@@ -17,24 +17,23 @@ addLessonNavigation("/signals_systems.php", "shifting_scaling_lesson2.php", "Int
 ?>
 <h2>Part 1: Sinewaves and Linear Time-Invariant Systems</h2>
 <ol>
-<li>Playing with Sinewaves</li>
-<li>Shifting and Scaling</li>
-<li>The Linear Pendulum system</li>
-<li>Linearity</li>
+<li><a href="sinewaves_lesson1.php">Playing with Sinewaves</a></li>
+<li><a href="shifting_scaling_lesson2.php">Shifting and Scaling</a></li>
+<li><a href="pendulum_lesson3.php">The Linear Pendulum system</a></li>
+<li><a href="linearity_lesson4.php">Linearity</a></li>
 <li>Time-Invariance</li>
+<li>Other fun periodic signals: Square Waves, Triangle Waves</li>
 </ol>
 <h2>Part 2: Fourier Series Representation</h2>
 <ol>
 <li><a href="lesson2_1.php">The Inner Product (or how many peas are in my soup?)</a></li>
 <li><a href="lesson2_2.php">Orthogonal Functions</a></li>
 <li><a href="lesson2_3.php">Decomposing Periodic Signals</a></li>
-<li>Periodicity</li>
-<li>The Sinusoidal Fourier Series</li>
-<li>Even and odd Signals</li>
+<li><a href="lesson2_4.php">The (Sine) Fourier Series</a></li>
+<li>Even and Odd Signals, and The Cosine Fourier Series</a></li>
 <li>Driving the simple pendulum with an odd square wave</li>
-<li>The Cosine Fourier Series</li>
-<li>The Complex Exponential</li>
 <li>The damped Pendulum (or why we love complex numbers)</li>
+<li>The Complex Exponential</li>
 <li>The complex exponential as an Eigenfunction</li>
 <li>The Complex Fourier Series</li>
 </ol>
