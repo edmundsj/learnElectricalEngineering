@@ -31,7 +31,7 @@ addLessonNavigation("/signals_systems.php", "sinewaves_lesson1.php", "Introducti
 <li><a href="lesson2_3.php">Decomposing Periodic Signals</a></li>
 <li><a href="lesson2_4.php">Signal Energy and Average Power</a></li>
 <li><a href="lesson2_5.php">The (Sine) Fourier Series</a></li>
-<li>Even and Odd Signals, and The Cosine Fourier Series</a></li>
+<li><a href="lesson2_6.php">The Cosine Fourier Series</a></li>
 <li>Driving the simple pendulum with an odd square wave</li>
 <li>The damped Pendulum (or why we love complex numbers)</li>
 <li>The Complex Exponential</li>
