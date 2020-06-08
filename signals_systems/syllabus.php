@@ -25,10 +25,10 @@ addLessonNavigation("/signals_systems.php", "shifting_scaling_lesson2.php", "Int
 </ol>
 <h2>Part 2: Fourier Series Representation</h2>
 <ol>
-<li>The Inner Product (or how many peas are in my soup?</li>
-<li>Orthogonal Functions</li>
+<li><a href="lesson2_1.php">The Inner Product (or how many peas are in my soup?)</a></li>
+<li><a href="lesson2_2.php">Orthogonal Functions</a></li>
+<li><a href="lesson2_3.php">Decomposing Periodic Signals</a></li>
 <li>Periodicity</li>
-<li>Decomposing a periodic signal: Power</li>
 <li>The Sinusoidal Fourier Series</li>
 <li>Even and odd Signals</li>
 <li>Driving the simple pendulum with an odd square wave</li>

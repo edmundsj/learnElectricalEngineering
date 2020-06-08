@@ -73,7 +73,7 @@ function addTwoMobileImages($image1, $image2) {
 	echo '<div style="max-width: 50%">';
 	echo '<img src="/images/' . $image1 . '" style="width: auto; height: auto;" />'; 
 	echo '</div>';
-	echo '<div style="max-width: 50%">';
+	echo '<div style="max-width: 50%;">';
 	echo '<img src="/images/' . $image2 . '" style="width: auto; height: auto;" />'; 
 	echo '</div>';
 	echo '</div>';
