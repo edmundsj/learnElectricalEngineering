@@ -10,7 +10,7 @@ beginWrapper();
 
 <h1>Signals and Systems Part 2: Fourier Series</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 7: Even and Odd Signals</h1>
+<h1>Lesson 6: Even and Odd Signals</h1>
 <?php
 addLessonNavigationE("lesson2_5.php", "lesson2_7.php", "syllabus.php", "Fourier Series", "Next", "Syllabus");
 ?>
@@ -83,25 +83,25 @@ This is neither even nor odd. But we could imagine <i>constructing it</i> from s
 <?php addMobileImageFull('signals_systems/gaussian_odd.svg'); ?>
 </p>
 <p>
-Then the bump on the left-hand side would cancel out, and the one on the right hand side would get twice as large. So we just need to multiply by 1/2, and we get back our original signal. You can <i>always</i> do this. Just take your signal, and mirror it. To make an even version of your signal, just keep the mirrored part positive, but to create an even version, make the mirrored part negative (as we did above). If you divide everything by two, then by adding the two signals you can get back to your original.
+Then the bump on the left-hand side would cancel out, and the one on the right hand side would get twice as large. So we just need to multiply by 1/2, and we get back our original signal. You can <i>always</i> do this. To make an even version of your signal, just mirror your original signal, and keep the mirrored part positive, but to create an odd version, make the mirrored part negative (as we did above). If you divide everything by two, then by adding the two signals you can get back to your original.
 </p>
 <p>
 We can also express this in math. If we have a signal \(f(x)\) (for example the little lump above), we can create an even signal from this, by adding the signal to its mirror image:
 </p>
 \begin{equation}
-f_{even}(x) = f(x) + f(-x)
+f_{even}(x) = \frac{1}{2}\left(f(x) + f(-x)\right)
 \end{equation}
 <p>
 Or, to create an odd signal, <i>subtract</i> the mirror image:
 </p>
 \begin{equation}
-f_{odd}(x) = f(x) - f(-x)
+f_{odd}(x) = \frac{1}{2}\left(f(x) - f(-x)\right)
 \end{equation}
 <p>
 Then, we can say that our signal is <i>literally</i> made out of an even part and an odd part.
 </p>
 \begin{equation}
-f(x) = \frac{1}{2}( f_{even}(x) + f_{odd}(x))
+f(x) = f_{even}(x) + f_{odd}(x)
 \end{equation}
 <p>
 This might seem a little weird and contrived, and to some degree it is, but often it's more convenient to work with even and odd signals than it is to work with our original signal. Just a useful trick to be aware of. This useful trick, though, has some serious theoretical implications, which we explore in the <a href="lesson2_7.php">next lesson</a>, on the cosine Fourier Series. This theme of signals being 'composed of' other signals will come up again and again.

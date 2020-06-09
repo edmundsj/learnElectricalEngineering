@@ -11,7 +11,7 @@ beginWrapper();
 <!-- Main content goes here -->
 <h1>Signals and Systems Part 2: Fourier Series</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 6: The Cosine Fourier Series</h1>
+<h1>Lesson 7: The Cosine Fourier Series</h1>
 <?php
 addLessonNavigationE("lesson2_6.php", "lesson2_8.php", "syllabus.php", "Fourier Series", "Next", "Syllabus");
 ?>
@@ -21,10 +21,10 @@ So in <a href="lesson2_5.php">the last lesson on Fourier Series</a> we saw we co
 <?php addMobileImageFull('signals_systems/squarewave_shifted_two_periods.svg'); ?>
 </p>
 <p>
-In other words, the square wave is now <i>even</i>. Does this change our Fourier Coefficients? Well, let's compute them again and see if they change. We need to multiply our new square wave by a sinewave and integrate that over a period. Here I chose \(-\pi\) to \(\pi\), to do the integration, instead of \(0\) to \(2\pi\), which is totally fine, and it will help to make a point:
+In other words, the square wave is now <i>even</i>. Does this change our Fourier Coefficients? Well, let's compute them again and see if they change. We need to multiply our new square wave by a sinewave and integrate that over a period. Here I chose \(-\pi\) to \(\pi\), to do the integration, instead of \(0\) to \(2\pi\), which is totally fine, and it will help to make a point. Let's call this new signal \(sq_e\) instead of just \(sq\), to distinguish it from the odd square wave:
 </p>
 \begin{equation}
-b_n = \frac{2}{P}\langle sq(x+\pi/2), sin(x) \rangle = \frac{2}{2\pi} \int_{-\pi}^{\pi}sq(x+\pi/2)sin(x)dx
+b_n = \frac{2}{P}\langle sq_{e}(x), sin(x) \rangle = \frac{2}{2\pi} \int_{-\pi}^{\pi}sq_{e}(x)sin(x)dx
 \end{equation}
 <p>
 You can do the integral, or you can just plot what the two look like when multiplied together:
@@ -50,7 +50,7 @@ Let's try instead to use cosines, rather than sinewaves, to construct the square
 It does look like they have a great deal of overlap - so we might suspect there is some cosine to be found in our square wave, but how much? Want to take a guess? Let's actually do the integral:
 </p>
 \begin{equation}
-\frac{2}{P}\langle sq(x+\pi/2), cos(x) \rangle = \frac{2}{2\pi} \int_{-\pi}^{\pi}sq(x+\pi/2)cos(x)dx
+\frac{2}{P}\langle sq_{e}(x), cos(x) \rangle = \frac{2}{2\pi} \int_{-\pi}^{\pi}sq_{e}(x)cos(x)dx
 \end{equation}
 <?php
 $counter = 0;
@@ -94,7 +94,7 @@ And eventually, as in the case with sinewaves, if we add enough terms the square
 </p>
 <h2>Representing any periodic signal</h2>
 <p>
-We've now seen that when our square wave was odd (as in the last lesson), we could build it out of a bunch of other odd signals - sinewaves. But when our square wave was even (in this lesson), we needed a bunch of even signals (cosines) to create it. But what if our signal was neither even nor odd? Well, remember that we can <i>always</i> 'decompose' a signal into its even parts and its odd parts. So if we had a signal that was neither even nor odd, we could <i>create it</i> using one signal that is even, and one signal that is odd. The odd signal is made up only of sine waves (and we can figure out their coefficients, \(b_n\)), and the even signal only of cosines (whose coefficients are \(a_n\). Let's explore this more
+We've now seen that when our square wave was odd (as in the last lesson), we could build it out of a bunch of other odd signals - sinewaves. But when our square wave was even (in this lesson), we needed a bunch of even signals (cosines) to create it. But what if our signal was neither even nor odd? Well, remember that we can <i>always</i> 'decompose' a signal into its even parts and its odd parts. So if we had a signal that was neither even nor odd, we could <i>create it</i> using one signal that is even, and one signal that is odd. The odd signal is made up only of sine waves (and we can figure out their coefficients, \(b_n\)), and the even signal only of cosines (whose coefficients are \(a_n\). But there's one more subtlety we have to cover before we can represent <i>any</i> periodic signal, and that's dealing with offsets.
 </p>
 <?php
 addLessonNavigationE("lesson2_6.php", "lesson2_8.php", "syllabus.php", "Fourier Series", "Next", "Syllabus");

@@ -23,6 +23,9 @@ addLessonNavigation("/signals_systems.php", "sinewaves_lesson1.php", "Introducti
 <li><a href="linearity_lesson4.php">Linearity</a></li>
 <li>Time-Invariance</li>
 <li>Other fun signals: Square Waves, Triangle Waves, Unit Steps</li>
+<li>The Complex Exponential</li>
+<li>RC Circuits (or why we love complex numbers)</li>
+<li>The complex exponential as an Eigenfunction</li>
 </ol>
 <h2>Part 2: Fourier Series Representation</h2>
 <ol>
@@ -33,12 +36,10 @@ addLessonNavigation("/signals_systems.php", "sinewaves_lesson1.php", "Introducti
 <li><a href="lesson2_5.php">The (Sine) Fourier Series</a></li>
 <li><a href="lesson2_6.php">Even and Odd Signals</a></li>
 <li><a href="lesson2_7.php">The Cosine Fourier Series</a></li>
-<li><a href="lesson2_8.php">The Sine/Cosine Fourier Series</a></li>
-<li>RC Circuits</li>
-<li>The damped Pendulum (or why we love complex numbers)</li>
-<li>The Complex Exponential</li>
-<li>The complex exponential as an Eigenfunction</li>
-<li>The Complex Fourier Series</li>
+<li><a href="lesson2_8.php">Dealing with Offsets</a></li>
+<li><a href="lesson2_9.php">The Sine/Cosine Fourier Series</a></li>
+<li><a href="lesson2_10.php">The Complex Fourier Series</a></li>
+<li><a href="lesson2_11.php">Fourier Series with Time Instead of x</a></li>
 </ol>
 <h2>Part 3: The Fourier Transform and its Applications</h2>
 <ol>
