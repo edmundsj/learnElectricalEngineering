@@ -73,6 +73,7 @@ as a student. It's also true that even if you want to specialize in a particular
 <li>Core Electrical Engineering Courses</li>
 	<ul style="margin-bottom: 0px;">
 	<li><a href="signals_systems.php">Signals and Systems</a></li>
+	<li><a href="coming_soon.php">Probability Theory</a></li>
 	<li><a href="coming_soon.php">Electronics: Device Physics</a></li>
 	<li><a href="coming_soon.php">Electronics: From Device to Circuit</a></li>
 	<li><a href="coming_soon.php">Electronics: Integrated Circuits</a></li>
@@ -196,11 +197,28 @@ The other three courses, <a href="signals_systems.php">Signals and Systems</a>, 
 This is the discipline I am most directly involved in for my Ph.D. work - but what courses do you need to specialize in this area? What skills do you need? Well, a lot. The most commonly-used physics by far is electromagnetism. So you should get really really good at that, and take as many courses as your university offers. 
 </p>
 
-<h2>Helpful Resources</h2>
+<h2>My Favorite YouTube Channels</h2>
+<ul>
 
-<a href="https://www.youtube.com/watch?v=89NJj1F_qmQ">Map of Electrical Engineering</a> - a fun
-video describing graphically what I discuss in this page.
+<li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">3Blue1Brown YouTube Channel</a> - Truly spectacular videos on mathematical concepts, including linear algebra, calculus, the Fourier Series, and more.</li>
+<li><a href="https://www.youtube.com/channel/UCq0imsn84ShAe9PBOFnoIrg">Brian Douglas</a> - Excellent YouTube Series on control systems</a></li>
+<li><a href='https://www.khanacademy.org/'>Khan Academy</a> - Great videos on calculus, differential equations, and basic physics. They also have some EE content as well.</li>
+<li><a href="https://www.youtube.com/channel/UCJ0yBou72Lz9fqeMXh9mkog">Physics videos by Eugene Khutoryansky</a>Spectacular visual videos on Maxwell's equations, circuits, and concepts like the Fourier Series and vectors.</li>
+<li><a href="https://www.youtube.com/channel/UC7_gcs09iThXybpVgjHZ_7g">PBS Space Time</a> - The physics nerd in me couldn't <i>not</i> put this channel on this list. Great for learning advanced concepts in physics in a reasobly accessible way.</li>
+<li><a href="https://www.youtube.com/watch?v=89NJj1F_qmQ">Map of Electrical Engineering</a> - a fun video describing graphically what I discuss in this page.</li>
+</ul>
 
+<h2>My Favorite Textbooks</h2>
+<ul>
+<li><a href="https://www.amazon.com/Semiconductor-Physics-Devices-Basic-Principles/dp/0073529583">Neamen - Semiconductor Physics</a>. Great textbook for the more mathematically inclined. A fair number of worked examples.</li>
+<li><a href="https://www.amazon.com/Semiconductor-Device-Fundamentals-Robert-Pierret/dp/0201543931">Pieret - Semiconductor Devices</a>. Good complement to Neamen, explanations tend to be different and what Neamen does poorly, I think this book does well.</li>
+<li><a href="https://www.amazon.com/Signals-Systems-2nd-Alan-Oppenheim/dp/0138147574">Oppenheim - Signals and Systems</a>. Unfortunately I have to list this as my 'favorite' because I haven't found a better one. But I don't love it.
+<li><a href="https://www.amazon.com/Introduction-Probability-Statistics-Random-Processes/dp/0990637204/ref=sr_1_7?dchild=1&keywords=probability+theory&qid=1591753580&s=books&sr=1-7">Pishro-Nik Probability Theory</a> - The single best textbook I have ever read. Period stop. It happens to be on probability theory</li>
+<li><a href="https://www.amazon.com/Introduction-Thermal-Physics-Daniel-Schroeder/dp/0201380277">Schroeder - Thermal Physics</a>. An excellent textbook on the more hard-core statistical mechanics and thermodynamics typically not taught in EE. Great, accessible book if you want to know more about device physics.
+<li><a href="https://www.amazon.com/Engineering-Electromagnetics-Nathan-Ida/dp/3319078054/ref=sr_1_4?dchild=1&keywords=engineering+electromagnetics&qid=1591754002&sr=8-4">Ida - Engineering Electromagnetics</a>. This was the textbook I <i>actually</i> learned electromagnetics from. It's dense, but has tons of worked examples and is extremely comprehensive.</li>
+<li><a href="https://www.amazon.com/Diode-Lasers-Photonic-Integrated-Circuits/dp/0470484128/ref=sr_1_1?dchild=1&keywords=coldren+laser+diodes&qid=1591753844&sr=8-1">Coldren - Laser Diodes</a>. kGreat advanced text on optoelectronics and laser physics. Some chapters can get pretty heavy but the early ones have a really good explanation of the fundamentals.
+</ul>
+<h2>Other Useful Resources</h2>
 <?php
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
