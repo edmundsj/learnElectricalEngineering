@@ -11,9 +11,9 @@ beginWrapper();
 <!-- Main content goes here -->
 <h1>Signals and Systems Part 2: Fourier Series</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 9: The Complex Fourier Series</h1>
+<h1>Lesson 10: The Complex Fourier Series</h1>
 <?php
-addLessonNavigationE("lesson2_6.php", "lesson2_8.php", "syllabus.php", "Fourier Series", "Next", "Syllabus");
+addLessonNavigationE("lesson2_9.php", "lesson2_11.php", "syllabus.php", "Fourier Series", "Next", "Syllabus");
 ?>
 <h2>Down with sines and cosines!</h2>
 <p>
@@ -116,7 +116,7 @@ $counter = appendToQuiz($counter, 'Given the answer above, what is the \(c_0\) c
 For all of our work on the Fourier series, we have been working with the variable \(x\), but typically, in engineering, we care much more about \(t\), or time. We want to be able to use what we learn on <i>physical</i> problems and signals which exist in the <i>real world</i>, and so we need to be able to deal with functions of time.
 </p>
 <?php
-addLessonNavigationE("lesson2_6.php", "lesson2_8.php", "syllabus.php", "Fourier Series", "Next", "Syllabus");
+addLessonNavigationE("lesson2_9.php", "lesson2_11.php", "syllabus.php", "Fourier Series", "Next", "Syllabus");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
