@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 7: Reflection off an Interface </h1>
+<h1>Lesson 1: Reflection off an Interface </h1>
 <?php
-addLessonNavigation("lesson6.php", "lesson8.php", "Perfectly Matched Layer", "Next");
+addLessonNavigationE("lesson1_6.php", "lesson2_2.php", "syllabus.php", "PMLs", "Transmitted Power", "Outline");
 ?>
 <h2>But we already know the answer!</h2>
 <p>
@@ -147,7 +147,7 @@ fieldAnimation.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx2
 plt.show()
 </pre>
 <?php
-addLessonNavigation("lesson6.php", "lesson8.php", "Perfectly Matched Layer", "Next");
+addLessonNavigationE("lesson1_6.php", "lesson2_2.php", "syllabus.php", "PMLs", "Transmitted Power", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

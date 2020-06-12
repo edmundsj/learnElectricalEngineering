@@ -9,13 +9,13 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 12: Frequency-dependent reflection from Dispersive Materials</h1>
+<h1>Lesson 6: Frequency-dependent reflection from Dispersive Materials</h1>
 <?php
-addLessonNavigation("lesson11.php", "lesson13.php", "Multi-Frequency Simulations", "Next");
+addLessonNavigationE("lesson2_5.php", "lesson2_7.php", "syllabus.php", "Multi-Frequency Simulation", "Angular Dependence", "Outline");
 ?>
-<h2>Why make materials so complicated</h2>
+<h2>Why make materials so complicated?</h2>
 <p>
 Why do we care about frequency dependence of material properties? Why not just do our simulations at one frequency and call it a day? Well, because real materials tend to have refractive indices that are <i>very strongly</i> dependent on frequency (or equivalently, wavelength). For example, Silicon, probably the most widely-used material in all of electrical engineering (by impact, maybe not mass) has a refractive index vs. wavelength that looks like this (taken from <a href="https://refractiveindex.info/?shelf=main&book=Si&page=Aspnes">here</a>):
 <?php addMobileImageFull("computational_em/si_refractive_index.svg") ?>
@@ -242,7 +242,7 @@ fieldAnimation = animation.FuncAnimation(fig, animate, init_func=init,
 plt.show()
 </pre>
 <?php
-addLessonNavigation("lesson11.php", "lesson13.php", "Multi-Frequency Simulations", "Next");
+addLessonNavigationE("lesson2_5.php", "lesson2_7.php", "syllabus.php", "Multi-Frequency Simulation", "Angular Dependence", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

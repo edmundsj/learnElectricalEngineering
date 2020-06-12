@@ -40,11 +40,14 @@ addLessonNavigation("/signals_systems.php", "sinewaves_lesson1.php", "Introducti
 <li><a href="lesson2_9.php">The Sine/Cosine Fourier Series</a></li>
 <li><a href="lesson2_10.php">The Complex Fourier Series</a></li>
 <li><a href="lesson2_11.php">Fourier Series with Time Instead of x</a></li>
+<li>Plotting the Fourier Series</li>
+<li>Changing the Period - What happens to the Frequencies?</li>
+<li>Parseval's Theorem</li>
 <li><a href="lesson2_12.php">A real-world example: Transfer Functions - RC circuits and square waves</a></li>
 </ol>
 <h2>Part 3: The Fourier Transform and its Applications</h2>
 <ol>
-<li>Stretching the Period</li>
+<li><a href="lesson3_1.php">Stretching the Period</a></li>
 <li>The limit as the period becomes infinite</li>
 <li>Examples of the Fourier Transform</li>
 <li>Filtering</li>

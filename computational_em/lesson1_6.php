@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 1: Getting Started</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 6: Perfectly Matched Layer (PML) </h1>
 <?php
-addLessonNavigation("lesson5.php", "lesson7.php", "Visualizing Fields", "Next");
+addLessonNavigationE("lesson1_5.php", "lesson2_1.php", "syllabus.php", "Visualizing Fields", "Reflection", "Outline");
 ?>
 <h2>Stopping the reflections</h2>
 <p>
@@ -136,7 +136,7 @@ fieldAnimation.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx2
 plt.show()
 </pre>
 <?php
-addLessonNavigation("lesson5.php", "lesson7.php", "Visualizing Fields", "Next");
+addLessonNavigationE("lesson1_5.php", "lesson2_1.php", "syllabus.php", "Visualizing Fields", "Reflection", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 14: Multi-Frequency Oblique Incidence Reflection</h1>
+<h1>Lesson 8: Multi-Frequency Oblique Incidence Reflection</h1>
 <?php
-addLessonNavigation("lesson13.php", "lesson15.php", "Reflection at an Angle", "Next");
+addLessonNavigationE("lesson2_7php", "lesson2_9.php", "syllabus.php", "Angular Dependence", "Multi-Frequeny Angle", "Outline");
 ?>
 <h2>All the frequencies!</h2>
 <p>
@@ -101,7 +101,7 @@ It does exactly what we want, and you will find that your simulation will actual
 </p>
 
 <?php
-addLessonNavigation("lesson13.php", "lesson15.php", "Reflection at an Angle", "Next");
+addLessonNavigationE("lesson2_7.php", "lesson2_9.php", "syllabus.php", "Angular Dependence", "Multi-Frequeny Angle", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

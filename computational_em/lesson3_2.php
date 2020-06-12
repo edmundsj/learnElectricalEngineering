@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP: 2D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 20: Gaussian Beam Propagation</h1>
+<h1>Lesson 2: Gaussian Beam Propagation</h1>
 <?php
-addLessonNavigation("lesson19.php", "lesson21.php", "Introduction", "Next");
+addLessonNavigationE("lesson3_1.php", "lesson3_3.php", "syllabus.php", "2D MEEP", "Next", "Outline");
 ?>
 <h2>But I thought we already used Gaussian beams</h2>
 <p>
@@ -26,7 +26,7 @@ $counter = appendToQuiz($counter, 'A quiz question',
 	array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("lesson19.php", "lesson21.php", "Introduction", "Next");
+addLessonNavigationE("lesson3_1.php", "lesson3_3.php", "syllabus.php", "2D MEEP", "Next", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

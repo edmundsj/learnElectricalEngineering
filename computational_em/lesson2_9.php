@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 15: Multi-Frequency, Multi-Angle Simulations</h1>
+<h1>Lesson 9: Multi-Frequency, Multi-Angle Simulations</h1>
 <?php
-addLessonNavigation("lesson14.php", "lesson16.php", "Multi-Frequency Oblique Angle", "Next");
+addLessonNavigationE("lesson2_8.php", "lesson2_9.php", "syllabus.php", "Multi-Frequency Angule", "Efficient Multi-Angle", "Outline");
 ?>
 <h2>All the simulations!</h2>
 <p>
@@ -303,7 +303,7 @@ simulationAxes.set_ylabel("angle (degrees)")
 plt.show()
 </pre>
 <?php
-addLessonNavigation("lesson14.php", "lesson16.php", "Multi-Frequency Oblique Angle", "Next");
+addLessonNavigationE("lesson2_8.php", "lesson2_9.php", "syllabus.php", "Multi-Frequency Angule", "Efficient Multi-Angle", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 1: Getting Started</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 3: Getting aquainted with MEEP</h1>
+<h1>Lesson 3: (Extreme) Basics of FDTD</h1>
 <?php
-addLessonNavigation("lesson2.php", "lesson4.php", "Units in MEEP", "Next");
+addLessonNavigationE("lesson1_2.php", "lesson1_4.php", "syllabus.php", "Units in MEEP", "Hello World", "Outline");
 ?>
 <p>
 Before we actually start writing our first program, there's a couple more things you should know about how simulators work. 
@@ -91,7 +91,7 @@ Next, we will actually use this to set up our simulation.
 </p>
 
 <?php
-addLessonNavigation("lesson2.php", "lesson4.php", "Units in MEEP", "Next");
+addLessonNavigationE("lesson1_2.php", "lesson1_4.php", "syllabus.php", "Units in MEEP", "Hello World", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

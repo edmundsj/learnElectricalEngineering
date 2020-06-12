@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 16: Thin-film interference </h1>
+<h1>Lesson 10: Thin-Film Interference</h1>
 <?php
-addLessonNavigation("lesson15.php", "lesson17.php", "Multi-Angle Multi-Frequency Reflection", "Next");
+addLessonNavigationE("lesson2_9.php", "lesson2_11.php", "syllabus.php", "Multi-Frequency Multi-Angle", "Bragg Reflectors", "Outline");
 ?>
 <h2>Now on to the fun stuff!</h2>
 <p>
@@ -190,7 +190,7 @@ reflectionSpectraAxes.set_ylabel('R')
 plt.show()
 </pre>
 <?php
-addLessonNavigation("lesson15.php", "lesson17.php", "Multi-Angle Multi-Frequency Reflection", "Next");
+addLessonNavigationE("lesson2_9.php", "lesson2_11.php", "syllabus.php", "Multi-Frequency Multi-Angle", "Bragg Reflectors", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

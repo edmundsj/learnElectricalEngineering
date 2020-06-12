@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 9: Convergence testing in MEEP</h1>
+<h1>Lesson 3: Convergence testing in MEEP</h1>
 <?php
-addLessonNavigation("lesson8.php", "lesson10.php", "Transmitted Power", "Next");
+addLessonNavigationE("lesson2_2.php", "lesson2_4.php", "syllabus.php", "Transmitted Power", "Reflected Power", "Outline");
 ?>
 <h2>Remember that resolution guideline?</h2>
 <p>

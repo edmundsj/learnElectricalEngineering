@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 17: Distributed Bragg Reflectors and Anti-Reflection Coatings</h1>
+<h1>Lesson 11: Distributed Bragg Reflectors</h1>
 <?php
-addLessonNavigation("lesson16.php", "lesson18.php", "Thin Film Interference", "Next");
+addLessonNavigationE("lesson2_10.php", "lesson2_12.php", "syllabus.php", "Thin Film", "Resonators", "Outline");
 ?>
 <h2>Distributed Bragg Reflector</h2>
 <p>
@@ -287,7 +287,7 @@ $counter = appendToQuiz($counter, 'A quiz question',
 	array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("lesson16.php", "lesson18.php", "Thin Film Interference", "Next");
+addLessonNavigationE("lesson2_10.php", "lesson2_12.php", "syllabus.php", "Thin Film", "Resonators", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

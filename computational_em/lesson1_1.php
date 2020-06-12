@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 1: Getting Started</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 1: Getting Started</h1>
 <?php
-addLessonNavigation("computational_em.php", "lesson2.php", "Introduction", "Next");
+addLessonNavigationE("syllabus.php", "lesson1_2.php", "syllabus.php", "Outline", "Units in MEEP", "Outline");
 ?>
 <h2>Installing Python, Anaconda</h2>
 <p>
@@ -40,7 +40,7 @@ $counter = appendToQuiz($counter, 'A quiz question',
 	array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("/signals_systems.php", "lesson2.php", "Introduction", "Hello World");
+addLessonNavigationE("syllabus.php", "lesson1_2.php", "syllabus.php", "Introduction", "Outline", "Units in MEEP");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

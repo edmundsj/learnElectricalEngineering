@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 13: Angular-Dependent Reflection</h1>
+<h1>Lesson 7: Angular-Dependent Reflection</h1>
 <?php
-addLessonNavigation("lesson12.php", "lesson14.php", "Dispersive Materials", "Next");
+addLessonNavigationE("lesson2_6.php", "lesson2_8.php", "syllabus.php", "Dispersive Materials", "Multi-Frequency Oblique", "Outline");
 ?>
 <h2></h2>
 <p>
@@ -355,7 +355,7 @@ fieldAnimation = animation.FuncAnimation(fig, animate, init_func=init,
 plt.show()
 </pre>
 <?php
-addLessonNavigation("lesson12.php", "lesson14.php", "Dispersive Materials", "Next");
+addLessonNavigationE("lesson2_6.php", "lesson2_8.php", "syllabus.php", "Dispersive Materials", "Multi-Frequency Oblique", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 3: 2D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 19: MEEP in Two Dimensions </h1>
+<h1>Lesson 1: MEEP in Two Dimensions </h1>
 <?php
-addLessonNavigation("lesson18.php", "lesson20.php", "Introduction", "Next");
+addLessonNavigationE("lesson2_12.php", "lesson3_2.php", "syllabus.php", "Resonators", "Gaussian Beams", "Outline");
 ?>
 <h2>Finally!</h2>
 <p>
@@ -188,7 +188,7 @@ fieldAnimation.save('basic_animation.mp4', fps=30, extra_args=['-vcodec', 'libx2
 plt.show()
 </pre>
 <?php
-addLessonNavigation("lesson18.php", "lesson20.php", "Introduction", "Next");
+addLessonNavigationE("lesson2_12.php", "lesson3_2.php", "syllabus.php", "Resonators", "Gaussian Beams", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

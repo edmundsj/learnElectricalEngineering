@@ -13,7 +13,7 @@ beginWrapper();
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Introduction to Computational Electromagnetics with MEEP</h1>
 <?php
-addLessonNavigation("computational_em.php", "lesson1.php", "Introduction", "Getting Started");
+addLessonNavigationE("computational_em.php", "syllabus.php", "syllabus.php", "Introduction", "Outline", "Outline");
 ?>
 <h2>Who needs computation, anyway?</h2>
 <p>
@@ -45,7 +45,7 @@ $counter = appendToQuiz($counter, 'A quiz question',
 	array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("/computational_em/computational_em.php", "lesson2.php", "Introduction", "Getting Started");
+addLessonNavigationE("computational_em.php", "syllabus.php", "syllabus.php", "Introduction", "Outline", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

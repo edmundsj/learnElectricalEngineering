@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 1: Getting Started</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 5: Visualizing Fields with MEEP</h1>
 <?php
-addLessonNavigation("lesson4.php", "lesson6.php", "Running Simulation", "Perfectly Matched Layers");
+addLessonNavigationE("lesson1_4.php", "lesson1_6.php", "syllabus.php", "Hello World", "PMLs", "Outline");
 ?>
 <h2>Give me the data</h2>
 <p>
@@ -187,7 +187,7 @@ $counter = 0;
 	//array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("lesson4.php", "lesson6.php", "Running Simulation", "Perfectly Matched Layers");
+addLessonNavigationE("lesson1_4.php", "lesson1_6.php", "syllabus.php", "Hello World", "PMLs", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

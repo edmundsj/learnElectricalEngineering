@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 1: Getting Started</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
 <h1>Lesson 4: Setting up our Simulation </h1>
 <?php
-addLessonNavigation("lesson3.php", "lesson5.php", "Getting Aquainted", "Visualizing Fields");
+addLessonNavigationE("lesson1_3.php", "lesson1_5.php", "syllabus.php", "FDTD Basics", "Visualizing Fields", "Outline");
 ?>
 <h2>Parameters to enter</h2>
 <p>In the <a href="lesson3.php">previous lesson</a>, we discussed each of the parameters that we need to know prior to running a simulation, including the size of the simulation domain, the time to run the simulation, and the resolution of our simulation. We decided to simulate a plane wave of free-space wavelength \(500 nm\) propagating through free space, and found the following parameters to enter into MEEP:
@@ -129,7 +129,7 @@ $counter = appendToQuiz($counter, 'A quiz question',
 	array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("lesson3.php", "lesson5.php", "Getting Aquainted", "Visualizing Fields");
+addLessonNavigationE("lesson1_3.php", "lesson1_5.php", "syllabus.php", "FDTD Basics", "Visualizing Fields", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

@@ -9,11 +9,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP Part 2: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 11: Efficient Multi-Frequency Simulations</h1>
+<h1>Lesson 5: Efficient Multi-Frequency Simulations</h1>
 <?php
-addLessonNavigation("lesson10.php", "lesson12.php", "Reflected Power", "Next");
+addLessonNavigationE("lesson2_4.php", "lesson2_6.php", "syllabus.php", "Reflected Power", "Dispersive Materials", "Outline");
 ?>
 <h2>Remember those high-frequency waves?</h2>
 <p>
@@ -214,7 +214,7 @@ $counter = appendToQuiz($counter, 'A quiz question',
 	array('A quiz option'), 0);
 ?>
 <?php
-addLessonNavigation("lesson10.php", "lesson12.php", "Reflected Power", "Next");
+addLessonNavigationE("lesson2_4.php", "lesson2_6.php", "syllabus.php", "Reflected Power", "Dispersive Materials", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

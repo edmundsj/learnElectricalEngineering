@@ -8,11 +8,11 @@ beginWrapper();
 ?>
 
 <!-- Main content goes here -->
-<h1>Computational Electromagnetics with MEEP</h1>
+<h1>Computational Electromagnetics with MEEP: 1D MEEP</h1>
 <span class="image main"><img src="/images/pic13.jpg" alt="" /></span>
-<h1>Lesson 18: Resonators</h1>
+<h1>Lesson 12: Resonators</h1>
 <?php
-addLessonNavigation("lesson17.php", "lesson19.php", "Distributed Bragg Reflectors", "Next");
+addLessonNavigationE("lesson2_11.php", "lesson3_1.php", "syllabus.php", "Bragg Reflectors", "2D MEEP", "Outline");
 ?>
 <h2>It's Just two mirrors...</h2>
 <p>
@@ -303,7 +303,7 @@ plt.show()
 </pre>
 
 <?php
-addLessonNavigation("lesson17.php", "lesson19.php", "Distributed Bragg Reflectors", "Next");
+addLessonNavigationE("lesson2_11.php", "lesson3_1.php", "syllabus.php", "Bragg Reflectors", "2D MEEP", "Outline");
 endWrapper();
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";

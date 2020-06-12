@@ -191,10 +191,36 @@ The other three courses, <a href="signals_systems.php">Signals and Systems</a>, 
 
 </p>
 
-<h2> Specializations </h3>
-<h3> Photonics / Optoelectronics </h3>
+<h1> Specializations </h1>
+<p>
+As an electrical engineer, you will have to actually <i>do something specific</i> for a living. That 'something specific', if you work as an electrical engineer, is usually in one of the specializations listed below: 
+</p>
+<h3> <a href="https://en.wikipedia.org/wiki/Optoelectronics">Optoelectronics</a> / <a href="https://en.wikipedia.org/wiki/Photonics">Photonics</a> </h3>
 <p>
 This is the discipline I am most directly involved in for my Ph.D. work - but what courses do you need to specialize in this area? What skills do you need? Well, a lot. The most commonly-used physics by far is electromagnetism. So you should get really really good at that, and take as many courses as your university offers. 
+</p>
+<h3><a href="https://en.wikipedia.org/wiki/Power_engineering">Power Engineering</a></h3>
+<p>
+The creation, distribution, and transformation of power, in our grid, inside individual machines and devices, at pretty much any scale you can imagine. There are power engineers who work on airplanes, cars, the grid, power generation stations, and spacecraft.
+</p>
+<h3><a href="https://en.wikipedia.org/wiki/Control_engineering">Control Engineering</a></h3>
+<p>
+The control and automation of robotic systems, mechanical systems, electrical systems, thermal systems. Really anything can be shoved under the domain of controls. This is a heavily mathematical discipline, and (other than communications) probably the most abstract. It also happens to be one of the most interesting and pervasive.
+</p>
+<h3><a href="https://en.wikipedia.org/wiki/Telecommunication">Communications</a> / Signal Processing</a></h3>
+<p>
+Along with Controls, probably the most abstract and mathematical of the specializations. Thi
+</p>
+<h3>RF Engineering</h3>
+<p>
+</p>
+<h3>Circuit Design</h3>
+<p>
+Usually this refers to <i>integrating circuit design</i>, in contrast to PCB-level circuit design. Integrated Circuit designers work on the individual silicon chips inside phones, computers, toys, and all electronics. Studying circuit design will typically involve an extra few classes in advanced circuits, covering nonlinearity, noise, and most importantly, how to actually build the things.
+</p>
+<h3>Embedded Systems</h3>
+<p>
+While not typically thought of as a branch within EE, lots of electrical engineers do work on embedded systems, so I thought to include it here. This encompasses printed-circuit-board level electronics, and refers in general to making electronic systems that interact with the physical world to actuate and control things. You can check out <a href="https://en.wikipedia.org/wiki/Embedded_system">Wikipedia's Article</a> here.
 </p>
 
 <h2>My Favorite YouTube Channels</h2>
