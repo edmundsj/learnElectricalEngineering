@@ -39,9 +39,41 @@ addLessonNavigationE("computational_em.php", "lesson1_1.php", "syllabus.php", "I
 <li><a href="lesson2_11.php">Distributed Bragg Reflectors</a></li>
 <li><a href="lesson2_12.php">Resonators in MEEP</a></li>
 </ol>
+
 <h2>Part 3: MEEP in Two Dimensions</h2>
+<ol>
 <li><a href="lesson3_1.php">MEEP in Two Dimensions: Propagation</a></li>
 <li><a href="lesson3_2.php">Gaussian Beam Propagation</a></li>
+<li>Gaussian Beam Focusing</li>
+<li>Gaussian Beam Thin-Film Interference</li>
+<li>Modes in a Slab Waveguide</li>
+<li>Coupling Gaussian Beams into Slab Waveguide</li>
+<li>Modes in a Slab Waveguide Resonator (Longitudinal and Transverse)</li>
+<li>Coupling Gaussian Beams into Slab Resonator</li>
+<li>Radiation Leaking from a Resonator</li>
+<li>Scattering (Diffraction) off an Infinite Cylinder</li>
+<li>Diffraction Gratings</li>
+</ol>
+
+<h2>Part 4: MEEP in Three Dimensions</h2>
+<ol>
+<li>Point Source in Free Space (dipole antenna)</li>
+<li>Line Source in Free Space</li>
+<li>Sheet Source (plane wave) in Free Space</li>
+<li>Free Space Gaussian Beam Propagation</li>
+<li>Cylindrical Waveguide Modes</li>
+<li>Cylindrical Waveguide Modes using MEEP Symmetry</li>
+<li>Coupling a Gaussian Beam into a Cylindrical Waveguide</li>
+<li>3D Cylindrical Resonator Modes</li>
+<li>Coupling a Gaussian Beam into a Cylindrical Resonator</li>
+<li>Rectangular Resonator Modes</li>
+<li>Coupling a Gaussian Beam into a Rectangular Resonator</li>
+<li>Rectangular Resonator Modes with Dispersive Materials</li>
+<li>Rectangular Resonator Modes with Lossy Materials</li>
+<li>Rectangular Resonator Modes with Contacts</li>
+<li>Mie Scattering off a Sphere</li>
+<li>Plasmonics - Mie Scattering off a Metal Sphere</li>
+</ol>
 <p>
 Some stuff
 </p>
