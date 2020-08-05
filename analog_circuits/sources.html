@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	 Phantom by HTML5 UP
+	 html5up.net | @ajlkn
+	 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+  <head>
+	 <title>Analog Circuits - Ideal Sources</title>
+	 <meta charset="utf-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	 <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+	 <!-- Wrapper -->
+	 <div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+		  <div class="inner">
+
+			 <!-- Logo -->
+			 <a href="index.html" class="logo">
+				<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+			 </a>
+
+			 <!-- Nav -->
+			 <nav>
+				<ul>
+				  <li><a href="#menu">Menu</a></li>
+				</ul>
+			 </nav>
+
+		  </div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+		  <h2>Menu</h2>
+		  <ul>
+			 <li><a href="index.html">Home</a></li>
+			 <li><a href="generic.html">Ipsum veroeros</a></li>
+			 <li><a href="generic.html">Tempus etiam</a></li>
+			 <li><a href="generic.html">Consequat dolor</a></li>
+			 <li><a href="elements.html">Elements</a></li>
+		  </ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+		  <div class="inner">
+			 <h1>Analog Circuits</h1>
+			 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+          <h1>Lesson 6: Ideal voltage and current sources</h1>
+			 <p>An ideal voltage source sets a constant voltage \( V = A \), where \( A \) is a constant. You have
+            no idea what the current through this source is, unless you connect it to some external circuit.</p>
+          <img src="images/part1/voltage_source.png" alt="(The schematic symbol for an ideal voltage source, with defining equation V = A, where A is some constant. The current through the voltage source cannot be found through this relationship.)">
+          <p>An ideal current source sets a constant current \( I = B \), where \( B \) is a constant. You can't
+            determine the voltage across an ideal current source from just the current source itself. You need
+            to connect it to an external circuit, like with the voltage source.</p>
+                    <img src="images/part1/current_source.png" alt="(The schematic symbol for an ideal current source, with defining equation I = B, where B is some constant. The voltage through the current source cannot be found through this relationship.)">
+          <p>Here's a simpler way to think of it. If you look at the defining equations for each source, do you
+            see any V in the current source equation, or any I in the voltage source equation? If there isn't
+            one, how do you find that relationship? (Hint: you can't.) That means that the current through a
+            voltage source is legally allowed to be any value you want. So, if you hook up your voltage source
+            to another circuit, that other circuit sets the current value. The same idea applies for the voltage
+            across a current source.</p>
+          <p>picture of voltage-current graphs for ideal sources (circuitikz probably)</p>
+          <p><strong>Bottom line.</strong> Ideal sources are defined by equations of the form \( V = A \) (for a voltage source) or \( I = B \) (for a current source), where \( A \) and \( B \) are both constants. Don't assume you can treat sources like any other circuit element. You can't find the voltage across a current source or the current through a voltage source without connecting the source to some external circuit.
+		  </div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+		  <div class="inner">
+			 <section>
+				<h2>Get in touch</h2>
+				<form method="post" action="#">
+				  <div class="fields">
+					 <div class="field half">
+						<input type="text" name="name" id="name" placeholder="Name" />
+					 </div>
+					 <div class="field half">
+						<input type="email" name="email" id="email" placeholder="Email" />
+					 </div>
+					 <div class="field">
+						<textarea name="message" id="message" placeholder="Message"></textarea>
+					 </div>
+				  </div>
+				  <ul class="actions">
+					 <li><input type="submit" value="Send" class="primary" /></li>
+				  </ul>
+				</form>
+			 </section>
+			 <section>
+				<h2>Follow</h2>
+				<ul class="icons">
+				  <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+				  <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+				  <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			 </section>
+			 <ul class="copyright">
+				<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			 </ul>
+		  </div>
+		</footer>
+
+	 </div>
+
+	 <!-- Scripts -->
+	 <script src="assets/js/jquery.min.js"></script>
+	 <script src="assets/js/browser.min.js"></script>
+	 <script src="assets/js/breakpoints.min.js"></script>
+	 <script src="assets/js/util.js"></script>
+	 <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

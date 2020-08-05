@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	 Phantom by HTML5 UP
+	 html5up.net | @ajlkn
+	 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  -->
+<html>
+  <head>
+	 <title>Analog Circuits - KVL and KCL</title>
+	 <meta charset="utf-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	 <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	 <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  </head>
+  <body class="is-preload">
+	 <!-- Wrapper -->
+	 <div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+		  <div class="inner">
+
+			 <!-- Logo -->
+			 <a href="index.html" class="logo">
+				<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+			 </a>
+
+			 <!-- Nav -->
+			 <nav>
+				<ul>
+				  <li><a href="#menu">Menu</a></li>
+				</ul>
+			 </nav>
+
+		  </div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+		  <h2>Menu</h2>
+		  <ul>
+			 <li><a href="index.html">Home</a></li>
+			 <li><a href="generic.html">Ipsum veroeros</a></li>
+			 <li><a href="generic.html">Tempus etiam</a></li>
+			 <li><a href="generic.html">Consequat dolor</a></li>
+			 <li><a href="elements.html">Elements</a></li>
+		  </ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+		  <div class="inner">
+			 <h1>Analog Circuits</h1>
+			 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+          <h1>Lesson 7: KVL and KCL</h1>
+          <h2>KVL - Kirchoff's Voltage Law</h2>
+          <h3>Derivation</h3>
+			 <p>You can derive this from electromagnetism, too. KVL follows directly from assuming </p>
+           <p> \( \nabla \times \textbf{E} = -\frac{\partial B}{\partial t} = 0 \) </p>
+          <p> from Faraday's Law.
+            Then we can use the definition of voltage, </p>
+          <p> \( V = \int \mathbf{E} \cdot d\mathbf{l} \), </p>
+          <p> apply the condition from Faraday's Law, and take a sum over multiple elements in a closed loop.
+            You end up with </p>
+          <p> \( \sum_{k} V_k = 0 \). </p>
+          <p> This says that the sum of the voltage drops around any closed loop must equal zero. </p>
+          <p>Usually, you're looking for either a voltage or a current in a closed loop. If it's in a closed
+            loop, you apply KVL. Full stop. The only time you wouldn't want to do this is if the loop is
+            connected to some other loop through one of its elements.</p>
+          <img src="images/part1/kvl.png" alt="(Picture of a typical KVL analysis. A loop with a voltage source V_in, and 3 resistors, R_1, R_2, and R_3. Applying KVL and Ohm's Law, we get an equation that can solve for the input current I_in. That current can be used to solve for an output voltage at any connection point in the circuit.)">
+          <h3>Naming</h3>
+          <p> We use "KVL", "loop analysis", and "mesh analysis" interchangeably. These terms all mean the same
+            thing. They <i>might</i> not mean the same thing for 3D circuits, but who the heck builds 3D
+            circuits?</p>
+          
+          <h2>KCL - Kirchoff's Current Law</h2>
+          <p> I'll skip the derivation here, because the math is more complicated than in the derivation for
+            KVL. Suffice it to say that a similar line of reasoning about nodes (connection points between
+            circuit elements) results in </p>
+          <p> \( \sum_{k} I_k = 0 \). </p>
+          <img src="images/part1/kcl.png" alt="(A typical KCL analysis. A voltage source and 3 resistors are connected in parallel to one node, and, of course, the ground node. Applying KCL and Ohm's Law, we get an equation to solve for the input voltage V_in. That voltage can be used to solve for any output current through any resistor in the circuit.)">
+          <h3>Naming</h3>
+          <p>"Nodal analysis" and "modified nodal analysis" both refer to using KCL with Ohm's Law. They're all
+            fundamentally KCL anyway, so it's safe to say we can use these three terms interchangeably.</p>
+
+          <h2>When do you use one over the other?</h2>
+          <p>This choice depends on experience and personal preference. As a starting point, you can count the
+            number of nodes in the circuit, put that number off to the side, and count the number of loops in
+            the circuit. Compare them. The smaller number tells you which method might be easier than the 
+            other. If the loops have the smaller number, KVL might be a good choice. If the nodes have a smaller
+            number, KCL might be a good choice. This is a contrived method, but it gives you a bit of insight
+            into what we're looking for.</p>
+          <p>In short: Fewer equations \( \rightarrow \) better, and more equations \( \rightarrow \) worse.</p>
+          
+          <p><b>Bottom line.</b> \( \sum_{k} V_k = 0 \) around a closed loop. \( \sum_{k} I_k = 0 \) into/out
+            of any node. Use the one that gives you fewer equations.</p>
+
+		  </div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+		  <div class="inner">
+			 <section>
+				<h2>Get in touch</h2>
+				<form method="post" action="#">
+				  <div class="fields">
+					 <div class="field half">
+						<input type="text" name="name" id="name" placeholder="Name" />
+					 </div>
+					 <div class="field half">
+						<input type="email" name="email" id="email" placeholder="Email" />
+					 </div>
+					 <div class="field">
+						<textarea name="message" id="message" placeholder="Message"></textarea>
+					 </div>
+				  </div>
+				  <ul class="actions">
+					 <li><input type="submit" value="Send" class="primary" /></li>
+				  </ul>
+				</form>
+			 </section>
+			 <section>
+				<h2>Follow</h2>
+				<ul class="icons">
+				  <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+				  <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+				  <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+				  <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			 </section>
+			 <ul class="copyright">
+				<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			 </ul>
+		  </div>
+		</footer>
+
+	 </div>
+
+	 <!-- Scripts -->
+	 <script src="assets/js/jquery.min.js"></script>
+	 <script src="assets/js/browser.min.js"></script>
+	 <script src="assets/js/breakpoints.min.js"></script>
+	 <script src="assets/js/util.js"></script>
+	 <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
