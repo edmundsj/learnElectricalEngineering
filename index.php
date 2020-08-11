@@ -42,7 +42,7 @@ from an overview of the discipline to online lecture videos, reference material,
 <a href="/computational_em/computational_em.php">
 <h2>Computational Electromagnetics</h2>
 <div class="content">
-<p>Computational Electromagnetics with an open source FDTD simulator. Build on what you know about the theory of electromagnetics by learning to use the Finite Difference Time Domain, one of the most powerful tools for electromagnetics..</p>
+<p>Computational Electromagnetics with an open source FDTD simulator. Build on what you know about the theory of electromagnetics by learning to use the Finite Difference Time Domain, one of the most powerful tools for electromagnetics.</p>
 </div>
 </a>
 </article>
@@ -55,6 +55,18 @@ from an overview of the discipline to online lecture videos, reference material,
 <h2>Signals and Systems</h2>
 <div class="content">
 <p>Linear Time Invariant Signals and Systems, Fourier Analysis - become a world-class sinewave manipulator. Learn how the world actually works.</p>
+</div>
+</a>
+</section>
+
+<article class="style4">
+<span class="image">
+<img src="images/pic04.jpg" alt="" />
+</span>
+<a href="/analog_circuits/analog_syllabus.html">
+<h2>Analog Circuits</h2>
+<div class="content">
+<p>Ever wondered how computers can switch so fast? Transistors are why. Learn about them here.</p>
 </div>
 </a>
 </section>
