@@ -1,0 +1,11 @@
+#+AUTHOR: Garek Dyszel
+
+* File structure
+~ideas~: where all the plans go. This is the main document I'm working from.
+
+~resourcepage.org~: The monolithic file I'm using to produce this page via Emacs' Org Mode. This has all the actual information in it.
+~resourcepage.html~: Neat browser view of the same file.
+
+I don't know where the *.raw and *.log files came from. I'm assuming they're from Org Mode's html export process.
+
+Everything else is either an image or MathJax render files.

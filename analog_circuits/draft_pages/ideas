@@ -1,0 +1,34 @@
+* Ideas
+*** An EE student's apology: misconceptions and issues in EE education
+
+current flow and charge flow: which is correct? (charge flow, but for some reason we still say current flow)
+- why? see issue on electron flow vs conventional current flow, stackexchange
+
+op-amps
+- really just voltage amplifiers. can sub in ideal equivalent circuit model and solve that way
+
+bjts
+- really just current amplifiers. can sub in ideal equivalent circuit model for this, too
+
+mosfets
+- really just current sources. Gate current is always assumed to be zero.
+- provide solution for V_GS in terms of I_D (WHY is this not in Sedra and Smith?)
+
+diodes
+- typically have 0.7 V dropped across them. Essentially act like voltage sources to the rest of the circuit, in most cases
+
+kvl & kcl
+- see document from F2019. Might need to change examples so we don't have homework-solution-sharing issues
+
+approaches to circuit analysis: what are you actually trying to do?
+- figure out what variables you're given and what ones you need to find
+-- given either voltage or current, push through this topology to find the other. (given voltage, find current. given current, find voltage)
+-- general case of Ohm's law: V = ZI. Use s parameters for general DC/AC case, and make that part clear.
+- shortcuts
+-- nodal analysis: all resistor paths to ground from a single node can be written in parallel, on sight. See Vorperian prob. 3.9.
+-- can apply superposition using dependent sources. Caveat: have to wait to calculate values until full algebraic solution is reached.
+
+We should have manipulation rules for working with parallel operators.
+
+*** annotated bibliography of advice and other resources I found useful (mostly books)
+- See end of the resourcepage.org file for a start: also check *.bib for anything I didn't include yet.

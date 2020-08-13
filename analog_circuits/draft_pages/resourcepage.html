@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-05-15 Fri 09:42 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>An EE student's apology</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Garek Dyszel" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">An EE student's apology
+<br />
+<span class="subtitle">misconceptions and issues in EE education (and ways to resolve them)</span>
+</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orge240899">1. Current flow and charge flow: what's the difference?</a></li>
+<li><a href="#org85bd7b0">2. How to apply KVL and KCL without losing your mind</a>
+<ul>
+<li><a href="#orgb52dbc7">2.1. Figuring out what you need and what you don't</a></li>
+</ul>
+</li>
+<li><a href="#org2d3e56a">3. Dirty Circuit Analysis Tricks</a>
+<ul>
+<li><a href="#org3cbe312">3.1. Ohm's Law and s-parameters</a>
+<ul>
+<li><a href="#orga31d71d">3.1.1. Where the impedance functions for L and C come from</a></li>
+</ul>
+</li>
+<li><a href="#org186bfa3">3.2. Nodal analysis by inspection</a>
+<ul>
+<li><a href="#org8b40913">3.2.1. An example where being able to do this is really useful</a></li>
+</ul>
+</li>
+<li><a href="#org741c420">3.3. Superposition with dependent sources</a>
+<ul>
+<li><a href="#orgf8a207d">3.3.1. Example</a></li>
+</ul>
+</li>
+<li><a href="#orgaca6d5e">3.4. The Extra Element Theorem</a>
+<ul>
+<li><a href="#orgf97eae5">3.4.1. The formulas that minimize your effort</a></li>
+<li><a href="#org914b710">3.4.2. But seriously, you should really go check out Dr. Middlebrook's lectures.</a></li>
+</ul>
+</li>
+<li><a href="#org473e56f">3.5. The Input-Output Impedance Theorem</a></li>
+</ul>
+</li>
+<li><a href="#org2607c14">4. Bare-bones silicon devices</a>
+<ul>
+<li><a href="#orgf097b7b">4.1. Op-amps: voltage amplifiers</a>
+<ul>
+<li><a href="#org76ffc05">4.1.1. What's an op-amp?</a></li>
+<li><a href="#orgff9c1c9">4.1.2. A few common circuit topologies</a></li>
+<li><a href="#orgf3d158f">4.1.3. You can substitute the voltage amplifier model in for this</a></li>
+</ul>
+</li>
+<li><a href="#orgd0b6e14">4.2. BJTs: current amplifiers</a>
+<ul>
+<li><a href="#org2c5dedb">4.2.1. What's a BJT?</a></li>
+</ul>
+</li>
+<li><a href="#orga3c09ab">4.3. MOSFETs: current sources</a>
+<ul>
+<li><a href="#org762f181">4.3.1. What's a MOSFET?</a></li>
+</ul>
+</li>
+<li><a href="#org7751d99">4.4. Diodes: force current forwards</a>
+<ul>
+<li><a href="#org9b968a6">4.4.1. What's a diode?</a></li>
+</ul>
+</li>
+<li><a href="#orgab60f8f">4.5. Zener diodes: force current backwards</a>
+<ul>
+<li><a href="#org03ff4f8">4.5.1. What's a Zener diode?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+There are lots of great resources for EEs on the net. I haven't found anywhere that has all this info centralized.
+In an effort to minimize everybody else's Google work, I'm putting what I've found here. 
+</p>
+
+<p>
+This is monolithic. I'm doing my best to make sure everything's accurate, but something might slip by me. Send me any corrections: 
+</p>
+
+<p>
+gareks3rdcalendar (at) gmail (dot) com.
+</p>
+
+<p>
+Or, if you're on Michigan Tech's campus, you can find me in the email directory.
+</p>
+
+<div id="outline-container-orge240899" class="outline-2">
+<h2 id="orge240899"><span class="section-number-2">1</span> Current flow and charge flow: what's the difference?</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+What do we mean when we say current "flows" in a circuit?
+Well, the terminology's not exactly correct. <i>Charges</i> are what really "flow" in a circuit. EEs just say "current flows" because (1) we're lazy, and (2) we're often more interested in current values (amps) than charge values (coulombs).
+But it's really <i>charge</i> that flows. That flow of charge is what we call current.
+If it helps for some reason, you can think of charge flow as <i>inducing</i> a current in circuit theory (but that's not 100% right either).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org85bd7b0" class="outline-2">
+<h2 id="org85bd7b0"><span class="section-number-2">2</span> How to apply KVL and KCL without losing your mind</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Whenever you're gearing up to solve a circuit problem, it's best to look at the output first. This is really just whatever circuit variable you need to calculate. <br />
+You can blindly write equations for every node or every loop in the circuit and hope you get the number you're looking for, if you want. This approach is unwise, though, because it'll lead to a ton of extra algebra. In circuit theory, the algebra is its own monstrosity. If you don't take control of it, it will take control of you (or at least, your grade). <br />
+I'll keep simpler examples here.
+</p>
+
+<p>
+Examples
+[]
+</p>
+</div>
+
+<div id="outline-container-orgb52dbc7" class="outline-3">
+<h3 id="orgb52dbc7"><span class="section-number-3">2.1</span> Figuring out what you need and what you don't</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+It's best to learn this through examples. But if you're looking for general principles, I can give you this one. Even though you probably won't be able to internalize it until you've solved a lot of circuits. <br />
+</p>
+
+<p>
+<i>All you really need to care about is the <b>output</b>.</i> <br />
+</p>
+
+<p>
+However you solve for the output is up to you. This principle should be your guiding light any time you try to solve something.
+Another useful principle (from the late Dr. R. D. Middlebrook at Caltech) is <br />
+</p>
+
+<p>
+<i>"Don't put <b>more</b> in the model than you <b>have to</b>."</i>
+</p>
+
+<p>
+These examples aren't really the point of this page, so I'll dump them in the links below. That way this page can stay focused on the more efficient techniques. Explanations are all in the *.pdf files for this section.
+</p>
+
+<p>
+The traditional approach boils down to:
+</p>
+<ol class="org-ol">
+<li>Find the output (better get your eyes checked if you can't do this one).</li>
+<li>Use voltage dividers and current dividers wherever possible to get to output from input (not too hard).</li>
+<li>Apply KCL or KVL as a last resort, if you can't get it using voltage and current dividers (pretty darn hard when you have &ge; 6 elements).</li>
+</ol>
+
+<p>
+If you're calculating numbers, this works just fine. It's when you actually want to <i>design</i> something that you'll run into trouble. You'll have to go back through the circuit all over again if one of the element/voltage/current values changes. If you want to avoid having to go through the calculations again, you'll inevitably have to try to symbolically invert some giant matrix. It's just <i>wasteful</i> algebra at that point. You might as well use SPICE first, like many industry engineers.
+</p>
+
+<p>
+<b>Bottom line.</b> Traditional methods: Not so nice anymore, huh?
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org2d3e56a" class="outline-2">
+<h2 id="org2d3e56a"><span class="section-number-2">3</span> Dirty Circuit Analysis Tricks</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+These are extremely useful on tests where you're asked to calculate a number. (Not so for proofs, but you usually don't have to do proofs on tests. At least, not in the first few circuits/electronics classes.) <br />
+In all cases, they trivialize the algebra. You can do pretty much everything by inspection using these techniques.
+</p>
+</div>
+
+<div id="outline-container-org3cbe312" class="outline-3">
+<h3 id="org3cbe312"><span class="section-number-3">3.1</span> Ohm's Law and s-parameters</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+I don't know why we don't introduce this earlier. You can analyze circuits using s-parameters to get solutions for both dc and ac simultaneously.
+It boils down to two steps.
+</p>
+<ol class="org-ol">
+<li>Analyze the circuit using s-parameters.</li>
+<li>Take the limit s &rarr; 0 (dc) or s &rarr; &infin; (high-frequency ac).</li>
+</ol>
+<p>
+You can use the generalized form of Ohm's Law for this:
+\[ V = Z I. \]
+</p>
+</div>
+
+<div id="outline-container-orga31d71d" class="outline-4">
+<h4 id="orga31d71d"><span class="section-number-4">3.1.1</span> Where the impedance functions for L and C come from</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<p>
+I'll start with the differential equations for L and C.
+\[ I = C \frac{dV}{dt} \]
+\[ V = L \frac{dI}{dt} \]
+To make analysis easier, we typically use the transformation
+\[ \frac{d}{dt}(\cdot) \rightarrow j\omega. \]
+This reduces time derivatives to (mostly) simple algebra.
+Let's do that for the diff. eq's.
+\[ I = C \cdot j\omega V \]
+\[ V = L \cdot j\omega I \]
+We're looking for impedance functions \(Z = \frac{V}{I}\).
+After a little algebra, we end up with
+\[ Z_C = \frac{V}{I} = \frac{1}{j\omega C} \]
+and
+\[ Z_L = \frac{V}{I} = j\omega L. \]
+To make the notation more compact, transform again: s &rarr; j&omega;.
+\[ Z_C = \frac{V}{I} = \frac{1}{s C} \]
+and
+\[ Z_L = \frac{V}{I} = s L. \]
+</p>
+
+<p>
+<b>Comment.</b> Normally we'd use \(s = \sigma + j\omega\) to define an arbitrary complex quantity. We get rid of the real part (set \(\sigma = 0\)) for capacitors and inductors. Their impedances are purely imaginary. This isn't the case in real life because of parasitic elements. We can get away without worrying about these for most of the undergrad curriculum.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org186bfa3" class="outline-3">
+<h3 id="org186bfa3"><span class="section-number-3">3.2</span> Nodal analysis by inspection</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+If you can follow all the paths to ground from a specific node, you can put those paths' impedances in parallel. Let me show you what I mean.
+</p>
+</div>
+
+<div id="outline-container-org8b40913" class="outline-4">
+<h4 id="org8b40913"><span class="section-number-4">3.2.1</span> An example where being able to do this is really useful</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+Let's say we're interested in the output impedance of a common-emitter BJT hybrid-pi model with the signal source grounded. <br />
+(I'm neglecting \(C_{\pi}\) here for simplicity only.) So, we apply a test current source \(i_T\) at the output and measure the resulting voltage \(V_o\). Then we rearrange to get \(Z_o = \frac{V_o}{i_T}\). This works as a general principle, too: any sources/excitations applied to a circuit go in the denominator, and responses go in the numerator. That's a transfer function.
+This is part of Problem 3.9 from <a class='org-ref-reference' href="#vorperian_fast">vorperian_fast</a>.
+</p>
+
+<p>
+(If you just want the worked solution on paper without reading through this, <a href="./GD_Nodal_Example_Vorperian_3_9.pdf">here you go</a>.) <br />
+</p>
+
+
+<div id="org6d7315f" class="figure">
+<p><img src="./Vorperian_3_9_BJT_hybrid_pi.png" alt="Vorperian_3_9_BJT_hybrid_pi.png" height="300" width="500" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Common-emitter hybrid-pi model.</p>
+</div>
+
+
+<div id="orgec9fb08" class="figure">
+<p><img src="./Vorperian_3_9_Output_Impedance.png" alt="Vorperian_3_9_Output_Impedance.png" height="300" width="500" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Calculating the output impedance.</p>
+</div>
+
+<p>
+Let's write an equation for \(V_o\), the voltage across \(R_L\), using the standard KCL approach. We'll assume we don't know what direction the currents are flowing in yet. So, we'll make an arbitrary assumption: assume all currents <i>leaving</i> the node are positive.
+\[\frac{V_o}{R_s + r_{\pi}} + \frac{V_o}{R_L} + \frac{V_o}{r_{ce}} - g_m v_{\pi} - i_T = 0 \]
+Move the currents entering the node to the other side.
+\[\frac{V_o}{R_s + r_{\pi}} + \frac{V_o}{R_L} + \frac{V_o}{r_{ce}} = g_m v_{\pi} + i_T \]
+This is also a general principle for applying KCL. In other words,
+\[ \text{currents in} = \text{currents out}. \]
+For any resistors in parallel \(R_n\), you can use this identity: 
+\[\frac{1}{R_1} + \frac{1}{R_2} + \ldots + \frac{1}{R_n} = \frac{1}{R_1 \parallel R_2 \parallel ... \parallel R_n}. \]
+So we can factor out \(V_o\) and apply that identity.
+\[V_o \left( \frac{1}{(R_s + r_{\pi}) \parallel R_L \parallel r_{ce}} \right) = g_m v_{\pi} + i_T \]
+We need to eliminate \(v_{\pi}\) to get everything in terms of \(V_o\), \(i_T\), and \(g_m\). (The transconductance parameter \(g_m\) is a constant depending on the transistor's biasing arrangement.) <br />
+By inspection, \(v_{\pi}\) is due to a negative voltage divider of \(V_o\).
+\[ v_{\pi} = -V_o \frac{r_{\pi}}{R_s + r_{\pi}} \]
+Substitute that in for \(v_{\pi}\), and move \(g_m v_{\pi}\) to the left side. Factor out \(V_o\) from that term.
+\[ V_o \left(\frac{1}{(R_s + r_{\pi}) \parallel R_L \parallel r_{ce}} + \frac{g_m r_{\pi}}{R_s + r_{\pi}} \right) = i_T \]
+Adding like terms.
+\[ V_o \left( \frac{1}{R_L \parallel r_{ce}} + \frac{1 + g_m r_{\pi}}{R_s + r_{\pi}} \right) = i_T \]
+Focus on the \(1 + g_m r_{\pi}\) term. We can divide both stories of the fraction by \(1 + g_m r_{\pi}\).
+\[ \frac{1 + g_m r_{\pi}}{R_s + r_{\pi}} \rightarrow \frac{1}{\frac{R_s + r_{\pi}}{1 + g_m r_{\pi}}} \]
+We're left with
+\[ V_o \left( \frac{1}{R_L \parallel r_{ce}} + \frac{1}{\frac{R_s + r_{\pi}}{1 + g_m r_{\pi}}} \right) = i_T.  \]
+Apply the parallel identity again.
+\[ V_o \left( \frac{1}{R_L \parallel r_{ce} \parallel \frac{R_s + r_{\pi}}{1 + g_m r_{\pi}}} \right) = i_T  \]
+A little rearrangement, and we have the output impedance.
+\[ \frac{V_o}{i_T} = R_L \parallel r_{ce} \parallel \frac{R_s + r_{\pi}}{1 + g_m r_{\pi}} \]
+</p>
+
+<p>
+<b>Comments.</b> You can skip the first two steps entirely and directly write
+\[ \boxed{\frac{V_o}{(R_s + r_{\pi}) \parallel R_L \parallel r_{ce}} = g_m v_{\pi} + i_T} \]
+by finding all the paths to ground and putting those in parallel. I used the \(\textbf{currents in} = \textbf{currents out}\) form here.
+</p>
+
+<p>
+You didn't have to do any more algebraic rearrangement besides applying the parallel identity. I did so to verify with the answer given in the book.
+</p>
+
+<p>
+If there was a signal source, you could calculate the voltage gain and apply the Input-Output Impedance Theorem to find the output impedance, too.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org741c420" class="outline-3">
+<h3 id="org741c420"><span class="section-number-3">3.3</span> Superposition with dependent sources</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+A lot of textbooks say you can't do this. You can, though, as long as you don't calculate any values before summing all the individual solutions.
+You <i>can't</i> typically get a Thévenin or Norton equivalent directly with this technique. You'll have to solve the circuit first, then figure out what the Thévenin/Norton equivalents are.
+</p>
+</div>
+
+
+<div id="outline-container-orgf8a207d" class="outline-4">
+<h4 id="orgf8a207d"><span class="section-number-4">3.3.1</span> Example</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<p>
+This is Problem 5.76 from <a class='org-ref-reference' href="#irwin_basic">irwin_basic</a>. <br />
+</p>
+
+<p>
+(If you just want the worked solution on paper without reading through this, <a href="./GD_Irwin_Nelms_11th_5_76.pdf">here you go</a>.) <br />
+</p>
+
+<p>
+Here's an executive summary of what we're going to do.
+</p>
+<ol class="org-ol">
+<li>Find the individual contribution of each source to the output. So turn off all other sources except the one you're interested in. ("Turning off" means shorting voltage sources and opening current sources.)</li>
+<li>Sum up the individual contributions of each source to form the full output.</li>
+</ol>
+
+<p>
+<b>Important.</b> <i>Do not</i> try to calculate any numbers with the solutions for each individual source. You'll get the wrong answer. At least, you'll definitely get the wrong answer for the dependent source's equation alone.
+Technically, you're looking at multiple different circuits. They just happen to work nicely in this way.
+</p>
+
+<p>
+I greatly prefer analytic solutions, so I'll assign symbols to everything first. We can worry about why these are preferable later.
+</p>
+
+<div id="orgd1cb34f" class="figure">
+<p><img src="./Irwin_Nelms_11th_Prob_5_76.png" alt="Irwin_Nelms_11th_Prob_5_76.png" height="300" width="500" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Assigning symbols to all elements.</p>
+</div>
+
+<p>
+Next, we need to find the individual contribution of each source. I'll start with \(V_I\) alone.
+I'll refer to the <i>positive side</i> of the voltage across \(R_4\), \(V_x\) as \(V_{xp}\). This will be used later to calculate \(V_o\).
+We can ignore \(R_2\) for now, since it doesn't really contribute to \(V_{xp}\). 
+Writing by inspection at the \(V_{xp}\) node.
+</p>
+
+<div id="org4b35365" class="figure">
+<p><img src="./V_I_alone_dependent_superposition.png" alt="V_I_alone_dependent_superposition.png" height="300" width="500" />
+</p>
+<p><span class="figure-number">Figure 4: </span>Assessing \(V_I\)'s contribution.</p>
+</div>
+
+<p>
+\[ \frac{V_{xp}}{R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} = \frac{V_I}{R_1} \]
+Solving for \(V_{xp}\).
+\[ V_{xp} = \frac{V_I}{R_1} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right] \]
+The dependent source actually depends on the voltage <i>across</i> \(R_4\), not the voltage at the top node. So we'll also need the solution for the negative side of \(V_x\), \(V_{xn}\). It's just a voltage divider of \(V_{xp}\) in this case.
+\[ V_{xn} = V_{xp} \frac{R_5}{R_4 + R_5} \]
+</p>
+
+<p>
+On to the contribution of the dependent source \(b V_x\).
+It's actually pretty similar to the contribution of \(V_I\). Now the "supplied" or "current in" side is negative, though.
+</p>
+
+<div id="orgc3cb801" class="figure">
+<p><img src="./b_vx_alone_dependent_superposition.png" alt="b_vx_alone_dependent_superposition.png" height="300" width="500" />
+</p>
+<p><span class="figure-number">Figure 5: </span>Assessing \(b V_x\)'s contribution.</p>
+</div>
+
+<p>
+At node \(V_{xp}\), we can write
+\[ \frac{V_{xp}}{R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} = -\frac{b V_x}{R_3} \]
+Solve for \(V_{xp}\) once again.
+\[ V_{xp} = -\frac{b V_x}{R_3} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right] \]
+As before, \(V_{xn}\) is a voltage divider of \(V_{xp}\). The same one, in fact.
+\[ V_{xn} = V_{xp} \frac{R_5}{R_4 + R_5} \]
+</p>
+
+<p>
+Now we find the contribution of just the current source, \(I\). This one is a little more involved because the topology is different.
+After removing the sources, the circuit can be rearranged to simplify things.
+</p>
+
+<div id="orgf5e3f3d" class="figure">
+<p><img src="./i_alone_dependent_superposition.png" alt="i_alone_dependent_superposition.png" height="300" width="500" />
+</p>
+<p><span class="figure-number">Figure 6: </span>Assessing \(I\)'s contribution.</p>
+</div>
+
+<p>
+Using node \(V_{xn}\) is more powerful this time.
+\[ I = \frac{V_{xn}}{\left( R_1 \parallel R_3 \right) + R_4} + \frac{V_{xn}}{R_5} \]
+\[ I = \frac{V_{xn}}{\left[ \left( R_1 \parallel R_3 \right) + R_4 \right] \parallel R_5} \]
+Solve for \(V_{xn}\).
+\[ V_{xn} = I \left[ \left( R_1 \parallel R_3 \right) + R_4 \right] \parallel R_5  \]
+\(V_{xp}\) is a divided voltage of \(V_{xn}\).
+\[ V_{xp} = V_{xn} \frac{ \left( R_1 \parallel R_3 \right) }{ \left( R_1 \parallel R_3 \right) + R_4 } \]
+</p>
+
+<p>
+Using the fact that \(V_x = V_{xp} - V_{xn}\), the solutions for \(V_{xp}\) fall out. <br />
+\(V_1\) alone &rarr; \(V_{xp,1}\)
+\[ V_{xp} = \frac{V_I}{R_1} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right] \left( 1 - \frac{ R_5 }{ R_4 + R_5 } \right) \]
+\(b V_x\) alone &rarr; \(V_{xp,2}\)
+\[ V_{xp,2} = -\frac{b V_x}{R_3} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right] \left( 1 - \frac{ R_5 }{ R_4 + R_5 } \right) \]
+\(I\) alone &rarr; \(V_{xp,3}\)
+\[ V_{xp,3} = I \left( \left[ \left( R_1 \parallel R_3 \right) + R_4 \right] \parallel R_5 \right) \left( \frac{ \left( R_1 \parallel R_3 \right) }{ \left( R_1 \parallel R_3 \right) + R_4 } - 1 \right) \]
+</p>
+
+<p>
+Apply superposition. Solve for \(V_{xp}\).
+\[V_{xp} = V_{xp,1} + V_{xp,2} + V_{xp,3} \]
+\(V_{xp,2}\) is the only term besides \(V_{xp}\) on the left side that includes a \(V_{xp}\) variable.
+\[V_{xp} - V_{xp,2} = V_{xp,1} + V_{xp,3} \]
+Expanding the left-hand side. Factoring \(V_{xp}\) out.
+\[V_{xp} \left( 1 + \frac{b}{R_3} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right] \left( 1 - \frac{ R_5 }{ R_4 + R_5 } \right)  \right) = V_{xp,1} + V_{xp,3} \]
+This equation will get really messy if we write out the whole thing. I'll define two new resistance terms to clean it up.
+\[ R_a = R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)  \]
+\[ R_b =  \left[ \left( R_1 \parallel R_3 \right) + R_4 \right] \parallel R_5 \]
+Here's the final solution for \(V_{xp}\).
+\[ V_{xp} = \frac{\frac{ V_I }{ R_1 } R_a \left( 1 - \frac{ R_5 }{ R_4 + R_5 } \right) + I R_b \left[ \frac{ \left( R_1 \parallel R_3 \right) }{ \left( R_1 \parallel R_3 \right) + R_4 } - 1 \right]}{ 1 + \frac{b}{R_3} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right] \left( 1 - \frac{ R_5 }{ R_4 + R_5 } \right)} \]
+</p>
+
+<p>
+We have to return to the original circuit to find the solution for \(V_o\). 
+</p>
+
+<div id="orgdeaf69a" class="figure">
+<p><img src="./full_circuit_dependent_superposition.png" alt="full_circuit_dependent_superposition.png" height="300" width="500" />
+</p>
+<p><span class="figure-number">Figure 7: </span>Finding \(V_o\) using the solution we just got for \(V_{xp}\).</p>
+</div>
+
+<p>
+Writing a KCL equation at node \(V_o\).
+\[ \frac{ V_{xp} - V_o }{ R_4 } + I = \frac{ V_o }{ R_5 } \]
+\[ V_o = \left(\frac{ V_{xp} }{ R_4 } + I \right) \left(R_4 \parallel R_5 \right) \]
+</p>
+
+<p>
+Let's start plugging in numerical values.
+\[ R_a = 2 \text{k} \parallel 1 \text{k} \parallel \left( 1 \text{k} + 1 \text{k} \right) = 500.00 ~Ω  \]
+\[ R_b =  \left[ \left( 2 \text{k} \parallel 1 \text{k} \right) + 1 \text{k} \right] \parallel 1 \text{k} = 625.00 ~Ω \]
+\[ V_{xp} = \frac{\frac{ 12 }{ 2 \text{k} } (500) \left( 1 - \frac{ 1 \text{k} }{ 1 \text{k} + 1 \text{k} } \right) + (2 ~\text{mA}) (625) \left[ \frac{ \left( 2 \text{k} \parallel 1 \text{k} \right) }{ \left( 2 \text{k} \parallel 1 \text{k} \right) + 1 \text{k} } - 1 \right]}{ 1 + \frac{2}{1 \text{k}} (500) \left( 1 - \frac{ 1 \text{k} }{ 1 \text{k} + 1 \text{k} } \right)} = 3.00753 ~\text{V} \]
+Plug that into the expression for \(V_o\).
+\[ V_o = \left( \frac{ 3.00753 ~\text{V} }{ 1 \text{k} } + 2 ~\text{mA} \right) \left( \frac{ 1 \text{k} }{ 1 \text{k} + 1 \text{k} } \right) = 2.5038 ~\text{V} \]
+These values are dangerously close to what you'd get simulating this circuit with SPICE.
+</p>
+
+
+<div id="org392fc9b" class="figure">
+<p><img src="./Irwin_Nelms_10th_5_76_LTSpice.png" alt="Irwin_Nelms_10th_5_76_LTSpice.png" height="700" width="900" />
+</p>
+<p><span class="figure-number">Figure 8: </span>Checking the numbers with LTSpice.</p>
+</div>
+
+<p>
+As you can see, the equations we get from this method are <i>huge</i>. That's okay, though; the final expression is <i>modular</i>. So if you messed up some portion of the solution, you only need to fix that portion, and no other. Hopefully, I've convinced you just how powerful these methods can be. <br />
+You can read more about this technique in <a class='org-ref-reference' href="#leach_application">leach_application</a>. It has lots of examples, too. About half are op-amp circuits and half are passive networks.
+Additional clarification available in <a href="https://electronics.stackexchange.com/questions/107435/superposition-principle-dependent-sources-treated-as-independent-sources">this StackExchange post</a>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgaca6d5e" class="outline-3">
+<h3 id="orgaca6d5e"><span class="section-number-3">3.4</span> The Extra Element Theorem</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+The solution to any linear system can be simplified. You don't have to just do algebra to solve the system. Most of it can be derived <i>directly</i> from the circuit topology.
+</p>
+
+<p>
+The basic idea is: 
+</p>
+<ol class="org-ol">
+<li>Pull an element out of the circuit by opening/shorting it. (You can also specify a spot where you want to <i>add</i> an element and apply the same formula.)</li>
+<li>Find the output you're looking for with that element removed.</li>
+<li>Add a correction factor (based on the topology of the circuit and the element in question).</li>
+</ol>
+
+<p>
+I won't go through the derivation here. It's not long, but you would be better served by learning it directly from the person who discovered it, Dr. R. D. Middlebrook (see <a class='org-ref-reference' href="#middlebrook_tech_therapy">middlebrook_tech_therapy</a>).
+</p>
+</div>
+
+<div id="outline-container-orgf97eae5" class="outline-4">
+<h4 id="orgf97eae5"><span class="section-number-4">3.4.1</span> The formulas that minimize your effort</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<p>
+These formulas can be applied for calculating any transfer function \(H(s)\) (voltage gain, current gain, whatever). \(Z_d\) is the driving-point impedance, calculated with the <i>input off</i>.
+\(Z_n\) is the null driving-point impedance, calculated by adding <i>another</i> input at the place where you want to add the element. You adjust this second input and the original input such that the output goes to zero. 
+\(H_o\) and \(H_o'\) are the transfer functions with the extra element removed. You choose the appropriate "reference" transfer function \(H_o\) or \(H_o'\) depending on how you plan on removing/adding your element. This choice also depends on frequency. If you're interested in the dc operating point, figure out what the impedance of the element is when \(s = j \omega \rightarrow 0\).
+\(Z\) is the impedance of the element you're removing (or adding).
+</p>
+
+<p>
+Impedance elements:
+\[ H(s) = H_o \frac{ 1 + \frac{ Z_n }{ Z } }{ 1 + \frac{ Z_d }{ Z } } ~\text{(for}~ Z \rightarrow \infty ~\text{when removed)}\]
+\[ H(s) = H_o' \frac{ 1 + \frac{ Z }{ Z_n } }{ 1 + \frac{ Z }{ Z_d } } ~\text{(for}~ Z \rightarrow 0 ~\text{when removed)}\]
+</p>
+
+<p>
+Dependent sources:
+\[ H(s) = H_o \frac{ 1 + A \overline{A_n} }{ 1 + A \overline{A} } ~\text{(for setting the dependent source to 0 when "removed")} \]
+\[ H(s) = H_o' \frac{ 1 + \frac{1}{A \overline{A_n} }}{{1 + \frac{1}{A \overline{A}} }}  ~\text{(for setting the dependent source to}~ \infty~ \text{when "removed")}\]
+</p>
+
+<p>
+You calculate \(H_o\) (or \(Ho'\)), \(Z_d\), and \(Z_n\) on the <i>original circuit</i> (or the circuit you're left with when you remove the extra element) and slap on the element's impedance \(Z\) when you're all done. Nice!
+</p>
+</div>
+</div>
+
+<div id="outline-container-org914b710" class="outline-4">
+<h4 id="org914b710"><span class="section-number-4">3.4.2</span> But seriously, you should really go check out Dr. Middlebrook's lectures.</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<p>
+They're a lot better than anything I can go through here. Hopefully, I could just show you "Hey, this is cool," and spur you to go look at it yourself.
+I'll put the link here again, because I think it's <i>that important</i>: <a class='org-ref-reference' href="#middlebrook_tech_therapy">middlebrook_tech_therapy</a>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org473e56f" class="outline-3">
+<h3 id="org473e56f"><span class="section-number-3">3.5</span> The Input-Output Impedance Theorem</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+The input and output impedances of a circuit can be calculated directly from that circuit's voltage gain. This is also from <a class='org-ref-reference' href="#middlebrook_tech_therapy">middlebrook_tech_therapy</a>. One slide from the lecture notes summarizes it best: <a href="./input_output_impedance_theorem.pdf">./input_output_impedance_theorem.pdf</a>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2607c14" class="outline-2">
+<h2 id="org2607c14"><span class="section-number-2">4</span> Bare-bones silicon devices</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgf097b7b" class="outline-3">
+<h3 id="orgf097b7b"><span class="section-number-3">4.1</span> Op-amps: voltage amplifiers</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+These are a lot more complicated than we let on. They're nonlinear devices, but we linearize them to make the algebra easier. If you want to see how they work in full, nonlinear glory, check <a class='org-ref-reference' href="#muthuswamy_banerjee_nonlinear">muthuswamy_banerjee_nonlinear</a>.
+</p>
+</div>
+<div id="outline-container-org76ffc05" class="outline-4">
+<h4 id="org76ffc05"><span class="section-number-4">4.1.1</span> What's an op-amp?</h4>
+</div>
+<div id="outline-container-orgff9c1c9" class="outline-4">
+<h4 id="orgff9c1c9"><span class="section-number-4">4.1.2</span> A few common circuit topologies</h4>
+</div>
+<div id="outline-container-orgf3d158f" class="outline-4">
+<h4 id="orgf3d158f"><span class="section-number-4">4.1.3</span> You can substitute the voltage amplifier model in for this</h4>
+</div>
+</div>
+<div id="outline-container-orgd0b6e14" class="outline-3">
+<h3 id="orgd0b6e14"><span class="section-number-3">4.2</span> BJTs: current amplifiers</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org2c5dedb" class="outline-4">
+<h4 id="org2c5dedb"><span class="section-number-4">4.2.1</span> What's a BJT?</h4>
+</div>
+</div>
+
+<div id="outline-container-orga3c09ab" class="outline-3">
+<h3 id="orga3c09ab"><span class="section-number-3">4.3</span> MOSFETs: current sources</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org762f181" class="outline-4">
+<h4 id="org762f181"><span class="section-number-4">4.3.1</span> What's a MOSFET?</h4>
+</div>
+</div>
+
+<div id="outline-container-org7751d99" class="outline-3">
+<h3 id="org7751d99"><span class="section-number-3">4.4</span> Diodes: force current forwards</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org9b968a6" class="outline-4">
+<h4 id="org9b968a6"><span class="section-number-4">4.4.1</span> What's a diode?</h4>
+</div>
+</div>
+
+<div id="outline-container-orgab60f8f" class="outline-3">
+<h3 id="orgab60f8f"><span class="section-number-3">4.5</span> Zener diodes: force current backwards</h3>
+<div class="outline-text-3" id="text-4-5">
+</div>
+<div id="outline-container-org03ff4f8" class="outline-4">
+<h4 id="org03ff4f8"><span class="section-number-4">4.5.1</span> What's a Zener diode?</h4>
+<div class="outline-text-4" id="text-4-5-1">
+<p>
+
+<h1 class='org-ref-bib-h1'>Bibliography</h1>
+<ul class='org-ref-bib'><li><a id="vorperian_fast">[vorperian_fast]</a> <a name="vorperian_fast"></a>Vorperian, Fast Analytical Techniques for Electrical and Electronic Circuits, .</li>
+<li><a id="irwin_basic">[irwin_basic]</a> <a name="irwin_basic"></a>Irwin & Nelms, Basic Engineering Circuit Analysis, .</li>
+<li><a id="leach_application">[leach_application]</a> <a name="leach_application"></a>Leach, On the Application of Superposition to Dependent Sources in Circuit Analysis, <i></i>,  10 . <a href="http://leachlegacy.ece.gatech.edu/papers/superpos.pdf">link</a>.</li>
+<li><a id="middlebrook_tech_therapy">[middlebrook_tech_therapy]</a> <a name="middlebrook_tech_therapy"></a>Middlebrook, Video Presentation of Technical Therapy for Analog Circuit Designers Part 1, <i></i>,  . <a href="https://www.venableinstruments.com/venable-vault/technica-therapy-one">link</a>.</li>
+<li><a id="muthuswamy_banerjee_nonlinear">[muthuswamy_banerjee_nonlinear]</a> <a name="muthuswamy_banerjee_nonlinear"></a>Muthuswamy & Banerjee, Introduction to Nonlinear Circuits and Networks, Springer International Publishing (2019).</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Garek Dyszel</p>
+<p class="date">Created: 2020-05-15 Fri 09:42</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

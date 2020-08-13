@@ -1,0 +1,28 @@
+
+@article{irwin_basic_nodate,
+  title = {Basic {{Engineering Circuit Analysis}}},
+  author = {Irwin, J David and Nelms, R Mark},
+  pages = {690},
+  file = {/home/chips/rsch/refs/Irwin and Nelms - Basic Engineering Circuit Analysis.pdf},
+  language = {en}
+}
+
+@article{leach_application_nodate,
+  title = {On the {{Application}} of {{Superposition}} to {{Dependent Sources}} in {{Circuit Analysis}}},
+  author = {Leach, W Marshall},
+  pages = {10},
+  abstract = {Many introductory circuits texts state or imply that superposition of dependent sources cannot be used in linear circuit analysis. Although the use of superposition of only independent sources leads to the correct solution, it does not make use of the full power of superposition. The use of superposition of dependent sources often leads to a simpler solution than other techniques of circuit analysis. A formal proof is presented that superposition of dependent sources is valid provided the controlling variable is not set to zero when the source is deactivated. Several examples are given which illustrate the technique.},
+  file = {/home/chips/rsch/refs/Leach - On the Application of Superposition to Dependent S.pdf},
+  language = {en}
+}
+
+@article{vorperian_fast_nodate,
+  ids = {vorperian\_fast\_nodate-2},
+  title = {Fast Analytical Techniques for Electrical and Electronic Circuits},
+  author = {Vorperian, Vatche},
+  pages = {492},
+  file = {/home/chips/rsch/refs/Vorperian - Fast analytical techniques for electrical and elec.pdf},
+  language = {en}
+}
+
+
