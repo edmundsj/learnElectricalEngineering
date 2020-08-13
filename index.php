@@ -66,7 +66,7 @@ from an overview of the discipline to online lecture videos, reference material,
 <a href="/analog_circuits/analog_syllabus.html">
 <h2>Analog Circuits</h2>
 <div class="content">
-<p>Ever wondered how computers can switch so fast? Transistors are why. Learn about them here.</p>
+<p>Ever wondered how guitar amps work, or why computers can switch so fast? Learn about the circuits behind them here.</p>
 </div>
 </a>
 </section>

@@ -1,46 +1,13 @@
-<!DOCTYPE html>
-<!--
-	 Phantom by HTML5 UP	html5up.net | @ajlkn
-	 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Analog Circuits - Ohm's Law Revisited</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-  </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Header -->
-      <header id="header">
-        <div class="inner">
-          <!-- Logo --> <a href="index.html" class="logo"> <span class="symbol"><img
-                                                                                  src="images/logo.svg" alt=""></span><span class="title">Phantom</span>
-          </a>
-          <!-- Nav -->
-          <nav>
-            <ul>
-              <li><a href="#menu">Menu</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <!-- Menu -->
-      <nav id="menu">
-        <h2>Menu</h2>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="generic.html">Ipsum veroeros</a></li>
-          <li><a href="generic.html">Tempus etiam</a></li>
-          <li><a href="generic.html">Consequat dolor</a></li>
-          <li><a href="elements.html">Elements</a></li>
-        </ul>
-      </nav>
-      <!-- Main -->
+<?php
+
+echo'<html>';
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/functions.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/head.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/header_menu.php";
+beginPage();
+beginWrapper();
+?>
+<!-- Main -->
       <div id="main">
         <div class="inner">
           <h1>Analog Circuits</h1>
@@ -137,49 +104,9 @@
                 s = j 2 \pi f \) and shove it into your calculator. </p>
 
       <!-- Footer -->
-      <footer id="footer">
-        <div class="inner">
-          <section>
-            <h2>Get in touch</h2>
-            <form method="post" action="#">
-              <div class="fields">
-                <div class="field half"> <input name="name" id="name" placeholder="Name"
-                                                type="text"> </div>
-                <div class="field half"> <input name="email" id="email" placeholder="Email"
-                                                type="email"> </div>
-                <div class="field"> <textarea name="message" id="message" placeholder="Message"></textarea>
-                </div>
-              </div>
-              <ul class="actions">
-                <li><input value="Send" class="primary" type="submit"></li>
-              </ul>
-            </form>
-          </section>
-          <section>
-            <h2>Follow</h2>
-            <ul class="icons">
-              <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-              <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-              <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-              <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-              <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-              <li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-              <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-              <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-          </section>
-          <ul class="copyright">
-            <li>© Untitled. All rights reserved</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+<?php
+endWrapper();
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/footer.php";
+include $_SERVER["DOCUMENT_ROOT"] . "/includes/js_assets.php";
+endPage();
+?>
