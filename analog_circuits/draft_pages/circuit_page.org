@@ -366,6 +366,8 @@ If you're solving things analytically, you can usually get away with just solvin
 
 But if your signal varies more than $\~ \SI{5}{\mV}$, you're probably in trouble just using the small-signal model. You should use the large-signal model in that case.
 
+At some point, if all the values get high enough, you can just use Ohm's Law anyway. But that's around when the transistor goes into breakdown.
+
 *** Apps
 
 
