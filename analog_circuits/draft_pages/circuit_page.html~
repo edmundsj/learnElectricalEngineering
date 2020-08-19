@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-07-04 Sat 13:38 -->
+<!-- 2020-08-13 Thu 08:50 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>An EE student's apology</title>
@@ -198,7 +198,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -272,65 +272,65 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org58e6bc7">1. Current flow and charge flow: what's the difference?</a></li>
-<li><a href="#orgd2b67be">2. How to apply KVL and KCL without losing your mind</a>
+<li><a href="#org08efa23">1. Current flow and charge flow: what's the difference?</a></li>
+<li><a href="#orgb4fe3c6">2. How to apply KVL and KCL without losing your mind</a>
 <ul>
-<li><a href="#orgfa291b8">2.1. Figuring out what you need and what you don't</a></li>
+<li><a href="#org39455d2">2.1. Figuring out what you need and what you don't</a></li>
 </ul>
 </li>
-<li><a href="#orge388a04">3. Dirty Circuit Analysis Tricks</a>
+<li><a href="#org9a05a37">3. Dirty Circuit Analysis Tricks</a>
 <ul>
-<li><a href="#org25aa3ac">3.1. Ohm's Law and s-parameters</a>
+<li><a href="#orgcd59d93">3.1. Ohm's Law and s-parameters</a>
 <ul>
-<li><a href="#orgbb1b4c9">3.1.1. Where the impedance functions for L and C come from</a></li>
+<li><a href="#orgc78c86e">3.1.1. Where the impedance functions for L and C come from</a></li>
 </ul>
 </li>
-<li><a href="#orge9cc6b8">3.2. Nodal analysis by inspection</a>
+<li><a href="#org814ecb1">3.2. Nodal analysis by inspection</a>
 <ul>
-<li><a href="#orga507d69">3.2.1. An example where being able to do this is really useful</a></li>
+<li><a href="#org0fb878f">3.2.1. An example where being able to do this is really useful</a></li>
 </ul>
 </li>
-<li><a href="#orgcc30e18">3.3. Superposition with dependent sources</a>
+<li><a href="#org684ed35">3.3. Superposition with dependent sources</a>
 <ul>
-<li><a href="#orgd1e19f1">3.3.1. Example</a></li>
+<li><a href="#orgbf198cb">3.3.1. Example</a></li>
 </ul>
 </li>
-<li><a href="#orgf4766d4">3.4. The Extra Element Theorem</a>
+<li><a href="#org0be5b54">3.4. The Extra Element Theorem</a>
 <ul>
-<li><a href="#org2b69deb">3.4.1. The formulas that minimize your effort</a></li>
-<li><a href="#org41d94db">3.4.2. But seriously, you should really go check out Dr. Middlebrook's lectures.</a></li>
+<li><a href="#org9002f0d">3.4.1. The formulas that minimize your effort</a></li>
+<li><a href="#orged7e60d">3.4.2. But seriously, you should really go check out Dr. Middlebrook's lectures.</a></li>
 </ul>
 </li>
-<li><a href="#orgeb2c12d">3.5. The Input-Output Impedance Theorem</a></li>
+<li><a href="#org4656c20">3.5. The Input-Output Impedance Theorem</a></li>
 </ul>
 </li>
-<li><a href="#org9e656f5">4. Bare-bones silicon devices</a>
+<li><a href="#orgf24494c">4. Bare-bones silicon devices</a>
 <ul>
-<li><a href="#org49e6c34">4.1. Diodes: force current forwards</a>
+<li><a href="#org700034f">4.1. Diodes: force current forwards</a>
 <ul>
-<li><a href="#org4d03e41">4.1.1. Apps</a></li>
-<li><a href="#org8a3562d">4.1.2. Not so important, but kind of interesting V, D, R circuit</a></li>
+<li><a href="#orge7228c3">4.1.1. Apps</a></li>
+<li><a href="#org2a43695">4.1.2. Not so important, but kind of interesting V, D, R circuit</a></li>
 </ul>
 </li>
-<li><a href="#orgedfb13f">4.2. Zener diodes: force current backwards</a>
+<li><a href="#org0fce347">4.2. Zener diodes: force current backwards</a>
 <ul>
-<li><a href="#org37abda9">4.2.1. Apps</a></li>
+<li><a href="#orgfb739bb">4.2.1. Apps</a></li>
 </ul>
 </li>
-<li><a href="#orgb74ab81">4.3. BJTs: current amplifiers</a>
+<li><a href="#org53017bf">4.3. BJTs: current amplifiers</a>
 <ul>
-<li><a href="#orgb677cc8">4.3.1. Large-signal vs small-signal models</a></li>
-<li><a href="#org281e7c8">4.3.2. Apps</a></li>
+<li><a href="#org1c9695d">4.3.1. Large-signal vs small-signal models</a></li>
+<li><a href="#org055454d">4.3.2. Apps</a></li>
 </ul>
 </li>
-<li><a href="#orgddc4c5c">4.4. MOSFETs: current sources</a>
+<li><a href="#orgc2fa41b">4.4. MOSFETs: current sources</a>
 <ul>
-<li><a href="#org14d97aa">4.4.1. Naming convention differences between MOSFETs and BJTs</a></li>
-<li><a href="#org10847a4">4.4.2. The solution for \(V_GS\) in terms of \(I_D\)</a></li>
-<li><a href="#org747291e">4.4.3. Apps</a></li>
+<li><a href="#org26a8ab6">4.4.1. Naming convention differences between MOSFETs and BJTs</a></li>
+<li><a href="#org867d93b">4.4.2. The solution for \(V_GS\) in terms of \(I_D\)</a></li>
+<li><a href="#orge5fb3f9">4.4.3. Apps</a></li>
 </ul>
 </li>
-<li><a href="#org7827529">4.5. Op-amps: voltage amplifiers</a></li>
+<li><a href="#org79337e5">4.5. Op-amps: voltage amplifiers</a></li>
 </ul>
 </li>
 </ul>
@@ -353,8 +353,8 @@ gjdyszel (at) mtu (dot) edu.
 Or, if you're on Michigan Tech's campus, you can just search me in the email directory.
 </p>
 
-<div id="outline-container-org58e6bc7" class="outline-2">
-<h2 id="org58e6bc7"><span class="section-number-2">1</span> Current flow and charge flow: what's the difference?</h2>
+<div id="outline-container-org08efa23" class="outline-2">
+<h2 id="org08efa23"><span class="section-number-2">1</span> Current flow and charge flow: what's the difference?</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 What do we mean when we say current "flows" in a circuit?
@@ -365,8 +365,8 @@ If it helps for some reason, you can think of charge flow as <i>inducing</i> a c
 </div>
 </div>
 
-<div id="outline-container-orgd2b67be" class="outline-2">
-<h2 id="orgd2b67be"><span class="section-number-2">2</span> How to apply KVL and KCL without losing your mind</h2>
+<div id="outline-container-orgb4fe3c6" class="outline-2">
+<h2 id="orgb4fe3c6"><span class="section-number-2">2</span> How to apply KVL and KCL without losing your mind</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Whenever you're gearing up to solve a circuit problem, it's best to look at the output first. This is really just whatever circuit variable you need to calculate. <br />
@@ -380,8 +380,8 @@ Examples
 </p>
 </div>
 
-<div id="outline-container-orgfa291b8" class="outline-3">
-<h3 id="orgfa291b8"><span class="section-number-3">2.1</span> Figuring out what you need and what you don't</h3>
+<div id="outline-container-org39455d2" class="outline-3">
+<h3 id="org39455d2"><span class="section-number-3">2.1</span> Figuring out what you need and what you don't</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 It's best to learn this through examples. But if you're looking for general principles, I can give you this one. Even though you probably won't be able to internalize it until you've solved a lot of circuits. <br />
@@ -425,8 +425,8 @@ If you're calculating numbers, this works just fine. It's when you actually want
 </div>
 
 
-<div id="outline-container-orge388a04" class="outline-2">
-<h2 id="orge388a04"><span class="section-number-2">3</span> Dirty Circuit Analysis Tricks</h2>
+<div id="outline-container-org9a05a37" class="outline-2">
+<h2 id="org9a05a37"><span class="section-number-2">3</span> Dirty Circuit Analysis Tricks</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 These are extremely useful on tests where you're asked to calculate a number. (Not so for proofs, but you usually don't have to do proofs on tests. At least, not in the first few circuits/electronics classes.) <br />
@@ -434,8 +434,8 @@ In all cases, they trivialize the algebra. You can do pretty much everything by 
 </p>
 </div>
 
-<div id="outline-container-org25aa3ac" class="outline-3">
-<h3 id="org25aa3ac"><span class="section-number-3">3.1</span> Ohm's Law and s-parameters</h3>
+<div id="outline-container-orgcd59d93" class="outline-3">
+<h3 id="orgcd59d93"><span class="section-number-3">3.1</span> Ohm's Law and s-parameters</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 I don't know why we don't introduce this earlier. You can analyze circuits using s-parameters to get solutions for both dc and ac simultaneously.
@@ -451,8 +451,8 @@ You can use the generalized form of Ohm's Law for this:
 </p>
 </div>
 
-<div id="outline-container-orgbb1b4c9" class="outline-4">
-<h4 id="orgbb1b4c9"><span class="section-number-4">3.1.1</span> Where the impedance functions for L and C come from</h4>
+<div id="outline-container-orgc78c86e" class="outline-4">
+<h4 id="orgc78c86e"><span class="section-number-4">3.1.1</span> Where the impedance functions for L and C come from</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 I'll start with the differential equations for L and C.
@@ -482,16 +482,16 @@ and
 </div>
 </div>
 
-<div id="outline-container-orge9cc6b8" class="outline-3">
-<h3 id="orge9cc6b8"><span class="section-number-3">3.2</span> Nodal analysis by inspection</h3>
+<div id="outline-container-org814ecb1" class="outline-3">
+<h3 id="org814ecb1"><span class="section-number-3">3.2</span> Nodal analysis by inspection</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 If you can follow all the paths to ground from a specific node, you can put those paths' impedances in parallel. Let me show you what I mean.
 </p>
 </div>
 
-<div id="outline-container-orga507d69" class="outline-4">
-<h4 id="orga507d69"><span class="section-number-4">3.2.1</span> An example where being able to do this is really useful</h4>
+<div id="outline-container-org0fb878f" class="outline-4">
+<h4 id="org0fb878f"><span class="section-number-4">3.2.1</span> An example where being able to do this is really useful</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <p>
 Let's say we're interested in the output impedance of a common-emitter BJT hybrid-pi model with the signal source grounded. <br />
@@ -504,14 +504,14 @@ This is part of Problem 3.9 from <a class='org-ref-reference' href="#vorperian_f
 </p>
 
 
-<div id="org2e802be" class="figure">
+<div id="org3eb1843" class="figure">
 <p><img src="./Vorperian_3_9_BJT_hybrid_pi.png" alt="Vorperian_3_9_BJT_hybrid_pi.png" height="300" width="500" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Common-emitter hybrid-pi model.</p>
 </div>
 
 
-<div id="orge5012c6" class="figure">
+<div id="orgb7af3e4" class="figure">
 <p><img src="./Vorperian_3_9_Output_Impedance.png" alt="Vorperian_3_9_Output_Impedance.png" height="300" width="500" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Calculating the output impedance.</p>
@@ -562,8 +562,8 @@ If there was a signal source, you could calculate the voltage gain and apply the
 </div>
 </div>
 
-<div id="outline-container-orgcc30e18" class="outline-3">
-<h3 id="orgcc30e18"><span class="section-number-3">3.3</span> Superposition with dependent sources</h3>
+<div id="outline-container-org684ed35" class="outline-3">
+<h3 id="org684ed35"><span class="section-number-3">3.3</span> Superposition with dependent sources</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 A lot of textbooks say you can't do this. You can, though, as long as you don't calculate any values before summing all the individual solutions.
@@ -572,8 +572,8 @@ You <i>can't</i> typically get a Thévenin or Norton equivalent directly with th
 </div>
 
 
-<div id="outline-container-orgd1e19f1" class="outline-4">
-<h4 id="orgd1e19f1"><span class="section-number-4">3.3.1</span> Example</h4>
+<div id="outline-container-orgbf198cb" class="outline-4">
+<h4 id="orgbf198cb"><span class="section-number-4">3.3.1</span> Example</h4>
 <div class="outline-text-4" id="text-3-3-1">
 <p>
 This is Problem 5.76 from <a class='org-ref-reference' href="#irwin_basic">irwin_basic</a>. <br />
@@ -600,7 +600,7 @@ Technically, you're looking at multiple different circuits. They just happen to 
 I greatly prefer analytic solutions, so I'll assign symbols to everything first. We can worry about why these are preferable later.
 </p>
 
-<div id="org82699c8" class="figure">
+<div id="orgbdbb04c" class="figure">
 <p><img src="./Irwin_Nelms_11th_Prob_5_76.png" alt="Irwin_Nelms_11th_Prob_5_76.png" height="300" width="500" />
 </p>
 <p><span class="figure-number">Figure 3: </span>Assigning symbols to all elements.</p>
@@ -613,7 +613,7 @@ We can ignore \(R_2\) for now, since it doesn't really contribute to \(V_{xp}\).
 Writing by inspection at the \(V_{xp}\) node.
 </p>
 
-<div id="org5858138" class="figure">
+<div id="orgde6ac5e" class="figure">
 <p><img src="./V_I_alone_dependent_superposition.png" alt="V_I_alone_dependent_superposition.png" height="300" width="500" />
 </p>
 <p><span class="figure-number">Figure 4: </span>Assessing \(V_I\)'s contribution.</p>
@@ -632,7 +632,7 @@ On to the contribution of the dependent source \(b V_x\).
 It's actually pretty similar to the contribution of \(V_I\). Now the "supplied" or "current in" side is negative, though.
 </p>
 
-<div id="orgc095751" class="figure">
+<div id="orgecae618" class="figure">
 <p><img src="./b_vx_alone_dependent_superposition.png" alt="b_vx_alone_dependent_superposition.png" height="300" width="500" />
 </p>
 <p><span class="figure-number">Figure 5: </span>Assessing \(b V_x\)'s contribution.</p>
@@ -652,7 +652,7 @@ Now we find the contribution of just the current source, \(I\). This one is a li
 After removing the sources, the circuit can be rearranged to simplify things.
 </p>
 
-<div id="orgf4468f5" class="figure">
+<div id="orge026f8d" class="figure">
 <p><img src="./i_alone_dependent_superposition.png" alt="i_alone_dependent_superposition.png" height="300" width="500" />
 </p>
 <p><span class="figure-number">Figure 6: </span>Assessing \(I\)'s contribution.</p>
@@ -696,7 +696,7 @@ Here's the final solution for \(V_{xp}\).
 We have to return to the original circuit to find the solution for \(V_o\). 
 </p>
 
-<div id="org887e977" class="figure">
+<div id="orgb752738" class="figure">
 <p><img src="./full_circuit_dependent_superposition.png" alt="full_circuit_dependent_superposition.png" height="300" width="500" />
 </p>
 <p><span class="figure-number">Figure 7: </span>Finding \(V_o\) using the solution we just got for \(V_{xp}\).</p>
@@ -719,7 +719,7 @@ These values are dangerously close to what you'd get simulating this circuit wit
 </p>
 
 
-<div id="orgd0585b9" class="figure">
+<div id="orgc75de21" class="figure">
 <p><img src="./Irwin_Nelms_10th_5_76_LTSpice.png" alt="Irwin_Nelms_10th_5_76_LTSpice.png" height="700" width="900" />
 </p>
 <p><span class="figure-number">Figure 8: </span>Checking the numbers with LTSpice.</p>
@@ -734,8 +734,8 @@ Additional clarification available in <a href="https://electronics.stackexchange
 </div>
 </div>
 
-<div id="outline-container-orgf4766d4" class="outline-3">
-<h3 id="orgf4766d4"><span class="section-number-3">3.4</span> The Extra Element Theorem</h3>
+<div id="outline-container-org0be5b54" class="outline-3">
+<h3 id="org0be5b54"><span class="section-number-3">3.4</span> The Extra Element Theorem</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 The solution to any linear system can be simplified. You don't have to just do algebra to solve the system. Most of it can be derived <i>directly</i> from the circuit topology.
@@ -755,8 +755,8 @@ I won't go through the derivation here. It's not long, but you would be better s
 </p>
 </div>
 
-<div id="outline-container-org2b69deb" class="outline-4">
-<h4 id="org2b69deb"><span class="section-number-4">3.4.1</span> The formulas that minimize your effort</h4>
+<div id="outline-container-org9002f0d" class="outline-4">
+<h4 id="org9002f0d"><span class="section-number-4">3.4.1</span> The formulas that minimize your effort</h4>
 <div class="outline-text-4" id="text-3-4-1">
 <p>
 These formulas can be applied for calculating any transfer function \(H(s)\) (voltage gain, current gain, whatever). \(Z_d\) is the driving-point impedance, calculated with the <i>input off</i>.
@@ -783,8 +783,8 @@ You calculate \(H_o\) (or \(Ho'\)), \(Z_d\), and \(Z_n\) on the <i>original circ
 </div>
 </div>
 
-<div id="outline-container-org41d94db" class="outline-4">
-<h4 id="org41d94db"><span class="section-number-4">3.4.2</span> But seriously, you should really go check out Dr. Middlebrook's lectures.</h4>
+<div id="outline-container-orged7e60d" class="outline-4">
+<h4 id="orged7e60d"><span class="section-number-4">3.4.2</span> But seriously, you should really go check out Dr. Middlebrook's lectures.</h4>
 <div class="outline-text-4" id="text-3-4-2">
 <p>
 They're a lot better than anything I can go through here. Hopefully, I could just show you "Hey, this is cool," and spur you to go look at it yourself.
@@ -794,8 +794,8 @@ I'll put the link here again, because I think it's <i>that important</i>: <a cla
 </div>
 </div>
 
-<div id="outline-container-orgeb2c12d" class="outline-3">
-<h3 id="orgeb2c12d"><span class="section-number-3">3.5</span> The Input-Output Impedance Theorem</h3>
+<div id="outline-container-org4656c20" class="outline-3">
+<h3 id="org4656c20"><span class="section-number-3">3.5</span> The Input-Output Impedance Theorem</h3>
 <div class="outline-text-3" id="text-3-5">
 <p>
 The input and output impedances of a circuit can be calculated directly from that circuit's voltage gain. This is also from <a class='org-ref-reference' href="#middlebrook_tech_therapy">middlebrook_tech_therapy</a>. One slide from the lecture notes summarizes it best: <a href="./input_output_impedance_theorem.pdf">./input_output_impedance_theorem.pdf</a>.
@@ -804,8 +804,8 @@ The input and output impedances of a circuit can be calculated directly from tha
 </div>
 </div>
 
-<div id="outline-container-org9e656f5" class="outline-2">
-<h2 id="org9e656f5"><span class="section-number-2">4</span> Bare-bones silicon devices</h2>
+<div id="outline-container-orgf24494c" class="outline-2">
+<h2 id="orgf24494c"><span class="section-number-2">4</span> Bare-bones silicon devices</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 There's some basic quantum mechanics behind these, but that's beyond what we're concerned with here. It's something to be aware of if you want to design the devices themselves. Shoving the quantum mechanics into the explanation of how these devices work kind of makes you lose sight of what the point is. Unless you already know how quantum mechanics works; in which case, more power to you!
@@ -820,8 +820,8 @@ Somewhat irrelevant side note: If you want to call these nonlinear resistors (be
 </p>
 </div>
 
-<div id="outline-container-org49e6c34" class="outline-3">
-<h3 id="org49e6c34"><span class="section-number-3">4.1</span> Diodes: force current forwards</h3>
+<div id="outline-container-org700034f" class="outline-3">
+<h3 id="org700034f"><span class="section-number-3">4.1</span> Diodes: force current forwards</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 At its most basic level, you can call a diode a voltage-controlled switch. It turns on when the voltage across the anode and cathode, \(V_D\) is positive, and turns off when \(V_D\) is negative. Ideally, you'd switch it on really close to virtual ground, but it can't work like that in practice.
@@ -839,8 +839,8 @@ How we use these <i>really is</i> that simple.
 </p>
 </div>
 
-<div id="outline-container-org4d03e41" class="outline-4">
-<h4 id="org4d03e41"><span class="section-number-4">4.1.1</span> Apps</h4>
+<div id="outline-container-orge7228c3" class="outline-4">
+<h4 id="orge7228c3"><span class="section-number-4">4.1.1</span> Apps</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <p>
 Rectifiers
@@ -851,8 +851,8 @@ exponentiators, ln(), lambert<sub>w</sub>() computers
 </div>
 </div>
 
-<div id="outline-container-org8a3562d" class="outline-4">
-<h4 id="org8a3562d"><span class="section-number-4">4.1.2</span> Not so important, but kind of interesting V, D, R circuit</h4>
+<div id="outline-container-org2a43695" class="outline-4">
+<h4 id="org2a43695"><span class="section-number-4">4.1.2</span> Not so important, but kind of interesting V, D, R circuit</h4>
 <div class="outline-text-4" id="text-4-1-2">
 <p>
 Normally you would have to use iteration to solve this circuit. Technically you still do, if your computer doesn't implement the Lambert W function.
@@ -862,8 +862,8 @@ In any case, it's a cool little exercise to derive the solution analytically. Yo
 </div>
 </div>
 
-<div id="outline-container-orgedfb13f" class="outline-3">
-<h3 id="orgedfb13f"><span class="section-number-3">4.2</span> Zener diodes: force current backwards</h3>
+<div id="outline-container-org0fce347" class="outline-3">
+<h3 id="org0fce347"><span class="section-number-3">4.2</span> Zener diodes: force current backwards</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 These are almost exactly like diodes, with two important differences. 
@@ -879,8 +879,8 @@ This means the current through Zeners flows in the <i>opposite</i> direction. Ke
 </p>
 </div>
 
-<div id="outline-container-org37abda9" class="outline-4">
-<h4 id="org37abda9"><span class="section-number-4">4.2.1</span> Apps</h4>
+<div id="outline-container-orgfb739bb" class="outline-4">
+<h4 id="orgfb739bb"><span class="section-number-4">4.2.1</span> Apps</h4>
 <div class="outline-text-4" id="text-4-2-1">
 <p>
 All the same as diodes, with one extra.
@@ -893,8 +893,8 @@ Voltage reference.
 </div>
 </div>
 
-<div id="outline-container-orgb74ab81" class="outline-3">
-<h3 id="orgb74ab81"><span class="section-number-3">4.3</span> BJTs: current amplifiers</h3>
+<div id="outline-container-org53017bf" class="outline-3">
+<h3 id="org53017bf"><span class="section-number-3">4.3</span> BJTs: current amplifiers</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 This is like a double-sided diode. The idea is a small current turns on a bigger current. You have to give up some voltage to do this, but that's usually okay in BJT circuits.
@@ -903,8 +903,8 @@ The base current \(I_B\) sets the values for the rest of the transistor. Think o
 </p>
 </div>
 
-<div id="outline-container-orgb677cc8" class="outline-4">
-<h4 id="orgb677cc8"><span class="section-number-4">4.3.1</span> Large-signal vs small-signal models</h4>
+<div id="outline-container-org1c9695d" class="outline-4">
+<h4 id="org1c9695d"><span class="section-number-4">4.3.1</span> Large-signal vs small-signal models</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <p>
 So here's the thing. It's not always nice to deal with the nonlinear large-signal model, so we linearize it around some arbitrary operating point.
@@ -914,17 +914,21 @@ If you're solving things analytically, you can usually get away with just solvin
 <p>
 But if your signal varies more than \(\~ \SI{5}{\mV}\), you're probably in trouble just using the small-signal model. You should use the large-signal model in that case.
 </p>
+
+<p>
+At some point, if all the values get high enough, you can just use Ohm's Law anyway. But that's around when the transistor goes into breakdown.
+</p>
 </div>
 </div>
 
-<div id="outline-container-org281e7c8" class="outline-4">
-<h4 id="org281e7c8"><span class="section-number-4">4.3.2</span> Apps</h4>
+<div id="outline-container-org055454d" class="outline-4">
+<h4 id="org055454d"><span class="section-number-4">4.3.2</span> Apps</h4>
 </div>
 </div>
 
 
-<div id="outline-container-orgddc4c5c" class="outline-3">
-<h3 id="orgddc4c5c"><span class="section-number-3">4.4</span> MOSFETs: current sources</h3>
+<div id="outline-container-orgc2fa41b" class="outline-3">
+<h3 id="orgc2fa41b"><span class="section-number-3">4.4</span> MOSFETs: current sources</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 These and BJTs are similar to one another. They <i>sort of</i> do the same thing. The key difference is MOSFETs have no base current, but BJTs do.
@@ -936,8 +940,8 @@ They can be kind of noisy. You'll want to watch out for this if you're putting y
 </p>
 </div>
 
-<div id="outline-container-org14d97aa" class="outline-4">
-<h4 id="org14d97aa"><span class="section-number-4">4.4.1</span> Naming convention differences between MOSFETs and BJTs</h4>
+<div id="outline-container-org26a8ab6" class="outline-4">
+<h4 id="org26a8ab6"><span class="section-number-4">4.4.1</span> Naming convention differences between MOSFETs and BJTs</h4>
 <div class="outline-text-4" id="text-4-4-1">
 <p>
 These are <i>super</i> jacked up. Somebody should have standardized these a long time ago.
@@ -946,8 +950,8 @@ Here's the correspondence between the two.
 </div>
 </div>
 
-<div id="outline-container-org10847a4" class="outline-4">
-<h4 id="org10847a4"><span class="section-number-4">4.4.2</span> The solution for \(V_GS\) in terms of \(I_D\)</h4>
+<div id="outline-container-org867d93b" class="outline-4">
+<h4 id="org867d93b"><span class="section-number-4">4.4.2</span> The solution for \(V_GS\) in terms of \(I_D\)</h4>
 <div class="outline-text-4" id="text-4-4-2">
 <p>
 Sedra and Smith didn't put this directly in the newest edition their book, as of now (2020-06) CITE sedra<sub>smith</sub>. Maybe because they want you to derive it yourself. 
@@ -959,8 +963,8 @@ I'll defeat that purpose and give it away here.
 </div>
 </div>
 
-<div id="outline-container-org747291e" class="outline-4">
-<h4 id="org747291e"><span class="section-number-4">4.4.3</span> Apps</h4>
+<div id="outline-container-orge5fb3f9" class="outline-4">
+<h4 id="orge5fb3f9"><span class="section-number-4">4.4.3</span> Apps</h4>
 <div class="outline-text-4" id="text-4-4-3">
 <p>
 You'd use a MOSFET if you want to miniaturize the circuit you're working with, or if you want to minimize power consumption (lower loss due to base currents). Watch out for noisy situations; most of the time, the MOSFET will dump that noise right into the rest of the circuit (voltage-noise dependence). 
@@ -973,8 +977,8 @@ These are used for digital logic circuits almost exclusively because of their fa
 </div>
 </div>
 
-<div id="outline-container-org7827529" class="outline-3">
-<h3 id="org7827529"><span class="section-number-3">4.5</span> Op-amps: voltage amplifiers</h3>
+<div id="outline-container-org79337e5" class="outline-3">
+<h3 id="org79337e5"><span class="section-number-3">4.5</span> Op-amps: voltage amplifiers</h3>
 <div class="outline-text-3" id="text-4-5">
 <p>
 These are a lot more complicated than we let on. They're nonlinear devices, but we linearize them to make the algebra easier. If you want to see how they work in full, nonlinear glory, check <a class='org-ref-reference' href="#muthuswamy_banerjee_nonlinear">muthuswamy_banerjee_nonlinear</a>.
@@ -996,7 +1000,7 @@ These are a lot more complicated than we let on. They're nonlinear devices, but 
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Garek Dyszel</p>
-<p class="date">Created: 2020-07-04 Sat 13:38</p>
+<p class="date">Created: 2020-08-13 Thu 08:50</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -40,8 +40,8 @@ beginWrapper();
             <h2>Part 2: How to actually use this stuff</h2>
             <p></p>
             <ol>
-              <li><span style=" color: #0000ee;">Figuring out what you need,
-                  ...and what you don't<br>
+              <li><a href="what_you_need.php">Figuring out what you need,
+                  ...and what you don't</a><br>
               </span></li>
               <li><span style="   color: #0000ee;">Solving circuits to get a
                   number</span></li>
@@ -59,6 +59,7 @@ beginWrapper();
                   to make circuit analysis trivial</span></li>
               <li><span style="     color: #0000ee;">Input and output impedances
                   from voltage gain using the Input-Output Impedance Theorem</span></li>
+              <li>Return ratio and Blackman's Theorem</li>
             </ol>
             <h2>Part 4: Using silicon without getting stuck in the details</h2>
             <ol>
