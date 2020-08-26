@@ -63,7 +63,7 @@ from an overview of the discipline to online lecture videos, reference material,
 <span class="image">
 <img src="images/pic04.jpg" alt="" />
 </span>
-<a href="/analog_circuits/analog_syllabus.html">
+<a href="/analog_circuits/analog_syllabus.php">
 <h2>Analog Circuits</h2>
 <div class="content">
 <p>Ever wondered how guitar amps work, or why computers can switch so fast? Learn about the circuits behind them here.</p>

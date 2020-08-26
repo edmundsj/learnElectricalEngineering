@@ -35,25 +35,13 @@ beginWrapper();
               <li><a href="thevenin.php">Thévenin/Norton equivalent
                   circuits and source transformation: pretending everything is a voltage or current divider</a></li>
               <li><a href="power.php">Phasors and introductory power concepts</a></li>
-            </ol>
-            <p></p>
-            <h2>Part 2: How to actually use this stuff</h2>
-            <p></p>
-            <ol>
               <li><a href="what_you_need.php">Figuring out what you need,
-                  ...and what you don't</a><br>
-              </span></li>
-              <li><span style="   color: #0000ee;">Solving circuits to get a
-                  number</span></li>
-              <li><span style="    color: #0000ee;">Solving circuits in terms of
-                  variables</span></li>
+                  ...and what you don't</a></li>
             </ol>
-            <h2>Part 3: Dirty Circuit Analysis Tricks (the meat)</h2>
+            <h2>Part 2: Dirty Circuit Analysis Tricks (the meat)</h2>
             <ol>
-              <li><span style=" color: #0000ee;">Simplifying nodal analysis
-                  equations by inspection<br>
-              </span></li>
-              <li><span style="   color: #0000ee;">Superposition with dependent
+             <?php /* <li>Simplifying nodal analysis equations by inspection</li> */ ?>
+              <li><a href="superposition_dependent.php">Superposition with dependent
                   sources (yes, it's legal!)</span></li>
               <li><span style="    color: #0000ee;">The Extra Element Theorem: how
                   to make circuit analysis trivial</span></li>
@@ -61,7 +49,7 @@ beginWrapper();
                   from voltage gain using the Input-Output Impedance Theorem</span></li>
               <li>Return ratio and Blackman's Theorem</li>
             </ol>
-            <h2>Part 4: Using silicon without getting stuck in the details</h2>
+            <h2>Part 3: Using silicon without getting stuck in the details</h2>
             <ol>
               <li><span style="     color: #0000ee;">Diodes: forcing current from
                   positive (+) to negative (-) voltages</span></li>
@@ -71,7 +59,7 @@ beginWrapper();
               <li>Op-amps: the ultimate voltage amplifiers</li>
             </ol>
             <h1>Guided Circuit Analysis</h1>
-            <h2>Part 5: Examples & Problems</h2>
+            <h2>Part 4: Examples & Problems</h2>
             <ol>
               <li><span style="       color: #0000ee;">Part 1 & Part 2 practice problems</span></li>
               <li><span style="       color: #0000ee;">Part 3 practice problems</span></li>
