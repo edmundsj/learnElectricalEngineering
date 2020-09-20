@@ -1,3 +1,4 @@
+
 <?php
 
 echo'<html>';
@@ -34,49 +35,47 @@ beginWrapper();
               </li>
               <li><a href="thevenin.php">Thévenin/Norton equivalent
                   circuits and source transformation: pretending everything is a voltage or current divider</a></li>
-              <li><a href="power.php">Phasors and introductory power concepts</a></li>
-              <li><a href="what_you_need.php">Figuring out what you need,
+<li><a href="what_you_need.php">Figuring out what you need,
                   ...and what you don't</a></li>
+              <li><a href="power.php">Phasors and introductory power concepts</a></li>
             </ol>
             <h2>Part 2: Dirty Circuit Analysis Tricks (the meat)</h2>
             <ol>
-             <?php /* <li>Simplifying nodal analysis equations by inspection</li> */ ?>
               <li><a href="superposition_dependent.php">Superposition with dependent
-                  sources (yes, it's legal!)</span></li>
-              <li><span style="    color: #0000ee;">The Extra Element Theorem: how
-                  to make circuit analysis trivial</span></li>
-              <li><span style="     color: #0000ee;">Input and output impedances
-                  from voltage gain using the Input-Output Impedance Theorem</span></li>
+                  sources (yes, it's legal!)</a></li>
+<li><a href="extra_element.php">The Extra Element Theorem: how to make circuit
+    analysis trivial</a></li>
+<li><a href="poles_zeroes_transfer.php">Poles, zeroes, and the six standard transfer functions</a></li>
+              <li>Input and output impedances
+                  from voltage gain using the Input-Output Impedance Theorem</li>
               <li>Return ratio and Blackman's Theorem</li>
             </ol>
             <h2>Part 3: Using silicon without getting stuck in the details</h2>
             <ol>
-              <li><span style="     color: #0000ee;">Diodes: forcing current from
-                  positive (+) to negative (-) voltages</span></li>
+              <li>Diodes: forcing current from
+                  positive (+) to negative (-) voltages</li>
               <li>BJTs: current amplifiers</li>
-              <li>MOSFETs: cheap current sources</li>
+              <li>MOSFETs: cheap current sources and lightning-fast switches</li>
               <li>Zener diodes: voltage regulators and "reverse diodes"</li>
               <li>Op-amps: the ultimate voltage amplifiers</li>
             </ol>
             <h1>Guided Circuit Analysis</h1>
             <h2>Part 4: Examples & Problems</h2>
             <ol>
-              <li><span style="       color: #0000ee;">Part 1 & Part 2 practice problems</span></li>
-              <li><span style="       color: #0000ee;">Part 3 practice problems</span></li>
-              <li><span style="     color: #0000ee;">Part 4 practice problems</span></li>
-              <li><span style="      color: #0000ee;">Analyzing some real circuits (synthesizers, etc.)</span></li>
+              <li>Part 1 & Part 2 practice problems</li>
+              <li>Part 3 practice problems</li>
+              <li>Part 4 practice problems</li>
+              <li>Analyzing some real circuits (synthesizers, etc.)</span></li>
             </ol>
             <h2>Part 6: Digressions</h2>
             <ol>
-              <li><span style="       color: #0000ee;">Analyzing a video amplifier
+              <li>Analyzing a video amplifier
                   circuit</span></li>
-              <li><span style="        color: #0000ee;">Is electron flow or
+              <li>Is electron flow or
                   conventional current better? (Neither.)<br>
-              </span></li>
-              <li><span style="     color: #0000ee;">Solving diode circuits in
-                  terms of the Lambert W function</span></li>
-              <li>Solving transistor circuits
-                in terms of the Lambert W function</span></li>
+              </li>
+              <li>Solving diode and transistor circuits in
+                  terms of the Lambert W function</li>
 </ol>
 <p></p>
 </div>

@@ -12,7 +12,7 @@ beginWrapper();
         <div class="inner">
           <h1>Analog Circuits</h1>
           <span class="image main"><img src="images/pic13.jpg" alt=""></span>
-          <h1>Lesson 2: Resistors, Resistance, and Ohm's Law</h1>
+          <h1>Lesson 1.2: Resistors, Resistance, and Ohm's Law</h1>
           <p>There are two fundamental variables in circuit theory. They're all you care about when analyzing or
             designing a circuit. They are
           <ol>

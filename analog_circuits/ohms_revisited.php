@@ -14,7 +14,7 @@ beginWrapper();
           <span class="image main"><img src="images/pic13.jpg" alt=""><br>
         </span></div>
         <div class="inner">
-          <h1>Lesson 5: Ohm's Law Revisited: Impedances</h1>
+          <h1>Lesson 1.5: Ohm's Law Revisited: Impedances</h1>
           <p>If you couldn't tell, I was dying to get to this part. I gave you a
             pretty short version of what the current-voltage relationships are,
             so you could see how hard they can be to remember! I'll show you

@@ -12,7 +12,7 @@ beginWrapper();
 		  <div class="inner">
 			 <h1>Analog Circuits</h1>
 			 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-          <h1>Series and Parallel Impedances</h1>
+                                                                     <h1>Lesson 1.8: Series and Parallel Impedances</h1>
 			 <p>These are shortcuts for applying KVL and KCL that really simplify circuit problems.</p>
           <p>We're allowed to derive the rules for resistors alone. Recall that this generalizes to any
             arbitrary impedance if you replace R with Z (we discussed this in

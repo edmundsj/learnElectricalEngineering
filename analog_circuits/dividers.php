@@ -12,7 +12,7 @@ beginWrapper();
 						<div class="inner">
 							<h1>Analog Circuits</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-                     <h1>Lesson 7: Voltage dividers and current dividers</h1>
+                     <h1>Lesson 1.9: Voltage dividers and current dividers</h1>
 							<p>These build on the ideas of series and parallel to get some general expressions you can
                        use in <i>a lot</i> of circuits. Many circuits are just sequences of divider circuits
                        strung together.</p>

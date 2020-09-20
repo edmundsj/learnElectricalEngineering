@@ -12,7 +12,7 @@ beginWrapper();
 		  <div class="inner">
 			 <h1>Analog Circuits</h1>
 			 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-          <h1>Lesson 7: KVL and KCL</h1>
+          <h1>Lesson 1.7: KVL and KCL</h1>
           <h2>KVL - Kirchoff's Voltage Law</h2>
           <h3>Derivation</h3>
 			 <p>You can derive this from electromagnetism, too. KVL follows directly from assuming </p>

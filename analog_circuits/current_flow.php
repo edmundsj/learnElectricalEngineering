@@ -12,7 +12,7 @@ beginWrapper();
         <div class="inner">
           <h1>Analog Circuits</h1>
           <span class="image main"><img src="images/pic13.jpg" alt=""></span>
-          <h1>Lesson 1: Current flow and charge flow</h1>
+          <h1>Lesson 1.1: Current flow and charge flow</h1>
           <p> I'll use this first lesson to let you know the most important
             convention for the whole course. The details matter, yes, but the
             human brain is not infinite. You're going to have to figure out

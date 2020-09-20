@@ -12,7 +12,7 @@ beginWrapper();
         <div class="inner">
           <h1>Analog Circuits</h1>
           <span class="image main"><img src="images/pic13.jpg" alt=""></span>
-          <h1>Lesson 3: Capacitors (Caps)</h1>
+          <h1>Lesson 1.3: Capacitors (Caps)</h1>
           <img src="images/part1/capacitor.png"
                alt="(The schematic symbol for a capacitor, disconnected from a circuit. A common application for capacitors is in RC low-pass filters. The capacitor and resistor together set a cutoff frequency for that filter. If the input voltage frequency is greater than this cutoff, there is no voltage output. If the input voltage frequency is lower than the cutoff, the input voltage signal passes to the output.) ">
           <h2>deriving the current-voltage relationship</h2>

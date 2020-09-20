@@ -49,11 +49,11 @@ It's actually pretty similar to the contribution of \( V_I \). Now the "supplied
 <figcaption>(Assessing \( b V_x \)'s contribution.)</figcaption><br>
 
 <p>At node \( V_{xp} \), we can write
-\[ \frac{V_{xp}}{R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} = -\frac{b V_x}{R_3} \]
-Solve for \( V_{xp} \) once again.
-\[ V_{xp} = -\frac{b V_x}{R_3} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right] \]
-As before, \( V_{xn} \) is a voltage divider of \( V_{xp} \). The same one, in fact.
-\[ V_{xn} = V_{xp} \frac{R_5}{R_4 + R_5} \]</p>
+\[ \frac{V_{xp}}{R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} = -\frac{b V_x}{R_3}. \]
+Solve for \( V_{xp} \) once again:
+\[ V_{xp} = -\frac{b V_x}{R_3} \left[ {R_1 \parallel R_3 \parallel \left( R_4 + R_5 \right)} \right]. \]
+As before, \( V_{xn} \) is a voltage divider of \( V_{xp} \). The same one, in fact, written as
+\[ V_{xn} = V_{xp} \frac{R_5}{R_4 + R_5}. \]</p>
 
 <p>Now we find the contribution of just the current source, \( I \). This one is a little more involved because the topology is different.
 After removing the sources, the circuit can be rearranged to simplify things.</p>
@@ -95,8 +95,11 @@ Here's the final solution for \( V_{xp} \).
 <img src="./images/part2/full_circuit_dependent_superposition.png" alt="Finding Vo using the solution we just got for Vxp. \)" length=300 width=500>
 <figcaption>Finding \( V_o \) using the solution we just got for \( V_{xp} \).</figcaption><br>
 
-<p>Writing a KCL equation at node \( V_o \).
-\[ \frac{ V_{xp} - V_o }{ R_4 } + I = \frac{ V_o }{ R_5 } \]
+<p>Writing a KCL equation at node \( V_o \) yields
+  \[ \frac{ V_{xp} - V_o }{ R_4 } + I = \frac{ V_o }{ R_5 } \]
+
+  and
+  
 \[ V_o = \left(\frac{ V_{xp} }{ R_4 } + I \right) \left(R_4 \parallel R_5 \right) \]</p>
 
 <p>Let's start plugging in numerical values.
@@ -108,10 +111,10 @@ Plug that into the expression for \( V_o \).
 These values are dangerously close to what you'd get simulating this circuit with LTSpice.</p>
 
 <img src="./images/part2/Irwin_Nelms_10th_5_76_LTSpice.png" alt="Checking the numbers with LTSpice." length=600 width=900>
-<figcaption>Checking the numbers with LTSpice.</figcaption><br>
+<figcaption>(Checking the numbers with LTSpice.)</figcaption><br>
 
 <p>As you can see, the solution we got from this method was <i>huge</i>. That's okay, though; the final expression is modular. So if you messed up some portion of the solution, you only need to fix that portion, and no other.</p>
-<p>You can read more about this technique in <a href="http://leachlegacy.ece.gatech.edu/papers/superpos.pdf">William Leach's unpublished paper on this technique.</a>. It has lots of examples, too. About half are op-amp circuits and half are passive networks.
+<p>You can read more about this technique in <a href="http://leachlegacy.ece.gatech.edu/papers/superpos.pdf">William Leach's unpublished paper on it.</a>. It has tons of examples, so you can use those to check your understanding.
 You can also take a look at <a href="https://electronics.stackexchange.com/questions/107435/superposition-principle-dependent-sources-treated-as-independent-sources">the StackExchange post where I originally found that paper.</a></p> 
 
 <?php

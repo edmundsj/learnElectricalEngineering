@@ -12,7 +12,7 @@ beginWrapper();
 		  <div class="inner">
 			 <h1>Analog Circuits</h1>
 			 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-          <h1>Lesson 11: Thévenin/Norton equivalent circuits and source transformation</h1>
+          <h1>Lesson 1.11: Thévenin/Norton equivalent circuits and source transformation</h1>
           <h2>Derivation of Thévenin's Theorem</h2>
 			 <p>Let's use superposition to turn everything into voltage and current dividers. That way, you don't have to do too much math at all, and you can worry about designing circuits instead.</p>
           <p>So let's assume you've been solving circuits for a while. It's kind of old hat to you at this point. While analyzing a lot of circuits, you noticed that some algebraic forms kept coming up, no matter what combination of impedances you had:

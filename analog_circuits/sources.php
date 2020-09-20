@@ -12,7 +12,7 @@ beginWrapper();
 		  <div class="inner">
 			 <h1>Analog Circuits</h1>
 			 <span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-          <h1>Lesson 6: Ideal voltage and current sources</h1>
+          <h1>Lesson 1.6: Ideal voltage and current sources</h1>
 			 <p>An ideal voltage source sets a constant voltage \( V = A \), where \( A \) is a constant. You have
             no idea what the current through this source is, unless you connect it to some external circuit.</p>
           <img src="images/part1/voltage_source.png" alt="(The schematic symbol for an ideal voltage source, with defining equation V = A, where A is some constant. The current through the voltage source cannot be found through this relationship.)">

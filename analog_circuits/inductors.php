@@ -13,7 +13,7 @@ beginWrapper();
           <h1>Analog Circuits</h1>
           <h1></h1>
           <span class="image main"><img src="images/pic13.jpg" alt=""></span>
-          <h1>Lesson 4: Inductors</h1>
+          <h1>Lesson 1.4: Inductors</h1>
           <img src="images/part1/inductor.png" alt="(The schematic symbol for a capacitor, disconnected from a circuit. Inductors are commonly used to minimize output ripple in AC to DC conversion circuits. An example of one such circuit is shown, with a diode, an inductor, and a capacitor. Then we look at what happens when the inductor is not includes, and when it is included. If the inductor is not included, there is greater output voltage ripple than if the inductor is included.)">
           <p>Okay, the derivation for inductance is a little bit more
             complicated than for resistance and capacitance. I'll have to ask
