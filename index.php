@@ -59,6 +59,7 @@ from an overview of the discipline to online lecture videos, reference material,
 </a>
 </article>
 
+<!--
 <article class="style4">
 <span class="image">
 <img src="images/pic04.jpg" alt="" />
@@ -70,6 +71,7 @@ from an overview of the discipline to online lecture videos, reference material,
 </div>
 </a>
 </article>
+-->
 </section>
 
 
