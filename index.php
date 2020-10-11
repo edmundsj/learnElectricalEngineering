@@ -35,9 +35,9 @@ from an overview of the discipline to online lecture videos, reference material,
 </a>
 </article>
 
-<article class="style3">
+<article class="style2">
 <span class="image">
-<img src="images/pic03.jpg" alt="" />
+<img src="images/pic02.jpg" alt="" />
 </span>
 <a href="/computational_em/computational_em.php">
 <h2>Computational Electromagnetics</h2>
@@ -47,9 +47,9 @@ from an overview of the discipline to online lecture videos, reference material,
 </a>
 </article>
 
-<article class="style2">
+<article class="style3">
 <span class="image">
-<img src="images/pic02.jpg" alt="" />
+<img src="images/pic03.jpg" alt="" />
 </span>
 <a href="/signals_systems.php">
 <h2>Signals and Systems</h2>
@@ -57,9 +57,9 @@ from an overview of the discipline to online lecture videos, reference material,
 <p>Linear Time Invariant Signals and Systems, Fourier Analysis - become a world-class sinewave manipulator. Learn how the world actually works.</p>
 </div>
 </a>
-</section>
+</article>
 
-<article class="style1">
+<article class="style4">
 <span class="image">
 <img src="images/pic04.jpg" alt="" />
 </span>
@@ -69,6 +69,7 @@ from an overview of the discipline to online lecture videos, reference material,
 <p>Ever wondered how guitar amps work, or why computers can switch so fast? Learn about the circuits behind them here.</p>
 </div>
 </a>
+</article>
 </section>
 
 
