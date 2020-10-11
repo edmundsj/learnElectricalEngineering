@@ -1,4 +1,5 @@
-Content / Pedagogical Principles
+## Content / Pedagogical Principles
+
 Below are a set of guidelines (see [discussion](https://github.com/edmundsj/learnElectricalEngineering/issues/13)) for creating new content and revising existing content. 
 
 **1. Specific before general, concrete before abstract**
